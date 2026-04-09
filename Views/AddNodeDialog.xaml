@@ -1,0 +1,85 @@
+﻿<Window x:Class="NetworkMonitor.Views.AddNodeDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Добавить узел" Height="420" Width="380"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{materialDesign:MaterialDesignFont}">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Light"
+                                         PrimaryColor="BlueGrey"
+                                         SecondaryColor="Cyan"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <StackPanel Margin="24">
+
+        <TextBlock Text="Новый узел" FontSize="18"
+                   FontWeight="Bold" Margin="0 0 0 16"/>
+
+        <!-- Имя -->
+        <TextBox x:Name="NameBox"
+                 materialDesign:HintAssist.Hint="Название устройства"
+                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                 Margin="0 8"/>
+
+        <!-- IP -->
+        <TextBox x:Name="IpBox"
+                 materialDesign:HintAssist.Hint="IP-адрес (например 192.168.1.1)"
+                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                 Margin="0 8"/>
+
+        <!-- Тип устройства -->
+        <ComboBox x:Name="TypeBox"
+                  materialDesign:HintAssist.Hint="Тип устройства"
+                  Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                  Margin="0 8">
+            <ComboBoxItem Content="Роутер"/>
+            <ComboBoxItem Content="Свитч"/>
+            <ComboBoxItem Content="Сервер"/>
+            <ComboBoxItem Content="ПК"/>
+            <ComboBoxItem Content="Камера"/>
+            <ComboBoxItem Content="Специальное устройство"/>
+            <ComboBoxItem Content="Другое"/>
+        </ComboBox>
+
+        <!-- Широта -->
+        <TextBox x:Name="LatBox"
+                 materialDesign:HintAssist.Hint="Широта (например 55.7522)"
+                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                 Margin="0 8"/>
+
+        <!-- Долгота -->
+        <TextBox x:Name="LonBox"
+                 materialDesign:HintAssist.Hint="Долгота (например 37.6156)"
+                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                 Margin="0 8"/>
+
+        <!-- Описание -->
+        <TextBox x:Name="DescBox"
+                 materialDesign:HintAssist.Hint="Описание (необязательно)"
+                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                 Margin="0 8"/>
+
+        <!-- Кнопки -->
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right" Margin="0 16 0 0">
+            <Button Content="Отмена"
+                    IsCancel="True"
+                    Style="{StaticResource MaterialDesignOutlinedButton}"
+                    Margin="0 0 8 0"/>
+            <Button Content="Добавить"
+                    Click="AddButton_Click"
+                    Style="{StaticResource MaterialDesignRaisedButton}"/>
+        </StackPanel>
+
+    </StackPanel>
+</Window>

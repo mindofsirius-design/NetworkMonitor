@@ -1,0 +1,227 @@
+﻿<Window x:Class="NetworkMonitor.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:gmap="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+        xmlns:vm="clr-namespace:NetworkMonitor.ViewModels"
+        Title="Network Monitor" Height="700" Width="1100"
+        MinHeight="600" MinWidth="900"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{materialDesign:MaterialDesignFont}">
+
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56"/>
+            <!-- Toolbar -->
+            <RowDefinition Height="*"/>
+            <!-- Content -->
+            <RowDefinition Height="30"/>
+            <!-- StatusBar -->
+        </Grid.RowDefinitions>
+
+        <!-- ===== TOOLBAR ===== -->
+        <materialDesign:ColorZone Grid.Row="0" Mode="PrimaryMid" Padding="8 0">
+            <DockPanel>
+                <TextBlock Text="🌐 Network Monitor"
+                           FontSize="18" FontWeight="Bold"
+                           VerticalAlignment="Center" Margin="8 0"/>
+
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right"
+                            HorizontalAlignment="Right">
+
+                    <!-- Старт/Стоп мониторинга -->
+                    <Button Content="{Binding MonitoringLabel}"
+                            Command="{Binding ToggleMonitoringCommand}"
+                            Style="{StaticResource MaterialDesignRaisedButton}"
+                            Margin="4 0" Width="110"/>
+
+                    <!-- Сохранить -->
+                    <Button Content="💾 Сохранить"
+                            Command="{Binding SaveCommand}"
+                            Style="{StaticResource MaterialDesignOutlinedButton}"
+                            Foreground="White" BorderBrush="White"
+                            Margin="4 0"/>
+
+                    <!-- Добавить узел -->
+                    <Button Content="➕ Узел"
+                            Click="AddNodeButton_Click"
+                            Style="{StaticResource MaterialDesignOutlinedButton}"
+                            Foreground="White" BorderBrush="White"
+                            Margin="4 0"/>
+
+                    <!-- Настройки -->
+                    <Button Content="⚙ Настройки"
+                            Click="SettingsButton_Click"
+                            Style="{StaticResource MaterialDesignOutlinedButton}"
+                            Foreground="White" BorderBrush="White"
+                            Margin="4 0"/>
+                </StackPanel>
+            </DockPanel>
+        </materialDesign:ColorZone>
+
+        <!-- ===== ОСНОВНОЙ КОНТЕНТ ===== -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <!-- Карта -->
+                <ColumnDefinition Width="280"/>
+                <!-- Боковая панель -->
+            </Grid.ColumnDefinitions>
+
+            <!-- КАРТА + УЗЛЫ -->
+            <Grid Grid.Column="0">
+
+                <!-- GMap -->
+                <gmap:GMapControl x:Name="MainMap"
+                                  MinZoom="2" MaxZoom="18"
+                                  Zoom="12"
+                                  MouseWheelZoomType="MousePositionAndCenter"
+                                  CanDragMap="True"
+                                  Loaded="MainMap_Loaded"/>
+
+                <!-- Надпись "Нет данных" -->
+                <TextBlock Text="Нет данных — добавьте узлы для мониторинга"
+                           FontSize="20" Foreground="Gray"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           IsHitTestVisible="False">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding HasNodes}" Value="False">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+
+            </Grid>
+
+            <!-- БОКОВАЯ ПАНЕЛЬ -->
+            <Border Grid.Column="1"
+                    BorderThickness="1 0 0 0"
+                    BorderBrush="{DynamicResource MaterialDesignDivider}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Заголовок панели -->
+                    <TextBlock Grid.Row="0" Text="Устройства"
+                               FontSize="14" FontWeight="Bold"
+                               Margin="12 10"/>
+
+                    <!-- Список узлов -->
+                    <ListView Grid.Row="1"
+                              ItemsSource="{Binding Nodes}"
+                              SelectedItem="{Binding SelectedNode}"
+                              BorderThickness="0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="12"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Индикатор статуса -->
+                                    <Ellipse Grid.Column="0" Width="10" Height="10"
+                                             VerticalAlignment="Center">
+                                        <Ellipse.Fill>
+                                            <SolidColorBrush Color="{Binding StatusColor}"/>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+
+                                    <!-- Имя и IP -->
+                                    <StackPanel Grid.Column="1" Margin="8 0">
+                                        <TextBlock Text="{Binding Name}" FontWeight="SemiBold"/>
+                                        <TextBlock Text="{Binding IpAddress}"
+                                                   FontSize="11" Opacity="0.6"/>
+                                    </StackPanel>
+
+                                    <!-- Пинг -->
+                                    <TextBlock Grid.Column="2"
+                                               VerticalAlignment="Center"
+                                               FontSize="11" Opacity="0.7">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Text"
+                                                        Value="{Binding LastPingMs, StringFormat={}{0} мс}"/>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding LastPingMs}" Value="-1">
+                                                        <Setter Property="Text" Value="—"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <!-- Детали выбранного узла -->
+                    <Border Grid.Row="2"
+                            BorderThickness="0 1 0 0"
+                            BorderBrush="{DynamicResource MaterialDesignDivider}"
+                            Padding="12"
+                            Visibility="{Binding SelectedNode, Converter={StaticResource NullToVisibilityConverter}}">
+                        <StackPanel>
+                            <TextBlock Text="{Binding SelectedNode.Name}"
+                                       FontSize="14" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding SelectedNode.IpAddress}"
+                                       Opacity="0.7" Margin="0 2"/>
+                            <TextBlock Text="{Binding SelectedNode.DeviceType}"
+                                       Opacity="0.7"/>
+                            <TextBlock Margin="0 4 0 0">
+                                <Run Text="Последний онлайн: "/>
+                                <Run Text="{Binding SelectedNode.LastSeen, StringFormat={}{0:dd.MM.yyyy HH:mm}}"/>
+                            </TextBlock>
+                            <TextBlock>
+                                <Run Text="Ping: "/>
+                                <Run Text="{Binding SelectedNode.LastPingMs}"/>
+                                <Run Text=" мс"/>
+                            </TextBlock>
+                            <Button Content="🗑 Удалить"
+                                    Click="DeleteNode_Click"
+                                    Style="{StaticResource MaterialDesignOutlinedButton}"
+                                    Foreground="Red" BorderBrush="Red"
+                                    Margin="0 8 0 0" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                    </Border>
+
+                </Grid>
+            </Border>
+
+        </Grid>
+
+        <!-- ===== СТАТУС БАР ===== -->
+        <StatusBar Grid.Row="2"
+                   Background="{DynamicResource MaterialDesignToolBarBackground}">
+            <StatusBarItem>
+                <TextBlock>
+                    <Run Text="Узлов: "/>
+                    <Run Text="{Binding Nodes.Count}"/>
+                </TextBlock>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock>
+                    <Run Text="Мониторинг: "/>
+                    <Run Text="{Binding IsMonitoring, Converter={StaticResource BoolToStringConverter}}"/>
+                </TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+
+    </Grid>
+</Window>

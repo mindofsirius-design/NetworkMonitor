@@ -1,0 +1,10 @@
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\Views\AddNodeDialog.baml
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\Views\SettingsDialog.baml
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\Views\AddNodeDialog.g.cs
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\Views\MainWindow.g.cs
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\Views\SettingsDialog.g.cs
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\App.g.cs
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\NetworkMonitor_Content.g.cs
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\NetworkMonitor_MarkupCompile.cache
+C:\Users\User\Desktop\NetworkMonitor\obj\Debug\NetworkMonitor_MarkupCompile.lref
