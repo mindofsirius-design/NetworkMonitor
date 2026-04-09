@@ -192,18 +192,63 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <!-- Models -->
     <Compile Include="Models\AppSettings.cs" />
+    <Compile Include="Models\MonitoringConfig.cs" />
+    <Compile Include="Models\MonitoringResult.cs" />
     <Compile Include="Models\NetworkNode.cs" />
+    <Compile Include="Models\NodeEvent.cs" />
     <Compile Include="Models\NodeLink.cs" />
-    <Compile Include="Services\PingService.cs" />
+    <!-- Services -->
+    <Compile Include="Services\DatabaseService.cs" />
+    <Compile Include="Services\EventBus.cs" />
+    <Compile Include="Services\ModuleRegistry.cs" />
+    <Compile Include="Services\MonitoringScheduler.cs" />
+    <Compile Include="Services\NotificationService.cs" />
     <Compile Include="Services\StorageService.cs" />
+    <!-- Monitoring Modules -->
+    <Compile Include="Services\Modules\IMonitoringModule.cs" />
+    <Compile Include="Services\Modules\PingModule.cs" />
+    <Compile Include="Services\Modules\TcpModule.cs" />
+    <Compile Include="Services\Modules\SnmpModule.cs" />
+    <Compile Include="Services\Modules\TracerouteModule.cs" />
+    <!-- ViewModels -->
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\Converters.cs" />
+    <Compile Include="ViewModels\EventLogViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\StatisticsViewModel.cs" />
+    <!-- App -->
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <!-- Views code-behind -->
+    <Compile Include="Views\AddNodeDialog.xaml.cs">
+      <DependentUpon>AddNodeDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EventLogView.xaml.cs">
+      <DependentUpon>EventLogView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\NodeDetailView.xaml.cs">
+      <DependentUpon>NodeDetailView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SettingsDialog.xaml.cs">
       <DependentUpon>SettingsDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\StatisticsView.xaml.cs">
+      <DependentUpon>StatisticsView.xaml</DependentUpon>
+    </Compile>
+    <!-- XAML Pages -->
     <Page Include="Views\AddNodeDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EventLogView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -211,18 +256,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Views\AddNodeDialog.xaml.cs">
-      <DependentUpon>AddNodeDialog.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+    <Page Include="Views\NodeDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\SettingsDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StatisticsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Theme.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -275,10 +321,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
-    <Folder Include="Themes\" />
+    <Content Include="Assets\Sounds\alert.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

@@ -1,85 +1,86 @@
-﻿<Window x:Class="NetworkMonitor.Views.AddNodeDialog"
+<Window x:Class="NetworkMonitor.Views.AddNodeDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="Добавить узел" Height="420" Width="380"
-        WindowStartupLocation="CenterOwner"
-        ResizeMode="NoResize"
-        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="{materialDesign:MaterialDesignFont}">
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Добавить узел" Width="420" Height="600"
+        WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        Style="{StaticResource MaterialDesignWindow}">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="20">
+            <TextBlock Text="Новый узел" FontSize="20" FontWeight="Bold" Margin="0,0,0,16"/>
 
-    <Window.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <materialDesign:BundledTheme BaseTheme="Light"
-                                         PrimaryColor="BlueGrey"
-                                         SecondaryColor="Cyan"/>
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Window.Resources>
+            <TextBox x:Name="NameBox" md:HintAssist.Hint="Имя устройства" Margin="0,0,0,8"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox x:Name="IpBox" md:HintAssist.Hint="IP-адрес" Margin="0,0,0,8"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <ComboBox x:Name="TypeBox" md:HintAssist.Hint="Тип устройства" Margin="0,0,0,8"
+                      Style="{StaticResource MaterialDesignOutlinedComboBox}" SelectedIndex="0">
+                <ComboBoxItem Content="Router"/>
+                <ComboBoxItem Content="Switch"/>
+                <ComboBoxItem Content="Server"/>
+                <ComboBoxItem Content="PC"/>
+                <ComboBoxItem Content="Camera"/>
+                <ComboBoxItem Content="Special"/>
+                <ComboBoxItem Content="Other"/>
+            </ComboBox>
+            <TextBox x:Name="LatBox" md:HintAssist.Hint="Широта (-90..90)" Margin="0,0,0,8"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox x:Name="LonBox" md:HintAssist.Hint="Долгота (-180..180)" Margin="0,0,0,8"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+            <TextBox x:Name="DescBox" md:HintAssist.Hint="Описание" Margin="0,0,0,16"
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
 
-    <StackPanel Margin="24">
+            <TextBlock Text="Модули мониторинга" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,12"/>
 
-        <TextBlock Text="Новый узел" FontSize="18"
-                   FontWeight="Bold" Margin="0 0 0 16"/>
+            <StackPanel Margin="0,0,0,8">
+                <StackPanel Orientation="Horizontal">
+                    <md:PackIcon Kind="LanConnect" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                    <TextBlock Text="Ping (всегда включён)" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="28,4,0,0">
+                    <TextBlock Text="Интервал (сек):" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                    <TextBox x:Name="PingIntervalBox" Width="60" Text="5"
+                             Style="{StaticResource MaterialDesignOutlinedTextBox}" Padding="4,2"/>
+                </StackPanel>
+            </StackPanel>
 
-        <!-- Имя -->
-        <TextBox x:Name="NameBox"
-                 materialDesign:HintAssist.Hint="Название устройства"
-                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                 Margin="0 8"/>
+            <StackPanel Margin="0,0,0,8">
+                <StackPanel Orientation="Horizontal">
+                    <ToggleButton x:Name="TcpToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
+                    <TextBlock Text="TCP Ports" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                </StackPanel>
+                <TextBox x:Name="TcpPortsBox" md:HintAssist.Hint="Порты (через запятую)" Text="80, 443"
+                         Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="28,4,0,0"
+                         IsEnabled="{Binding IsChecked, ElementName=TcpToggle}"/>
+            </StackPanel>
 
-        <!-- IP -->
-        <TextBox x:Name="IpBox"
-                 materialDesign:HintAssist.Hint="IP-адрес (например 192.168.1.1)"
-                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                 Margin="0 8"/>
+            <StackPanel Margin="0,0,0,8">
+                <StackPanel Orientation="Horizontal">
+                    <ToggleButton x:Name="SnmpToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
+                    <TextBlock Text="SNMP" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                </StackPanel>
+                <StackPanel Margin="28,4,0,0" IsEnabled="{Binding IsChecked, ElementName=SnmpToggle}">
+                    <TextBox x:Name="SnmpCommunityBox" md:HintAssist.Hint="Community" Text="public"
+                             Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="0,0,0,4"/>
+                    <ComboBox x:Name="SnmpVersionBox" md:HintAssist.Hint="Версия"
+                              Style="{StaticResource MaterialDesignOutlinedComboBox}" SelectedIndex="1">
+                        <ComboBoxItem Content="v1"/>
+                        <ComboBoxItem Content="v2c"/>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
 
-        <!-- Тип устройства -->
-        <ComboBox x:Name="TypeBox"
-                  materialDesign:HintAssist.Hint="Тип устройства"
-                  Style="{StaticResource MaterialDesignOutlinedComboBox}"
-                  Margin="0 8">
-            <ComboBoxItem Content="Роутер"/>
-            <ComboBoxItem Content="Свитч"/>
-            <ComboBoxItem Content="Сервер"/>
-            <ComboBoxItem Content="ПК"/>
-            <ComboBoxItem Content="Камера"/>
-            <ComboBoxItem Content="Специальное устройство"/>
-            <ComboBoxItem Content="Другое"/>
-        </ComboBox>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
+                <ToggleButton x:Name="TracerouteToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
+                <TextBlock Text="Traceroute" VerticalAlignment="Center" FontWeight="SemiBold"/>
+            </StackPanel>
 
-        <!-- Широта -->
-        <TextBox x:Name="LatBox"
-                 materialDesign:HintAssist.Hint="Широта (например 55.7522)"
-                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                 Margin="0 8"/>
-
-        <!-- Долгота -->
-        <TextBox x:Name="LonBox"
-                 materialDesign:HintAssist.Hint="Долгота (например 37.6156)"
-                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                 Margin="0 8"/>
-
-        <!-- Описание -->
-        <TextBox x:Name="DescBox"
-                 materialDesign:HintAssist.Hint="Описание (необязательно)"
-                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                 Margin="0 8"/>
-
-        <!-- Кнопки -->
-        <StackPanel Orientation="Horizontal"
-                    HorizontalAlignment="Right" Margin="0 16 0 0">
-            <Button Content="Отмена"
-                    IsCancel="True"
-                    Style="{StaticResource MaterialDesignOutlinedButton}"
-                    Margin="0 0 8 0"/>
-            <Button Content="Добавить"
-                    Click="AddButton_Click"
-                    Style="{StaticResource MaterialDesignRaisedButton}"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Отмена" IsCancel="True" Margin="0,0,8,0"
+                        Style="{StaticResource MaterialDesignOutlinedButton}"/>
+                <Button Content="Добавить" Click="AddButton_Click"
+                        Style="{StaticResource MaterialDesignRaisedButton}"/>
+            </StackPanel>
         </StackPanel>
-
-    </StackPanel>
+    </ScrollViewer>
 </Window>

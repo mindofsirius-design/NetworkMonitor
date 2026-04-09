@@ -1,22 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace NetworkMonitor.Models
 {
     public class AppSettings
     {
+        // Мониторинг
         public int PingIntervalSeconds { get; set; } = 30;
         public int PingTimeoutMs { get; set; } = 1000;
         public int PingRetries { get; set; } = 3;
         public int UnstableThresholdMs { get; set; } = 200;
-        public bool DarkTheme { get; set; } = false;
-        public bool SoundAlerts { get; set; } = true;
-        public string Language { get; set; } = "ru";
+
+        // Карта
         public double MapZoom { get; set; } = 10;
         public double MapLat { get; set; } = 55.75;
         public double MapLon { get; set; } = 37.61;
+
+        // Оформление
+        public bool DarkTheme { get; set; } = false;
+
+        // Уведомления
+        public bool ToastEnabled { get; set; } = true;
+        public bool SoundEnabled { get; set; } = true;
+        public string SoundFilePath { get; set; } = "Assets/Sounds/alert.wav";
+        public int SoundDebounceSec { get; set; } = 30;
+
+        // Email (опционально)
+        public bool EmailEnabled { get; set; } = false;
+        public string SmtpHost { get; set; } = "";
+        public int SmtpPort { get; set; } = 587;
+        public string SmtpUser { get; set; } = "";
+        public string SmtpPassword { get; set; } = "";
+        public string EmailFrom { get; set; } = "";
+        public string EmailTo { get; set; } = "";
+
+        // Данные
+        public int HistoryKeepDays { get; set; } = 90;
+
+        // Язык
+        public string Language { get; set; } = "ru";
     }
 }

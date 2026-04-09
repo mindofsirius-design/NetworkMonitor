@@ -1,92 +1,256 @@
-﻿using GMap.NET;
-using GMap.NET.MapProviders;
-using GMap.NET.WindowsPresentation;
-using NetworkMonitor.Models;
-using NetworkMonitor.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+using GMap.NET;
+using GMap.NET.MapProviders;
+using GMap.NET.WindowsPresentation;
+using NetworkMonitor.Models;
+using NetworkMonitor.Services;
+using NetworkMonitor.ViewModels;
 
 namespace NetworkMonitor.Views
 {
     public partial class MainWindow : Window
     {
-        private MainViewModel ViewModel => DataContext as MainViewModel;
+        private MainViewModel _vm;
+        private DispatcherTimer _refreshTimer;
+        private DispatcherTimer _toastTimer;
 
         public MainWindow()
         {
             InitializeComponent();
+            _vm = new MainViewModel();
+            DataContext = _vm;
+
+            DetailView.SetDatabase(_vm.Database);
+            DetailView.DeleteRequested += (s, node) =>
+            {
+                _vm.Nodes.Remove(node);
+                _vm.SelectedNode = null;
+                _vm.UpdateSchedulerNodes();
+                RefreshMarkers();
+            };
+
+            _refreshTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(3) };
+            _refreshTimer.Tick += (s, e) =>
+            {
+                RefreshMarkers();
+                _vm.UpdateCounters();
+                if (_vm.SelectedNode != null)
+                    DetailView.RefreshChart(_vm.SelectedNode);
+            };
+            _refreshTimer.Start();
+
+            _toastTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
+            _toastTimer.Tick += (s, e) =>
+            {
+                var expired = _vm.Notifications.Toasts
+                    .Where(t => (DateTime.Now - t.CreatedAt).TotalSeconds > 5)
+                    .ToList();
+                foreach (var t in expired)
+                    _vm.Notifications.Toasts.Remove(t);
+            };
+            _toastTimer.Start();
         }
 
         private void MainMap_Loaded(object sender, RoutedEventArgs e)
         {
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerAndCache;
-            MainMap.MapProvider = GMapProviders.OpenStreetMap;
-            MainMap.Position = new PointLatLng(55.75, 37.61); // Москва по умолчанию
-            MainMap.MinZoom = 2;
-            MainMap.MaxZoom = 18;
-            MainMap.Zoom = 12;
+            MainMap.MapProvider = OpenStreetMapProvider.Instance;
+            MainMap.Position = new PointLatLng(_vm.Settings.MapLat, _vm.Settings.MapLon);
+            MainMap.Zoom = _vm.Settings.MapZoom;
+            MainMap.OnPositionChanged += MainMap_OnPositionChanged;
+            MainMap.OnMapZoomChanged += MainMap_OnMapZoomChanged;
+
+            MiniMap.MapProvider = OpenStreetMapProvider.Instance;
+            MiniMap.Position = MainMap.Position;
+            MiniMap.Zoom = Math.Max(1, MainMap.Zoom - 4);
+
             RefreshMarkers();
         }
 
-        public void RefreshMarkers()
+        private void MainMap_OnPositionChanged(PointLatLng point)
+        {
+            MiniMap.Position = point;
+        }
+
+        private void MainMap_OnMapZoomChanged()
+        {
+            MiniMap.Zoom = Math.Max(1, MainMap.Zoom - 4);
+        }
+
+        private void RefreshMarkers()
         {
             MainMap.Markers.Clear();
 
-            foreach (var node in ViewModel.Nodes)
+            foreach (var link in _vm.Links)
             {
-                var marker = new GMapMarker(new PointLatLng(node.Latitude, node.Longitude));
+                var source = _vm.Nodes.FirstOrDefault(n => n.Id == link.SourceNodeId);
+                var target = _vm.Nodes.FirstOrDefault(n => n.Id == link.TargetNodeId);
+                if (source == null || target == null) continue;
 
-                // Кружок-маркер
-                var ellipse = new Ellipse
+                var route = new GMapRoute(new List<PointLatLng>
                 {
-                    Width = 18,
-                    Height = 18,
-                    Fill = new SolidColorBrush(
-                        (Color)ColorConverter.ConvertFromString(node.StatusColor)),
+                    new PointLatLng(source.Latitude, source.Longitude),
+                    new PointLatLng(target.Latitude, target.Longitude)
+                });
+
+                var worstStatus = (NodeStatus)Math.Max((int)source.Status, (int)target.Status);
+                Color lineColor;
+                switch (worstStatus)
+                {
+                    case NodeStatus.Online: lineColor = Color.FromRgb(0x4C, 0xAF, 0x50); break;
+                    case NodeStatus.Unstable: lineColor = Color.FromRgb(0xFF, 0xC1, 0x07); break;
+                    case NodeStatus.Offline: lineColor = Color.FromRgb(0xF4, 0x43, 0x36); break;
+                    default: lineColor = Color.FromRgb(0x9E, 0x9E, 0x9E); break;
+                }
+
+                route.Shape = new Line
+                {
+                    Stroke = new SolidColorBrush(lineColor),
+                    StrokeThickness = 2,
+                    Opacity = 0.7
+                };
+
+                MainMap.Markers.Add(route);
+            }
+
+            foreach (var node in _vm.Nodes)
+            {
+                Color markerColor;
+                switch (node.Status)
+                {
+                    case NodeStatus.Online: markerColor = Color.FromRgb(0x4C, 0xAF, 0x50); break;
+                    case NodeStatus.Unstable: markerColor = Color.FromRgb(0xFF, 0xC1, 0x07); break;
+                    case NodeStatus.Offline: markerColor = Color.FromRgb(0xF4, 0x43, 0x36); break;
+                    default: markerColor = Color.FromRgb(0x9E, 0x9E, 0x9E); break;
+                }
+
+                var iconKind = GetIconKind(node.DeviceType);
+
+                var grid = new Grid { Width = 36, Height = 36 };
+                grid.Children.Add(new Ellipse
+                {
+                    Fill = new SolidColorBrush(markerColor),
                     Stroke = Brushes.White,
                     StrokeThickness = 2,
-                    ToolTip = $"{node.Name}\n{node.IpAddress}\nPing: {node.LastPingMs} мс"
-                };
-
-                ellipse.MouseLeftButtonDown += (s, e) =>
+                    Width = 36,
+                    Height = 36
+                });
+                grid.Children.Add(new MaterialDesignThemes.Wpf.PackIcon
                 {
-                    ViewModel.SelectedNode = node;
+                    Kind = iconKind,
+                    Width = 18,
+                    Height = 18,
+                    Foreground = Brushes.White,
+                    HorizontalAlignment = HorizontalAlignment.Center,
+                    VerticalAlignment = VerticalAlignment.Center
+                });
+
+                grid.ToolTip = $"{node.Name}\n{node.IpAddress}\n{node.Status} | {node.LastPingMs}ms";
+
+                var capturedNode = node;
+                grid.MouseLeftButtonDown += (s, ev) =>
+                {
+                    _vm.SelectedNode = capturedNode;
+                    NodeListView.SelectedItem = capturedNode;
                 };
 
-                marker.Shape = ellipse;
-                marker.Offset = new System.Windows.Point(-9, -9);
+                var marker = new GMapMarker(new PointLatLng(node.Latitude, node.Longitude))
+                {
+                    Shape = grid,
+                    Offset = new Point(-18, -18)
+                };
                 MainMap.Markers.Add(marker);
+            }
+        }
+
+        private MaterialDesignThemes.Wpf.PackIconKind GetIconKind(string deviceType)
+        {
+            switch (deviceType?.ToLower())
+            {
+                case "router": return MaterialDesignThemes.Wpf.PackIconKind.Router;
+                case "server": return MaterialDesignThemes.Wpf.PackIconKind.Server;
+                case "switch": return MaterialDesignThemes.Wpf.PackIconKind.LanConnect;
+                case "camera": return MaterialDesignThemes.Wpf.PackIconKind.Camera;
+                case "pc": return MaterialDesignThemes.Wpf.PackIconKind.Monitor;
+                default: return MaterialDesignThemes.Wpf.PackIconKind.Devices;
             }
         }
 
         private void AddNodeButton_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new AddNodeDialog();
-            dialog.Owner = this;
-            if (dialog.ShowDialog() == true)
+            var dialog = new AddNodeDialog { Owner = this };
+            if (dialog.ShowDialog() == true && dialog.ResultNode != null)
             {
-                ViewModel.Nodes.Add(dialog.NewNode);
-                RefreshMarkers();
-            }
-        }
-
-        private void DeleteNode_Click(object sender, RoutedEventArgs e)
-        {
-            if (ViewModel.SelectedNode != null)
-            {
-                ViewModel.Nodes.Remove(ViewModel.SelectedNode);
-                ViewModel.SelectedNode = null;
+                _vm.Nodes.Add(dialog.ResultNode);
+                _vm.UpdateSchedulerNodes();
                 RefreshMarkers();
             }
         }
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new SettingsDialog(ViewModel.Settings);
-            dialog.Owner = this;
-            dialog.ShowDialog();
+            var dialog = new SettingsDialog(_vm.Settings, _vm.Database) { Owner = this };
+            if (dialog.ShowDialog() == true)
+            {
+                _vm.UpdateSettings();
+                _vm.Save();
+            }
+        }
+
+        private void StatisticsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var statsVm = new StatisticsViewModel(_vm.Database, _vm.Nodes);
+            var window = new StatisticsView(statsVm) { Owner = this };
+            window.Show();
+        }
+
+        private void EventLogButton_Click(object sender, RoutedEventArgs e)
+        {
+            var logVm = new EventLogViewModel(_vm.Database, _vm.Nodes);
+            var window = new EventLogView(logVm) { Owner = this };
+            window.Show();
+        }
+
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var filter = SearchBox.Text?.Trim().ToLower();
+            if (string.IsNullOrEmpty(filter))
+            {
+                NodeListView.ItemsSource = _vm.Nodes;
+                return;
+            }
+            NodeListView.ItemsSource = _vm.Nodes
+                .Where(n => (n.Name?.ToLower().Contains(filter) ?? false) ||
+                            (n.IpAddress?.ToLower().Contains(filter) ?? false))
+                .ToList();
+        }
+
+        private void NodeListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (_vm.SelectedNode != null)
+                DetailView.RefreshChart(_vm.SelectedNode);
+        }
+
+        private void Toast_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (sender is FrameworkElement fe && fe.DataContext is ToastNotification toast)
+                _vm.Notifications.RemoveToast(toast);
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            _refreshTimer.Stop();
+            _toastTimer.Stop();
+            _vm.Save();
+            _vm.Shutdown();
         }
     }
 }

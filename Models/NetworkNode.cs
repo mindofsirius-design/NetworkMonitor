@@ -26,6 +26,7 @@ namespace NetworkMonitor.Models
         public string IpAddress { get; set; }
         public string DeviceType { get; set; } = "Unknown";
         public string Description { get; set; }
+        public MonitoringConfig Monitoring { get; set; } = new MonitoringConfig();
 
         // Позиция на карте
         public double Latitude { get; set; }
