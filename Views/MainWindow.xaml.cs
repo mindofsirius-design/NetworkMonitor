@@ -83,6 +83,7 @@ namespace NetworkMonitor.Views
             MiniMap.MapProvider = OpenStreetMapProvider.Instance;
             MiniMap.Position = MainMap.Position;
             MiniMap.Zoom = Math.Max(1, MainMap.Zoom - 4);
+            MiniMap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.NoZoom;
 
             RefreshMarkers();
         }
