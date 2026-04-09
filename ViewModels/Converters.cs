@@ -28,19 +28,32 @@ namespace NetworkMonitor.ViewModels
 
     public class StatusToColorConverter : IValueConverter
     {
+        private static readonly SolidColorBrush OnlineBrush;
+        private static readonly SolidColorBrush OfflineBrush;
+        private static readonly SolidColorBrush UnstableBrush;
+        private static readonly SolidColorBrush UnknownBrush;
+
+        static StatusToColorConverter()
+        {
+            OnlineBrush = new SolidColorBrush(Color.FromRgb(0x4C, 0xAF, 0x50)); OnlineBrush.Freeze();
+            OfflineBrush = new SolidColorBrush(Color.FromRgb(0xF4, 0x43, 0x36)); OfflineBrush.Freeze();
+            UnstableBrush = new SolidColorBrush(Color.FromRgb(0xFF, 0xC1, 0x07)); UnstableBrush.Freeze();
+            UnknownBrush = new SolidColorBrush(Color.FromRgb(0x9E, 0x9E, 0x9E)); UnknownBrush.Freeze();
+        }
+
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value is NodeStatus status)
             {
                 switch (status)
                 {
-                    case NodeStatus.Online: return new SolidColorBrush(Color.FromRgb(0x4C, 0xAF, 0x50));
-                    case NodeStatus.Offline: return new SolidColorBrush(Color.FromRgb(0xF4, 0x43, 0x36));
-                    case NodeStatus.Unstable: return new SolidColorBrush(Color.FromRgb(0xFF, 0xC1, 0x07));
-                    default: return new SolidColorBrush(Color.FromRgb(0x9E, 0x9E, 0x9E));
+                    case NodeStatus.Online: return OnlineBrush;
+                    case NodeStatus.Offline: return OfflineBrush;
+                    case NodeStatus.Unstable: return UnstableBrush;
+                    default: return UnknownBrush;
                 }
             }
-            return new SolidColorBrush(Colors.Gray);
+            return UnknownBrush;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -49,18 +62,31 @@ namespace NetworkMonitor.ViewModels
 
     public class ToastTypeToColorConverter : IValueConverter
     {
+        private static readonly SolidColorBrush ErrorBrush;
+        private static readonly SolidColorBrush WarningBrush;
+        private static readonly SolidColorBrush InfoBrush;
+        private static readonly SolidColorBrush GrayBrush;
+
+        static ToastTypeToColorConverter()
+        {
+            ErrorBrush = new SolidColorBrush(Color.FromRgb(0xF4, 0x43, 0x36)); ErrorBrush.Freeze();
+            WarningBrush = new SolidColorBrush(Color.FromRgb(0xFF, 0xC1, 0x07)); WarningBrush.Freeze();
+            InfoBrush = new SolidColorBrush(Color.FromRgb(0x21, 0x96, 0xF3)); InfoBrush.Freeze();
+            GrayBrush = new SolidColorBrush(Colors.Gray); GrayBrush.Freeze();
+        }
+
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value is ToastType type)
             {
                 switch (type)
                 {
-                    case ToastType.Error: return new SolidColorBrush(Color.FromRgb(0xF4, 0x43, 0x36));
-                    case ToastType.Warning: return new SolidColorBrush(Color.FromRgb(0xFF, 0xC1, 0x07));
-                    default: return new SolidColorBrush(Color.FromRgb(0x21, 0x96, 0xF3));
+                    case ToastType.Error: return ErrorBrush;
+                    case ToastType.Warning: return WarningBrush;
+                    default: return InfoBrush;
                 }
             }
-            return new SolidColorBrush(Colors.Gray);
+            return GrayBrush;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

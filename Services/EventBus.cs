@@ -13,12 +13,14 @@ namespace NetworkMonitor.Services
 
         public void PublishResult(MonitoringResult result)
         {
-            OnResult?.Invoke(result);
+            var handler = OnResult;
+            handler?.Invoke(result);
         }
 
         public void PublishEvent(NodeEvent nodeEvent)
         {
-            OnEvent?.Invoke(nodeEvent);
+            var handler = OnEvent;
+            handler?.Invoke(nodeEvent);
         }
     }
 }

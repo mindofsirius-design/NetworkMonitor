@@ -38,10 +38,14 @@ namespace NetworkMonitor.Services.Modules
                         var delayTask = Task.Delay(TimeoutMs, ct);
                         var completed = await Task.WhenAny(connectTask, delayTask);
 
-                        if (completed == connectTask && client.Connected)
+                        if (completed == connectTask && !connectTask.IsFaulted && client.Connected)
                             openPorts.Add(port);
                         else
+                        {
                             closedPorts.Add(port);
+                            // Observe the task to prevent UnobservedTaskException in .NET 4.8
+                            var _ = connectTask.ContinueWith(t => { var ignored = t.Exception; }, TaskContinuationOptions.OnlyOnFaulted);
+                        }
                     }
                 }
                 catch

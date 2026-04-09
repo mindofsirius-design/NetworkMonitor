@@ -176,6 +176,8 @@ namespace NetworkMonitor.ViewModels
 
         public void Shutdown()
         {
+            EventBus.Instance.OnResult -= OnMonitoringResult;
+            EventBus.Instance.OnEvent -= OnNodeEvent;
             _scheduler.Stop();
             _database.Dispose();
         }

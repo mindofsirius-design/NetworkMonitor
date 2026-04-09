@@ -63,7 +63,8 @@ namespace NetworkMonitor.Views
                 StrokeThickness = 2
             };
 
-            foreach (var r in history.Where(h => h.LatencyMs >= 0).Skip(Math.Max(0, history.Count - 100)))
+            var validPoints = history.Where(h => h.LatencyMs >= 0).ToList();
+            foreach (var r in validPoints.Skip(Math.Max(0, validPoints.Count - 100)))
             {
                 series.Points.Add(new DataPoint(DateTimeAxis.ToDouble(r.Timestamp), r.LatencyMs));
             }

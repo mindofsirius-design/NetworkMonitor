@@ -140,8 +140,12 @@ namespace NetworkMonitor.Services
                         await Task.Delay(2000, ct);
                         try
                         {
-                            var result = await module.CheckAsync(node, ct);
-                            EventBus.Instance.PublishResult(result);
+                            using (var retryCts = new CancellationTokenSource(TaskTimeoutMs))
+                            using (var retryLinked = CancellationTokenSource.CreateLinkedTokenSource(ct, retryCts.Token))
+                            {
+                                var result = await module.CheckAsync(node, retryLinked.Token);
+                                EventBus.Instance.PublishResult(result);
+                            }
                         }
                         catch (Exception retryEx)
                         {

@@ -37,6 +37,18 @@ namespace NetworkMonitor.Views
                 RefreshMarkers();
             };
 
+            DetailView.PingRequested += async (s, node) =>
+            {
+                var pingModule = new Services.Modules.PingModule
+                {
+                    TimeoutMs = _vm.Settings.PingTimeoutMs,
+                    Retries = _vm.Settings.PingRetries,
+                    UnstableThresholdMs = _vm.Settings.UnstableThresholdMs
+                };
+                var result = await pingModule.CheckAsync(node, System.Threading.CancellationToken.None);
+                Services.EventBus.Instance.PublishResult(result);
+            };
+
             _refreshTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(3) };
             _refreshTimer.Tick += (s, e) =>
             {
@@ -95,30 +107,31 @@ namespace NetworkMonitor.Views
                 var target = _vm.Nodes.FirstOrDefault(n => n.Id == link.TargetNodeId);
                 if (source == null || target == null) continue;
 
-                var route = new GMapRoute(new List<PointLatLng>
+                var points = new List<PointLatLng>
                 {
                     new PointLatLng(source.Latitude, source.Longitude),
                     new PointLatLng(target.Latitude, target.Longitude)
-                });
-
-                var worstStatus = (NodeStatus)Math.Max((int)source.Status, (int)target.Status);
-                Color lineColor;
-                switch (worstStatus)
-                {
-                    case NodeStatus.Online: lineColor = Color.FromRgb(0x4C, 0xAF, 0x50); break;
-                    case NodeStatus.Unstable: lineColor = Color.FromRgb(0xFF, 0xC1, 0x07); break;
-                    case NodeStatus.Offline: lineColor = Color.FromRgb(0xF4, 0x43, 0x36); break;
-                    default: lineColor = Color.FromRgb(0x9E, 0x9E, 0x9E); break;
-                }
-
-                route.Shape = new Line
-                {
-                    Stroke = new SolidColorBrush(lineColor),
-                    StrokeThickness = 2,
-                    Opacity = 0.7
                 };
 
+                var route = new GMapRoute(points);
                 MainMap.Markers.Add(route);
+                route.RegenerateShape(MainMap);
+
+                if (route.Shape is System.Windows.Shapes.Path path)
+                {
+                    var worstStatus = (NodeStatus)Math.Max((int)source.Status, (int)target.Status);
+                    Color lineColor;
+                    switch (worstStatus)
+                    {
+                        case NodeStatus.Online: lineColor = Color.FromRgb(0x4C, 0xAF, 0x50); break;
+                        case NodeStatus.Unstable: lineColor = Color.FromRgb(0xFF, 0xC1, 0x07); break;
+                        case NodeStatus.Offline: lineColor = Color.FromRgb(0xF4, 0x43, 0x36); break;
+                        default: lineColor = Color.FromRgb(0x9E, 0x9E, 0x9E); break;
+                    }
+                    path.Stroke = new SolidColorBrush(lineColor);
+                    path.StrokeThickness = 2;
+                    path.Opacity = 0.7;
+                }
             }
 
             foreach (var node in _vm.Nodes)
@@ -221,16 +234,14 @@ namespace NetworkMonitor.Views
 
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            var view = System.Windows.Data.CollectionViewSource.GetDefaultView(_vm.Nodes);
             var filter = SearchBox.Text?.Trim().ToLower();
             if (string.IsNullOrEmpty(filter))
-            {
-                NodeListView.ItemsSource = _vm.Nodes;
-                return;
-            }
-            NodeListView.ItemsSource = _vm.Nodes
-                .Where(n => (n.Name?.ToLower().Contains(filter) ?? false) ||
-                            (n.IpAddress?.ToLower().Contains(filter) ?? false))
-                .ToList();
+                view.Filter = null;
+            else
+                view.Filter = obj => obj is NetworkNode n &&
+                    ((n.Name?.ToLower().Contains(filter) ?? false) ||
+                     (n.IpAddress?.ToLower().Contains(filter) ?? false));
         }
 
         private void NodeListView_SelectionChanged(object sender, SelectionChangedEventArgs e)

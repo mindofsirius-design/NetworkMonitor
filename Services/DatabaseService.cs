@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.Globalization;
 using System.IO;
 using NetworkMonitor.Models;
 using NLog;
@@ -16,6 +17,7 @@ namespace NetworkMonitor.Services
         private readonly List<MonitoringResult> _resultBuffer = new List<MonitoringResult>();
         private readonly List<NodeEvent> _eventBuffer = new List<NodeEvent>();
         private readonly object _bufferLock = new object();
+        private readonly object _writeLock = new object();
         private System.Threading.Timer _flushTimer;
 
         public DatabaseService(string dbPath = null)
@@ -111,50 +113,55 @@ namespace NetworkMonitor.Services
                 _eventBuffer.Clear();
             }
 
-            try
+            lock (_writeLock)
             {
-                using (var tx = _connection.BeginTransaction())
+                try
                 {
-                    foreach (var r in results)
+                    using (var tx = _connection.BeginTransaction())
                     {
-                        if (r.ModuleName == "ping")
+                        foreach (var r in results)
                         {
-                            ExecuteNonQuery(
-                                "INSERT INTO ping_history (node_id, latency_ms, packet_loss, status, timestamp) VALUES (@nid, @lat, @loss, @st, @ts)",
-                                new SQLiteParameter("@nid", r.NodeId),
-                                new SQLiteParameter("@lat", r.LatencyMs),
-                                new SQLiteParameter("@loss", r.PacketLoss),
-                                new SQLiteParameter("@st", r.Status.ToString()),
-                                new SQLiteParameter("@ts", r.Timestamp.ToString("o")));
+                            if (r.ModuleName == "ping")
+                            {
+                                ExecuteNonQuery(
+                                    "INSERT INTO ping_history (node_id, latency_ms, packet_loss, status, timestamp) VALUES (@nid, @lat, @loss, @st, @ts)",
+                                    new SQLiteParameter("@nid", r.NodeId),
+                                    new SQLiteParameter("@lat", r.LatencyMs),
+                                    new SQLiteParameter("@loss", r.PacketLoss),
+                                    new SQLiteParameter("@st", r.Status.ToString()),
+                                    new SQLiteParameter("@ts", r.Timestamp.ToString("o")));
+                            }
+                            else
+                            {
+                                ExecuteNonQuery(
+                                    "INSERT INTO module_results (node_id, module_name, success, details, timestamp) VALUES (@nid, @mod, @suc, @det, @ts)",
+                                    new SQLiteParameter("@nid", r.NodeId),
+                                    new SQLiteParameter("@mod", r.ModuleName),
+                                    new SQLiteParameter("@suc", r.Success ? 1 : 0),
+                                    new SQLiteParameter("@det", r.Details),
+                                    new SQLiteParameter("@ts", r.Timestamp.ToString("o")));
+                            }
                         }
 
-                        ExecuteNonQuery(
-                            "INSERT INTO module_results (node_id, module_name, success, details, timestamp) VALUES (@nid, @mod, @suc, @det, @ts)",
-                            new SQLiteParameter("@nid", r.NodeId),
-                            new SQLiteParameter("@mod", r.ModuleName),
-                            new SQLiteParameter("@suc", r.Success ? 1 : 0),
-                            new SQLiteParameter("@det", r.Details),
-                            new SQLiteParameter("@ts", r.Timestamp.ToString("o")));
-                    }
+                        foreach (var e in events)
+                        {
+                            ExecuteNonQuery(
+                                "INSERT INTO events (node_id, event_type, message, old_status, new_status, timestamp) VALUES (@nid, @et, @msg, @old, @new, @ts)",
+                                new SQLiteParameter("@nid", e.NodeId),
+                                new SQLiteParameter("@et", e.EventType),
+                                new SQLiteParameter("@msg", e.Message),
+                                new SQLiteParameter("@old", e.OldStatus?.ToString()),
+                                new SQLiteParameter("@new", e.NewStatus?.ToString()),
+                                new SQLiteParameter("@ts", e.Timestamp.ToString("o")));
+                        }
 
-                    foreach (var e in events)
-                    {
-                        ExecuteNonQuery(
-                            "INSERT INTO events (node_id, event_type, message, old_status, new_status, timestamp) VALUES (@nid, @et, @msg, @old, @new, @ts)",
-                            new SQLiteParameter("@nid", e.NodeId),
-                            new SQLiteParameter("@et", e.EventType),
-                            new SQLiteParameter("@msg", e.Message),
-                            new SQLiteParameter("@old", e.OldStatus?.ToString()),
-                            new SQLiteParameter("@new", e.NewStatus?.ToString()),
-                            new SQLiteParameter("@ts", e.Timestamp.ToString("o")));
+                        tx.Commit();
                     }
-
-                    tx.Commit();
                 }
-            }
-            catch (Exception ex)
-            {
-                Logger.Error(ex, "Database flush error");
+                catch (Exception ex)
+                {
+                    Logger.Error(ex, "Database flush error");
+                }
             }
         }
 
@@ -180,7 +187,7 @@ namespace NetworkMonitor.Services
                             LatencyMs = reader.IsDBNull(1) ? -1 : reader.GetInt64(1),
                             PacketLoss = reader.IsDBNull(2) ? 1.0 : reader.GetDouble(2),
                             Status = Enum.TryParse<NodeStatus>(reader.GetString(3), out var s) ? s : NodeStatus.Unknown,
-                            Timestamp = DateTime.Parse(reader.GetString(4))
+                            Timestamp = DateTime.Parse(reader.GetString(4), CultureInfo.InvariantCulture, DateTimeStyles.RoundtripKind)
                         });
                     }
                 }
@@ -246,7 +253,7 @@ namespace NetworkMonitor.Services
                             Message = reader.IsDBNull(3) ? null : reader.GetString(3),
                             OldStatus = reader.IsDBNull(4) ? (NodeStatus?)null : (Enum.TryParse<NodeStatus>(reader.GetString(4), out var os) ? os : (NodeStatus?)null),
                             NewStatus = reader.IsDBNull(5) ? (NodeStatus?)null : (Enum.TryParse<NodeStatus>(reader.GetString(5), out var ns) ? ns : (NodeStatus?)null),
-                            Timestamp = DateTime.Parse(reader.GetString(6))
+                            Timestamp = DateTime.Parse(reader.GetString(6), CultureInfo.InvariantCulture, DateTimeStyles.RoundtripKind)
                         });
                     }
                 }

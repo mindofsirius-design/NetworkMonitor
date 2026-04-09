@@ -12,9 +12,10 @@ namespace NetworkMonitor.Services
 {
     public class StorageService
     {
-        private readonly string _nodesFile = "nodes.json";
-        private readonly string _linksFile = "links.json";
-        private readonly string _settingsFile = "settings.json";
+        private static readonly string BaseDir = AppDomain.CurrentDomain.BaseDirectory;
+        private readonly string _nodesFile = Path.Combine(BaseDir, "nodes.json");
+        private readonly string _linksFile = Path.Combine(BaseDir, "links.json");
+        private readonly string _settingsFile = Path.Combine(BaseDir, "settings.json");
 
         public List<NetworkNode> LoadNodes()
         {

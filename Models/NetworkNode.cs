@@ -10,10 +10,10 @@ namespace NetworkMonitor.Models
 {
     public enum NodeStatus
     {
-        Online,
-        Offline,
-        Unstable,
-        Unknown
+        Online = 0,
+        Unknown = 1,
+        Unstable = 2,
+        Offline = 3
     }
 
     public class NetworkNode : INotifyPropertyChanged
@@ -36,7 +36,12 @@ namespace NetworkMonitor.Models
         public double X { get; set; }
         public double Y { get; set; }
 
-        public DateTime LastSeen { get; set; }
+        private DateTime _lastSeen;
+        public DateTime LastSeen
+        {
+            get => _lastSeen;
+            set { _lastSeen = value; OnPropertyChanged(); }
+        }
 
         public NodeStatus Status
         {

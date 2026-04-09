@@ -126,8 +126,10 @@ namespace NetworkMonitor.Services
                     client.EnableSsl = true;
                     client.Credentials = new NetworkCredential(_settings.SmtpUser, _settings.SmtpPassword);
 
-                    var msg = new MailMessage(_settings.EmailFrom, _settings.EmailTo, subject, body);
-                    client.Send(msg);
+                    using (var msg = new MailMessage(_settings.EmailFrom, _settings.EmailTo, subject, body))
+                    {
+                        client.Send(msg);
+                    }
                     Logger.Info("Email sent: {0}", subject);
                 }
             }

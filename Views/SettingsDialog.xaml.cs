@@ -112,20 +112,33 @@ namespace NetworkMonitor.Views
             helper.SetTheme(theme);
         }
 
-        private void TestEmail_Click(object sender, RoutedEventArgs e)
+        private async void TestEmail_Click(object sender, RoutedEventArgs e)
         {
+            var host = SmtpHostBox.Text?.Trim();
+            var port = int.TryParse(SmtpPortBox.Text, out int p) ? p : 587;
+            var user = SmtpUserBox.Text?.Trim();
+            var pass = SmtpPasswordBox.Password;
+            var from = EmailFromBox.Text?.Trim();
+            var to = EmailToBox.Text?.Trim();
+
             try
             {
-                using (var client = new SmtpClient(SmtpHostBox.Text?.Trim(), int.Parse(SmtpPortBox.Text)))
+                await System.Threading.Tasks.Task.Run(() =>
                 {
-                    client.EnableSsl = true;
-                    client.Credentials = new NetworkCredential(SmtpUserBox.Text?.Trim(), SmtpPasswordBox.Password);
-                    client.Timeout = 10000;
-                    var msg = new MailMessage(EmailFromBox.Text?.Trim(), EmailToBox.Text?.Trim(),
-                        "[NetworkMonitor] \u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435", "\u0415\u0441\u043B\u0438 \u0432\u044B \u0432\u0438\u0434\u0438\u0442\u0435 \u044D\u0442\u043E \u043F\u0438\u0441\u044C\u043C\u043E \u2014 email-\u0443\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u044F \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442.");
-                    client.Send(msg);
-                    MessageBox.Show("\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u043F\u0438\u0441\u044C\u043C\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E!", "\u0423\u0441\u043F\u0435\u0445", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
+                    using (var client = new SmtpClient(host, port))
+                    {
+                        client.EnableSsl = true;
+                        client.Credentials = new NetworkCredential(user, pass);
+                        client.Timeout = 10000;
+                        using (var msg = new MailMessage(from, to,
+                            "[NetworkMonitor] \u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
+                            "\u0415\u0441\u043B\u0438 \u0432\u044B \u0432\u0438\u0434\u0438\u0442\u0435 \u044D\u0442\u043E \u043F\u0438\u0441\u044C\u043C\u043E \u2014 email-\u0443\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u044F \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442."))
+                        {
+                            client.Send(msg);
+                        }
+                    }
+                });
+                MessageBox.Show("\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u043F\u0438\u0441\u044C\u043C\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E!", "\u0423\u0441\u043F\u0435\u0445", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
