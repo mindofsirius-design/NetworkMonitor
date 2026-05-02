@@ -1,0 +1,127 @@
+2026-04-10 16:13:21.5514 INFO App Application starting 
+2026-04-10 16:16:25.3994 INFO App Application starting 
+2026-04-10 16:16:26.8444 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:16:50.7224 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:16:50.7534 INFO App Application exiting 
+2026-04-10 16:17:01.8774 INFO App Application starting 
+2026-04-10 16:17:02.9954 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:17:07.4594 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:17:07.4594 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-04-10 16:17:08.0444 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:17:11.2944 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:17:11.2944 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-04-10 16:21:23.8204 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:21:23.8704 INFO App Application exiting 
+2026-04-10 16:22:18.8030 INFO App Application starting 
+2026-04-10 16:22:19.7934 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:22:29.2160 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:22:29.2530 INFO App Application exiting 
+2026-04-10 16:29:13.1540 INFO App Application starting 
+2026-04-10 16:29:14.2954 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:29:27.6906 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:29:27.7346 INFO App Application exiting 
+2026-04-10 16:31:26.4816 INFO App Application starting 
+2026-04-10 16:31:27.5374 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:31:32.1568 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:31:32.2188 INFO App Application exiting 
+2026-04-10 16:32:15.1976 INFO App Application starting 
+2026-04-10 16:32:16.3452 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:33:37.4786 INFO App Application starting 
+2026-04-10 16:33:38.5706 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:34:13.2994 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:34:13.3284 INFO App Application exiting 
+2026-04-10 16:35:19.5406 INFO App Application starting 
+2026-04-10 16:35:20.6568 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:37:36.9102 INFO App Application starting 
+2026-04-10 16:37:38.0362 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:37:56.7758 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:37:56.8338 INFO App Application exiting 
+2026-04-10 16:41:40.5206 INFO App Application starting 
+2026-04-10 16:41:41.6210 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:41:50.2646 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:41:50.2996 INFO App Application exiting 
+2026-04-10 16:42:04.3912 INFO App Application starting 
+2026-04-10 16:42:05.5036 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:42:09.9686 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:42:10.0026 INFO App Application exiting 
+2026-04-10 16:42:24.9046 INFO App Application starting 
+2026-04-10 16:42:26.3248 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:42:31.7326 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:42:31.8496 INFO App Application exiting 
+2026-04-10 16:42:52.8804 INFO App Application starting 
+2026-04-10 16:42:54.0564 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-10 16:42:59.7508 INFO MonitoringScheduler Scheduler stopped 
+2026-04-10 16:42:59.8858 INFO App Application exiting 
+2026-04-11 08:38:45.7359 INFO App Application starting 
+2026-04-11 08:38:46.5261 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 08:41:30.5262 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 08:41:30.5262 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-04-11 08:41:32.2828 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 09:09:44.8638 INFO App Application starting 
+2026-04-11 09:09:45.5395 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 09:10:37.5242 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 09:10:37.5372 INFO App Application exiting 
+2026-04-11 09:15:07.8367 INFO App Application starting 
+2026-04-11 09:15:08.4088 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 09:17:29.2384 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 09:17:29.2384 INFO App Application exiting 
+2026-04-11 19:16:13.0154 INFO App Application starting 
+2026-04-11 19:16:13.6557 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 19:16:56.6524 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:16:56.6524 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-04-11 19:16:57.4396 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:16:58.2966 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:16:58.2966 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-04-11 19:16:59.5475 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:17:00.3932 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:17:00.3932 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-04-11 19:17:00.8365 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:17:05.5060 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:17:05.5060 INFO App Application exiting 
+2026-04-11 19:18:27.9030 INFO App Application starting 
+2026-04-11 19:18:28.4820 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 19:18:38.6253 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:18:38.6383 INFO App Application exiting 
+2026-04-11 19:22:11.5758 INFO App Application starting 
+2026-04-11 19:22:12.1700 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 19:22:26.4138 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:22:26.4268 INFO App Application exiting 
+2026-04-11 19:22:42.7069 INFO App Application starting 
+2026-04-11 19:22:43.2637 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 19:23:13.9004 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:23:13.9114 INFO App Application exiting 
+2026-04-11 19:23:43.0592 INFO App Application starting 
+2026-04-11 19:23:43.6556 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 19:23:54.9441 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:23:54.9592 INFO App Application exiting 
+2026-04-11 19:24:05.5405 INFO App Application starting 
+2026-04-11 19:24:06.1153 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 19:24:17.4815 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:24:17.4975 INFO App Application exiting 
+2026-04-11 19:25:13.3372 INFO App Application starting 
+2026-04-11 19:25:13.9296 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-11 19:25:33.1329 INFO MonitoringScheduler Scheduler stopped 
+2026-04-11 19:25:33.1459 INFO App Application exiting 
+2026-04-17 13:19:26.6292 INFO App Application starting 
+2026-04-17 13:19:32.0896 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-17 13:19:57.0846 INFO MonitoringScheduler Scheduler stopped 
+2026-04-17 13:19:57.0846 INFO App Application exiting 
+2026-04-17 13:24:42.0122 INFO App Application starting 
+2026-04-17 13:24:43.0892 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-17 13:25:18.4052 INFO MonitoringScheduler Scheduler stopped 
+2026-04-17 13:25:18.4692 INFO App Application exiting 
+2026-04-17 13:26:58.1038 INFO App Application starting 
+2026-04-17 13:26:59.6112 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-17 13:27:05.0628 INFO MonitoringScheduler Scheduler stopped 
+2026-04-17 13:27:05.0928 INFO App Application exiting 
+2026-04-17 13:28:13.4320 INFO App Application starting 
+2026-04-17 13:28:14.3690 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-04-17 13:29:58.3164 INFO MonitoringScheduler Scheduler stopped 
+2026-04-17 13:29:58.3254 INFO App Application exiting 
+2026-05-02 17:31:39.9328 INFO App Application starting 
+2026-05-02 17:31:40.6363 INFO DatabaseService Database initialized: C:\Users\Egor\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-02 17:34:43.7304 INFO MonitoringScheduler Scheduler stopped 
+2026-05-02 17:34:43.7304 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-02 17:34:46.1083 INFO MonitoringScheduler Scheduler stopped 
+2026-05-02 17:37:37.2669 INFO MonitoringScheduler Scheduler stopped 
+2026-05-02 17:37:37.2809 INFO App Application exiting 

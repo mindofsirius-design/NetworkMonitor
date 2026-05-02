@@ -1,4 +1,4 @@
-<Window x:Class="NetworkMonitor.Views.StatisticsView"
+﻿<Window x:Class="NetworkMonitor.Views.StatisticsView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,12">
-            <TextBlock Text="Dashboard" FontSize="22" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,20,0"/>
+            <TextBlock Text="Приборная панель" FontSize="22" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,20,0"/>
             <TextBlock Text="&#x041F;&#x0435;&#x0440;&#x0438;&#x043E;&#x0434;:" VerticalAlignment="Center" Margin="0,0,8,0"/>
             <ComboBox x:Name="PeriodBox" ItemsSource="{Binding Periods}" SelectedItem="{Binding SelectedPeriod}"
                       Style="{StaticResource MaterialDesignOutlinedComboBox}" Width="100"/>
@@ -25,19 +25,19 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,12">
             <Border Background="#4CAF50" CornerRadius="8" Padding="20,12" Margin="0,0,8,0">
                 <StackPanel>
-                    <TextBlock Text="Online" Foreground="White" FontSize="13"/>
+                    <TextBlock Text="В сети" Foreground="White" FontSize="13"/>
                     <TextBlock Text="{Binding OnlineCount}" Foreground="White" FontSize="28" FontWeight="Bold"/>
                 </StackPanel>
             </Border>
             <Border Background="#F44336" CornerRadius="8" Padding="20,12" Margin="0,0,8,0">
                 <StackPanel>
-                    <TextBlock Text="Offline" Foreground="White" FontSize="13"/>
+                    <TextBlock Text="Не в сети" Foreground="White" FontSize="13"/>
                     <TextBlock Text="{Binding OfflineCount}" Foreground="White" FontSize="28" FontWeight="Bold"/>
                 </StackPanel>
             </Border>
             <Border Background="#FFC107" CornerRadius="8" Padding="20,12">
                 <StackPanel>
-                    <TextBlock Text="Unstable" FontSize="13"/>
+                    <TextBlock Text="Не стабильно" FontSize="13"/>
                     <TextBlock Text="{Binding UnstableCount}" FontSize="28" FontWeight="Bold"/>
                 </StackPanel>
             </Border>

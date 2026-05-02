@@ -4,7 +4,7 @@
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Добавить узел" Width="420" Height="600"
         WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
-        Style="{StaticResource MaterialDesignWindow}">
+        Style="{StaticResource MaterialDesignWindow}"> 
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <StackPanel Margin="20">
             <TextBlock Text="Новый узел" FontSize="20" FontWeight="Bold" Margin="0,0,0,16"/>
@@ -15,13 +15,14 @@
                      Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
             <ComboBox x:Name="TypeBox" md:HintAssist.Hint="Тип устройства" Margin="0,0,0,8"
                       Style="{StaticResource MaterialDesignOutlinedComboBox}" SelectedIndex="0">
-                <ComboBoxItem Content="Router"/>
-                <ComboBoxItem Content="Switch"/>
-                <ComboBoxItem Content="Server"/>
-                <ComboBoxItem Content="PC"/>
-                <ComboBoxItem Content="Camera"/>
-                <ComboBoxItem Content="Special"/>
-                <ComboBoxItem Content="Other"/>
+                <ComboBoxItem Content="FS-1000"/>
+                <ComboBoxItem Content="FS-2000"/>
+                <ComboBoxItem Content="Роутер"/>
+                <ComboBoxItem Content="Коммутатор"/>
+                <ComboBoxItem Content="Сервер"/>
+                <ComboBoxItem Content="Комьютер"/>
+                <ComboBoxItem Content="Камера"/>
+                <ComboBoxItem Content="Другое"/>
             </ComboBox>
             <TextBox x:Name="LatBox" md:HintAssist.Hint="Широта (-90..90)" Margin="0,0,0,8"
                      Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
@@ -47,7 +48,7 @@
             <StackPanel Margin="0,0,0,8">
                 <StackPanel Orientation="Horizontal">
                     <ToggleButton x:Name="TcpToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
-                    <TextBlock Text="TCP Ports" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                    <TextBlock Text="TCP порты" VerticalAlignment="Center" FontWeight="SemiBold"/>
                 </StackPanel>
                 <TextBox x:Name="TcpPortsBox" md:HintAssist.Hint="Порты (через запятую)" Text="80, 443"
                          Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="28,4,0,0"

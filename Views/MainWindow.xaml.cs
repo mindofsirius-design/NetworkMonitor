@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -24,6 +25,9 @@ namespace NetworkMonitor.Views
 
         public MainWindow()
         {
+            ServicePointManager.ServerCertificateValidationCallback =
+                (sender, cert, chain, errors) => true;
+
             InitializeComponent();
             _vm = new MainViewModel();
             DataContext = _vm;
@@ -73,68 +77,59 @@ namespace NetworkMonitor.Views
 
         private void MainMap_Loaded(object sender, RoutedEventArgs e)
         {
-            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerAndCache;
-            MainMap.MapProvider = OpenStreetMapProvider.Instance;
-            MainMap.Position = new PointLatLng(_vm.Settings.MapLat, _vm.Settings.MapLon);
-            MainMap.Zoom = _vm.Settings.MapZoom;
-            MainMap.OnPositionChanged += MainMap_OnPositionChanged;
-            MainMap.OnMapZoomChanged += MainMap_OnMapZoomChanged;
+            // GMap.NET 2.x: вместо GMaps.Instance.Mode используется статическое свойство
+            GMap.NET.GMaps.Instance.Mode = AccessMode.ServerAndCache;
 
-            MiniMap.MapProvider = OpenStreetMapProvider.Instance;
-            MiniMap.Position = MainMap.Position;
-            MiniMap.Zoom = Math.Max(1, MainMap.Zoom - 4);
-            MiniMap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.NoZoom;
+            //MainMap.MapProvider = OpenStreetMapProvider.Instance;
+            //MainMap.MapProvider = GMap.NET.MapProviders.BingMapProvider.Instance;
+            MainMap.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
+            //MainMap.Position = new PointLatLng(_vm.Settings.MapLat, _vm.Settings.MapLon);
+            //MainMap.Zoom = _vm.Settings.MapZoom;
+            MainMap.Position = new PointLatLng(53.9, 27.5667); // Минск
+            MainMap.Zoom = 7;
 
             RefreshMarkers();
-        }
-
-        private void MainMap_OnPositionChanged(PointLatLng point)
-        {
-            MiniMap.Position = point;
-        }
-
-        private void MainMap_OnMapZoomChanged()
-        {
-            MiniMap.Zoom = Math.Max(1, MainMap.Zoom - 4);
         }
 
         private void RefreshMarkers()
         {
             MainMap.Markers.Clear();
 
+            // Связи рисуем через кастомные маркеры-линии
             foreach (var link in _vm.Links)
             {
                 var source = _vm.Nodes.FirstOrDefault(n => n.Id == link.SourceNodeId);
                 var target = _vm.Nodes.FirstOrDefault(n => n.Id == link.TargetNodeId);
                 if (source == null || target == null) continue;
 
-                var points = new List<PointLatLng>
+                var worstStatus = (NodeStatus)Math.Max((int)source.Status, (int)target.Status);
+                Color lineColor;
+                switch (worstStatus)
                 {
-                    new PointLatLng(source.Latitude, source.Longitude),
-                    new PointLatLng(target.Latitude, target.Longitude)
-                };
+                    case NodeStatus.Online: lineColor = Color.FromRgb(0x4C, 0xAF, 0x50); break;
+                    case NodeStatus.Unstable: lineColor = Color.FromRgb(0xFF, 0xC1, 0x07); break;
+                    case NodeStatus.Offline: lineColor = Color.FromRgb(0xF4, 0x43, 0x36); break;
+                    default: lineColor = Color.FromRgb(0x9E, 0x9E, 0x9E); break;
+                }
+
+                // Используем GMapRoute с одним аргументом — список точек
+                var points = new List<PointLatLng>
+        {
+            new PointLatLng(source.Latitude, source.Longitude),
+            new PointLatLng(target.Latitude, target.Longitude)
+        };
 
                 var route = new GMapRoute(points);
-                MainMap.Markers.Add(route);
-                route.RegenerateShape(MainMap);
-
-                if (route.Shape is System.Windows.Shapes.Path path)
+                route.Shape = new System.Windows.Shapes.Path
                 {
-                    var worstStatus = (NodeStatus)Math.Max((int)source.Status, (int)target.Status);
-                    Color lineColor;
-                    switch (worstStatus)
-                    {
-                        case NodeStatus.Online: lineColor = Color.FromRgb(0x4C, 0xAF, 0x50); break;
-                        case NodeStatus.Unstable: lineColor = Color.FromRgb(0xFF, 0xC1, 0x07); break;
-                        case NodeStatus.Offline: lineColor = Color.FromRgb(0xF4, 0x43, 0x36); break;
-                        default: lineColor = Color.FromRgb(0x9E, 0x9E, 0x9E); break;
-                    }
-                    path.Stroke = new SolidColorBrush(lineColor);
-                    path.StrokeThickness = 2;
-                    path.Opacity = 0.7;
-                }
+                    Stroke = new SolidColorBrush(lineColor),
+                    StrokeThickness = 2,
+                    Opacity = 0.7
+                };
+                MainMap.Markers.Add(route);
             }
 
+            // Узлы
             foreach (var node in _vm.Nodes)
             {
                 Color markerColor;
@@ -263,6 +258,11 @@ namespace NetworkMonitor.Views
             _toastTimer.Stop();
             _vm.Save();
             _vm.Shutdown();
+        }
+
+        private void DetailView_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

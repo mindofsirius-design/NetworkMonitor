@@ -1,0 +1,23 @@
+{
+  "PingIntervalSeconds": 30,
+  "PingTimeoutMs": 1000,
+  "PingRetries": 3,
+  "UnstableThresholdMs": 200,
+  "MapZoom": 10.0,
+  "MapLat": 55.75,
+  "MapLon": 37.61,
+  "DarkTheme": true,
+  "ToastEnabled": true,
+  "SoundEnabled": true,
+  "SoundFilePath": "Assets/Sounds/alert.wav",
+  "SoundDebounceSec": 30,
+  "EmailEnabled": false,
+  "SmtpHost": "",
+  "SmtpPort": 587,
+  "SmtpUser": "",
+  "SmtpPassword": "",
+  "EmailFrom": "",
+  "EmailTo": "",
+  "HistoryKeepDays": 90,
+  "Language": "ru"
+}

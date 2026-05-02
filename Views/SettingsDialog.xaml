@@ -4,7 +4,7 @@
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Настройки" Width="480" Height="520"
         WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
-        Style="{StaticResource MaterialDesignWindow}">
+        Style="{StaticResource MaterialDesignWindow}" FontSize="14">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -12,7 +12,7 @@
         </Grid.RowDefinitions>
 
         <TabControl Style="{StaticResource MaterialDesignNavigationRailTabControl}" Margin="8">
-            <TabItem Header="Мониторинг">
+            <TabItem Header="Мониторинг" Width="100">
                 <StackPanel Margin="16">
                     <TextBox x:Name="IntervalBox" md:HintAssist.Hint="Интервал ping (сек)" Margin="0,0,0,8"
                              Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
@@ -25,7 +25,7 @@
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="Уведомления">
+            <TabItem Header="Уведомления" Width="100">
                 <StackPanel Margin="16">
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="ToastToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
@@ -40,7 +40,7 @@
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="Email">
+            <TabItem Header="Email" Width="99">
                 <StackPanel Margin="16">
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="EmailToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
@@ -65,7 +65,7 @@
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="Оформление">
+            <TabItem Header="Оформление" Width="100">
                 <StackPanel Margin="16">
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="DarkThemeToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}"
@@ -75,7 +75,7 @@
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="Данные">
+            <TabItem Header="Данные" Width="100">
                 <StackPanel Margin="16">
                     <TextBox x:Name="KeepDaysBox" md:HintAssist.Hint="Хранить историю (дней)" Margin="0,0,0,12"
                              Style="{StaticResource MaterialDesignOutlinedTextBox}"/>

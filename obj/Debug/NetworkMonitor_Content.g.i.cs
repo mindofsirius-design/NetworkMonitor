@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/sounds/alert.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.macos.7.3.0.1/runtimes/osx/native/libharfbuzz" +
     "sharp.dylib")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.macos.7.3.0.1/runtimes/osx/native/libharfbuzz" +

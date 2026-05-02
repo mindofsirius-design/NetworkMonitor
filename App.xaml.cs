@@ -2,6 +2,7 @@ using System.Windows;
 using MaterialDesignThemes.Wpf;
 using NetworkMonitor.Services;
 using NLog;
+using System.Net;
 
 namespace NetworkMonitor
 {
@@ -11,6 +12,9 @@ namespace NetworkMonitor
 
         protected override void OnStartup(StartupEventArgs e)
         {
+            // Принудительно включаем TLS 1.2 и 1.3 для всех HTTP-запросов (нужно для GMap.NET)
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls13;
+
             base.OnStartup(e);
             Logger.Info("Application starting");
 

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\User\Desktop\NetworkMonitor\obj\Debug\
+C:\Users\Egor\Desktop\NetworkMonitor\obj\Debug\
 NetworkMonitor
 none
 false
 DEBUG;TRACE
-C:\Users\User\Desktop\NetworkMonitor\App.xaml
-3138023812
-26-621465782
-15-1341922357
-55947594470
-Views\AddNodeDialog.xaml;Views\MainWindow.xaml;Views\SettingsDialog.xaml;
+C:\Users\Egor\Desktop\NetworkMonitor\App.xaml
+7-230205938
+271030583343
+32197430113
+6434926444
+Views\AddNodeDialog.xaml;Views\EventLogView.xaml;Views\MainWindow.xaml;Views\NodeDetailView.xaml;Views\SettingsDialog.xaml;Views\StatisticsView.xaml;Themes\Theme.xaml;
 
-True
+False
 
