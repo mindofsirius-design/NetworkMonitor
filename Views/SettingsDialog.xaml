@@ -85,6 +85,27 @@
                             Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
                 </StackPanel>
             </TabItem>
+
+            <TabItem Header="Управление" Width="100">
+                <StackPanel Margin="16">
+                    <!-- Первый переключатель: Перемещение при выборе -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                        <ToggleButton x:Name="CenterMapOnSelectToggle" 
+                          Style="{StaticResource MaterialDesignSwitchToggleButton}" 
+                          Margin="0,0,8,0"/>
+                        <TextBlock Text="Перемещение при выборе" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <!-- Второй переключатель: Приближать при выборе -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                        <ToggleButton x:Name="ZoomOnSelectToggle" 
+                          Style="{StaticResource MaterialDesignSwitchToggleButton}" 
+                          Margin="0,0,8,0"/>
+                        <TextBlock Text="Приближать при выборе" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+
         </TabControl>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="16">

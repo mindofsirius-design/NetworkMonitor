@@ -3,10 +3,13 @@
   "PingTimeoutMs": 1000,
   "PingRetries": 3,
   "UnstableThresholdMs": 200,
+  "DefaultMapZoom": 7.0,
+  "DefaultMapLat": 54.123822,
+  "DefaultMapLon": 29.388428,
   "MapZoom": 10.0,
   "MapLat": 55.75,
   "MapLon": 37.61,
-  "DarkTheme": true,
+  "DarkTheme": false,
   "ToastEnabled": true,
   "SoundEnabled": true,
   "SoundFilePath": "Assets/Sounds/alert.wav",
@@ -18,6 +21,8 @@
   "SmtpPassword": "",
   "EmailFrom": "",
   "EmailTo": "",
+  "CenterMapOnSelect": true,
+  "ZoomOnSelect": false,
   "HistoryKeepDays": 90,
   "Language": "ru"
 }

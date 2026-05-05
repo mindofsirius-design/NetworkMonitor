@@ -11,9 +11,14 @@ namespace NetworkMonitor.Views
     {
         public NetworkNode ResultNode { get; private set; }
 
-        public AddNodeDialog()
+        public AddNodeDialog(double lat = 0, double lon = 0)
         {
             InitializeComponent();
+            if (lat != 0 || lon != 0)
+            {
+                LatBox.Text = lat.ToString("F6", System.Globalization.CultureInfo.InvariantCulture);
+                LonBox.Text = lon.ToString("F6", System.Globalization.CultureInfo.InvariantCulture);
+            }
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)

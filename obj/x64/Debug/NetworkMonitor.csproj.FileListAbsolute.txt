@@ -262,3 +262,4 @@ C:\Users\Egor\Desktop\NetworkMonitor\obj\x64\Debug\NetworkMonitor.csproj.CoreCom
 C:\Users\Egor\Desktop\NetworkMonitor\obj\x64\Debug\NetworkMonitor.csproj.CopyComplete
 C:\Users\Egor\Desktop\NetworkMonitor\obj\x64\Debug\NetworkMonitor.exe
 C:\Users\Egor\Desktop\NetworkMonitor\obj\x64\Debug\NetworkMonitor.pdb
+C:\Users\User\Desktop\NetworkMonitor\obj\x64\Debug\NetworkMonitor.csproj.AssemblyReference.cache

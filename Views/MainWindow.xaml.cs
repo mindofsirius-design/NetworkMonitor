@@ -38,7 +38,7 @@ namespace NetworkMonitor.Views
                 _vm.Nodes.Remove(node);
                 _vm.SelectedNode = null;
                 _vm.UpdateSchedulerNodes();
-                RefreshMarkers();
+                RefreshMarkers(_vm.SelectedNode?.Id);
             };
 
             DetailView.PingRequested += async (s, node) =>
@@ -56,7 +56,7 @@ namespace NetworkMonitor.Views
             _refreshTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(3) };
             _refreshTimer.Tick += (s, e) =>
             {
-                RefreshMarkers();
+                RefreshMarkers(_vm.SelectedNode?.Id);
                 _vm.UpdateCounters();
                 if (_vm.SelectedNode != null)
                     DetailView.RefreshChart(_vm.SelectedNode);
@@ -83,15 +83,15 @@ namespace NetworkMonitor.Views
             //MainMap.MapProvider = OpenStreetMapProvider.Instance;
             //MainMap.MapProvider = GMap.NET.MapProviders.BingMapProvider.Instance;
             MainMap.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
-            //MainMap.Position = new PointLatLng(_vm.Settings.MapLat, _vm.Settings.MapLon);
-            //MainMap.Zoom = _vm.Settings.MapZoom;
-            MainMap.Position = new PointLatLng(53.9, 27.5667); // Минск
-            MainMap.Zoom = 7;
 
-            RefreshMarkers();
+            MainMap.Position = new PointLatLng(_vm.Settings.MapLat, _vm.Settings.MapLon);
+            MainMap.Zoom = _vm.Settings.MapZoom;
+
+            MainMap.MouseLeftButtonDown += MainMap_MouseLeftButtonDown;
+            RefreshMarkers(_vm.SelectedNode?.Id);
         }
 
-        private void RefreshMarkers()
+        private void RefreshMarkers(string selectedNodeId = null)
         {
             MainMap.Markers.Clear();
 
@@ -132,6 +132,10 @@ namespace NetworkMonitor.Views
             // Узлы
             foreach (var node in _vm.Nodes)
             {
+                bool isSelected = node.Id == selectedNodeId;
+                double size = isSelected ? 44 : 36;
+                double iconSize = isSelected ? 22 : 18;
+
                 Color markerColor;
                 switch (node.Status)
                 {
@@ -142,26 +146,24 @@ namespace NetworkMonitor.Views
                 }
 
                 var iconKind = GetIconKind(node.DeviceType);
-
-                var grid = new Grid { Width = 36, Height = 36 };
+                var grid = new Grid { Width = size, Height = size };
                 grid.Children.Add(new Ellipse
                 {
                     Fill = new SolidColorBrush(markerColor),
-                    Stroke = Brushes.White,
-                    StrokeThickness = 2,
-                    Width = 36,
-                    Height = 36
+                    Stroke = isSelected ? Brushes.Yellow : Brushes.White,
+                    StrokeThickness = isSelected ? 3 : 2,
+                    Width = size,
+                    Height = size
                 });
                 grid.Children.Add(new MaterialDesignThemes.Wpf.PackIcon
                 {
                     Kind = iconKind,
-                    Width = 18,
-                    Height = 18,
+                    Width = iconSize,
+                    Height = iconSize,
                     Foreground = Brushes.White,
                     HorizontalAlignment = HorizontalAlignment.Center,
                     VerticalAlignment = VerticalAlignment.Center
                 });
-
                 grid.ToolTip = $"{node.Name}\n{node.IpAddress}\n{node.Status} | {node.LastPingMs}ms";
 
                 var capturedNode = node;
@@ -169,12 +171,13 @@ namespace NetworkMonitor.Views
                 {
                     _vm.SelectedNode = capturedNode;
                     NodeListView.SelectedItem = capturedNode;
+                    ev.Handled = true;
                 };
 
                 var marker = new GMapMarker(new PointLatLng(node.Latitude, node.Longitude))
                 {
                     Shape = grid,
-                    Offset = new Point(-18, -18)
+                    Offset = new Point(-size / 2, -size / 2)
                 };
                 MainMap.Markers.Add(marker);
             }
@@ -195,12 +198,20 @@ namespace NetworkMonitor.Views
 
         private void AddNodeButton_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new AddNodeDialog { Owner = this };
-            if (dialog.ShowDialog() == true && dialog.ResultNode != null)
+            var center = MainMap.Position; // GMap.NET.PointLatLng
+            var dialog = new AddNodeDialog(center.Lat, center.Lng)
             {
+                Owner = this
+            };
+            if (dialog.ShowDialog() == true)
+            {
+                //_viewModel.Nodes.Add(dialog.ResultNode);
+                //_viewModel.UpdateSchedulerNodes();
+                //RefreshMapMarkers();
+
                 _vm.Nodes.Add(dialog.ResultNode);
                 _vm.UpdateSchedulerNodes();
-                RefreshMarkers();
+                RefreshMarkers(_vm.SelectedNode?.Id);
             }
         }
 
@@ -227,7 +238,13 @@ namespace NetworkMonitor.Views
             var window = new EventLogView(logVm) { Owner = this };
             window.Show();
         }
-
+        private void SaveMapPositionButton_Click(object sender, RoutedEventArgs e)
+        {
+            _vm.Settings.DefaultMapZoom = MainMap.Zoom;
+            _vm.Settings.DefaultMapLat = MainMap.Position.Lat;
+            _vm.Settings.DefaultMapLon = MainMap.Position.Lng;
+            _vm.Save();
+        }
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             var view = System.Windows.Data.CollectionViewSource.GetDefaultView(_vm.Nodes);
@@ -239,11 +256,33 @@ namespace NetworkMonitor.Views
                     ((n.Name?.ToLower().Contains(filter) ?? false) ||
                      (n.IpAddress?.ToLower().Contains(filter) ?? false));
         }
+        private void MainMap_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            // Если клик пришёл именно на карту, а не всплыл от маркера
+            if (e.OriginalSource is GMapControl || e.OriginalSource is Image ||
+                e.OriginalSource is System.Windows.Shapes.Path)
+            {
+                _vm.SelectedNode = null;
+                NodeListView.SelectedItem = null;
+                RefreshMarkers(null);
 
+                // Возврат на позицию по умолчанию
+                MainMap.Position = new PointLatLng(_vm.Settings.DefaultMapLat, _vm.Settings.DefaultMapLon);
+                MainMap.Zoom = _vm.Settings.DefaultMapZoom;
+            }
+        }
         private void NodeListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (_vm.SelectedNode != null)
-                DetailView.RefreshChart(_vm.SelectedNode);
+            {
+                if (_vm.Settings.CenterMapOnSelect)
+                    MainMap.Position = new PointLatLng(_vm.SelectedNode.Latitude, _vm.SelectedNode.Longitude);
+
+                if (_vm.Settings.ZoomOnSelect)
+                    MainMap.Zoom = 12;
+            }
+            RefreshMarkers(_vm.SelectedNode?.Id);
+            
         }
 
         private void Toast_MouseDown(object sender, MouseButtonEventArgs e)

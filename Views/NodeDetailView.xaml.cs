@@ -7,6 +7,7 @@ using NetworkMonitor.Services;
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
+using MaterialDesignThemes.Wpf;
 
 namespace NetworkMonitor.Views
 {
@@ -42,19 +43,42 @@ namespace NetworkMonitor.Views
 
             var history = _database.GetPingHistory(node.Id, DateTime.UtcNow.AddMinutes(-30), DateTime.UtcNow);
 
-            var model = new PlotModel();
+            // Определяем тёмную тему
+            var helper = new MaterialDesignThemes.Wpf.PaletteHelper();
+            var theme = helper.GetTheme();
+            bool isDark = theme.GetBaseTheme() == MaterialDesignThemes.Wpf.BaseTheme.Dark;
+
+            var bgColor = isDark ? OxyColor.FromRgb(30, 30, 30) : OxyColors.White;
+            var textColor = isDark ? OxyColors.LightGray : OxyColors.Black;
+            var gridColor = isDark ? OxyColor.FromRgb(60, 60, 60) : OxyColor.FromRgb(220, 220, 220);
+
+            var model = new PlotModel
+            {
+                Background = bgColor,
+                PlotAreaBackground = bgColor,
+                TextColor = textColor,
+                PlotAreaBorderColor = gridColor
+            };
+
             model.Axes.Add(new DateTimeAxis
             {
                 Position = AxisPosition.Bottom,
                 StringFormat = "HH:mm",
                 IsAxisVisible = true,
-                MajorGridlineStyle = LineStyle.Dot
+                MajorGridlineStyle = LineStyle.Dot,
+                MajorGridlineColor = gridColor,
+                TicklineColor = textColor,
+                TextColor = textColor
             });
             model.Axes.Add(new LinearAxis
             {
                 Position = AxisPosition.Left,
                 Minimum = 0,
-                Title = "ms"
+                Title = "мс",
+                MajorGridlineStyle = LineStyle.Dot,
+                MajorGridlineColor = gridColor,
+                TicklineColor = textColor,
+                TextColor = textColor
             });
 
             var series = new LineSeries
@@ -65,9 +89,7 @@ namespace NetworkMonitor.Views
 
             var validPoints = history.Where(h => h.LatencyMs >= 0).ToList();
             foreach (var r in validPoints.Skip(Math.Max(0, validPoints.Count - 100)))
-            {
                 series.Points.Add(new DataPoint(DateTimeAxis.ToDouble(r.Timestamp), r.LatencyMs));
-            }
 
             model.Series.Add(series);
             LatencyChart.Model = model;

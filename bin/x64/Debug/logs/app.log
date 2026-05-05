@@ -125,3 +125,487 @@
 2026-05-02 17:34:46.1083 INFO MonitoringScheduler Scheduler stopped 
 2026-05-02 17:37:37.2669 INFO MonitoringScheduler Scheduler stopped 
 2026-05-02 17:37:37.2809 INFO App Application exiting 
+2026-05-04 16:18:37.4230 INFO App Application starting 
+2026-05-04 16:18:40.2140 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-04 16:21:26.3190 INFO PingModule Ping FSКняжици (192.168.155.155): Offline, -1ms 
+2026-05-04 16:23:04.4070 INFO MonitoringScheduler Scheduler stopped 
+2026-05-04 16:23:04.5490 INFO App Application exiting 
+2026-05-04 16:29:48.3270 INFO App Application starting 
+2026-05-04 16:29:49.7360 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-04 16:45:20.9250 INFO App Application starting 
+2026-05-04 16:45:22.1150 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-04 16:46:41.8080 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-04 16:46:48.3410 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-04 16:47:09.7440 INFO MonitoringScheduler Scheduler stopped 
+2026-05-04 16:47:09.8340 INFO App Application exiting 
+2026-05-04 17:10:14.1010 INFO App Application starting 
+2026-05-04 17:10:15.5070 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-04 17:10:34.1970 INFO MonitoringScheduler Scheduler stopped 
+2026-05-04 17:10:34.2370 INFO App Application exiting 
+2026-05-05 10:23:24.7314 INFO App Application starting 
+2026-05-05 10:23:26.1510 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-05 10:31:53.5680 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 10:31:53.5850 INFO App Application exiting 
+2026-05-05 10:38:29.8840 INFO App Application starting 
+2026-05-05 10:38:30.9910 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-05 10:39:29.8140 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 10:39:33.8950 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 10:40:49.1410 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 10:40:49.1710 INFO App Application exiting 
+2026-05-05 11:10:57.5754 INFO App Application starting 
+2026-05-05 11:11:05.5220 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-05 11:13:03.0976 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 11:13:03.1206 INFO App Application exiting 
+2026-05-05 11:41:55.4606 INFO App Application starting 
+2026-05-05 11:42:05.6656 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-05 11:46:51.1316 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 11:46:51.1596 INFO App Application exiting 
+2026-05-05 11:57:48.7576 INFO App Application starting 
+2026-05-05 11:57:50.4056 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-05 13:41:01.3356 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 13:41:01.3356 INFO MonitoringScheduler Scheduler started with 2 nodes 
+2026-05-05 13:41:01.4596 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:01.5336 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:41:03.1716 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 13:41:03.7416 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 13:41:03.7416 INFO MonitoringScheduler Scheduler started with 2 nodes 
+2026-05-05 13:41:03.8196 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:03.8286 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:41:03.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:04.2216 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 13:41:04.5536 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 13:41:04.5536 INFO MonitoringScheduler Scheduler started with 2 nodes 
+2026-05-05 13:41:04.6236 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:04.6236 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:41:07.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:09.9806 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:12.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:15.0356 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:17.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:20.0126 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:22.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:25.5276 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:28.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:31.0306 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:33.8976 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:36.5156 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:39.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:42.0066 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:44.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:47.0106 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:49.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:52.5026 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:41:55.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:41:58.0156 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:00.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:03.5016 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:06.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:06.9226 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:42:09.0266 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:11.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:14.5196 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:17.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:19.5066 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:22.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:25.0086 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:27.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:30.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:33.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:36.0006 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:38.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:41.5046 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:44.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:47.0146 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:49.8966 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:52.5006 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:42:55.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:42:58.0066 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:00.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:03.4986 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:06.3966 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:07.4206 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:43:09.0226 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:11.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:14.5016 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:17.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:19.5096 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:22.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:25.0046 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:27.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:30.5066 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:33.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:35.9996 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:38.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:41.4986 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:44.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:46.9916 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:49.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:52.0036 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:43:54.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:43:57.4956 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:00.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:03.0006 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:05.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:07.9306 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:44:08.4966 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:11.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:14.0216 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:16.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:19.4866 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:22.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:24.4956 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:27.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:29.5216 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:32.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:34.9946 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:37.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:40.0216 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:42.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:45.5176 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:48.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:51.0466 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:53.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:44:56.5226 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:44:59.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:02.0136 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:04.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:07.5186 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:10.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:10.9106 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:45:13.0166 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:15.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:18.5186 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:21.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:24.0246 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:26.8976 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:29.5166 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:32.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:35.0236 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:37.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:40.5136 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:43.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:46.0216 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:48.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:51.5116 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:54.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:45:56.5196 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:45:59.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:02.0146 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:04.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:07.5176 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:10.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:11.4226 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:46:13.0086 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:15.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:18.5456 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:21.4166 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:24.0066 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:26.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:29.0126 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:31.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:34.5046 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:37.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:40.0126 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:42.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:45.5046 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:48.3966 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:51.0186 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:53.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:46:56.5186 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:46:59.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:02.0116 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:04.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:07.5136 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:10.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:11.4406 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:47:13.0066 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:15.8976 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:18.5146 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:21.3976 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:24.0076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:26.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:29.0126 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:31.8996 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:34.5036 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:37.4066 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:40.0086 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:42.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:45.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:48.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:51.0106 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:53.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:47:56.5016 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:47:59.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:01.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:04.3966 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:06.9986 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:09.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:11.9336 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:48:12.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:15.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:17.9986 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:20.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:23.5146 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:26.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:28.9996 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:31.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:34.0006 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:36.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:39.4936 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:42.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:44.9996 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:47.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:50.4906 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:53.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:48:55.9986 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:48:58.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:00.9986 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:03.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:06.0096 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:08.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:11.0256 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:13.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:14.4146 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:49:16.5196 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:19.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:21.5346 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:24.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:26.5466 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:29.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:32.0056 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:34.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:37.5146 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:40.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:43.0056 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:45.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:48.5086 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:51.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:53.9996 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:49:56.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:49:59.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:02.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:05.0126 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:07.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:10.5056 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:13.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:14.4306 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:50:15.5286 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:18.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:21.0056 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:23.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:26.4936 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:29.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:32.0006 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:34.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:37.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:40.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:43.0026 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:45.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:48.5066 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:51.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:54.0076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:50:56.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:50:59.5246 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:02.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:05.0016 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:07.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:10.0036 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:12.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:14.9376 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:51:15.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:18.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:21.0106 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:23.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:26.5116 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:29.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:32.0186 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:34.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:37.5106 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:40.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:43.0016 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:45.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:48.5046 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:51.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:53.9986 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:51:56.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:51:59.5036 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:02.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:04.9936 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:07.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:10.0066 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:12.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:15.4926 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:15.4926 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:52:18.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:20.9986 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:23.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:26.4916 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:29.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:32.0136 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:34.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:37.4966 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:40.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:42.5026 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:45.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:47.9876 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:50.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:53.4936 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:52:56.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:52:58.9866 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:01.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:04.4916 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:07.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:09.9846 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:12.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:14.9906 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:17.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:18.4066 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:53:20.0176 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:22.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:25.5226 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:28.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:31.0156 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:33.8976 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:36.5226 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:39.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:42.0136 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:44.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:47.0206 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:49.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:52.5106 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:53:55.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:53:58.0166 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:00.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:03.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:06.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:09.0146 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:11.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:14.5196 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:17.3976 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:18.4276 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:54:20.0156 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:22.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:25.5216 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:28.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:31.0156 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:33.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:36.5226 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:39.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:42.0106 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:44.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:47.0236 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:49.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:52.5096 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:54:55.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:54:58.0156 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:00.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:03.5106 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:06.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:09.0146 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:11.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:14.5086 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:17.3976 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:18.9366 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:55:19.5146 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:22.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:25.0026 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:27.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:30.5096 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:33.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:36.0016 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:38.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:41.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:44.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:46.9996 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:49.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:52.0086 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:55:54.8976 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:55:57.4976 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:00.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:03.0086 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:05.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:08.4966 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:11.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:14.0036 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:16.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:19.5096 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:19.5216 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:56:22.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:25.0036 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:27.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:30.5086 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:33.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:35.9996 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:38.8986 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:41.5056 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:44.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:46.9986 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:49.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:52.0066 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:56:54.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:56:57.4966 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:00.3976 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:03.0016 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:05.8966 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:08.4936 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:11.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:13.9996 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:16.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:19.4936 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:22.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:22.9176 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:57:24.5006 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:27.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:29.9936 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:32.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:35.5006 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:38.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:40.9946 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:43.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:46.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:49.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:52.0176 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:57:54.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:57:57.4936 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:00.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:03.0016 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:05.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:08.4916 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:11.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:13.9976 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:16.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:19.4886 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:22.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:23.4256 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:58:24.5076 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:27.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:29.9926 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:32.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:35.4956 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:38.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:41.0116 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:43.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:46.4956 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:49.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:51.9856 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:54.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:58:56.9936 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:58:59.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:59:02.4846 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:59:05.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:59:07.5216 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:59:10.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:59:13.0236 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:59:15.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:59:18.5196 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:59:21.3956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:59:23.5916 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 13:59:24.5576 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:59:26.8956 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 13:59:29.5246 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 13:59:31.9746 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 13:59:31.9836 INFO App Application exiting 
+2026-05-05 14:14:48.4802 INFO App Application starting 
+2026-05-05 14:14:49.8242 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-05 14:16:05.0682 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 14:16:05.1012 INFO App Application exiting 

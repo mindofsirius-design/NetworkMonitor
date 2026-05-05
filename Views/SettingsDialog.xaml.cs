@@ -43,6 +43,10 @@ namespace NetworkMonitor.Views
 
             DarkThemeToggle.IsChecked = _settings.DarkTheme;
             KeepDaysBox.Text = _settings.HistoryKeepDays.ToString();
+
+            //¬кладка "”правление"
+            CenterMapOnSelectToggle.IsChecked = _settings.CenterMapOnSelect;
+            ZoomOnSelectToggle.IsChecked = _settings.ZoomOnSelect;
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -88,9 +92,13 @@ namespace NetworkMonitor.Views
             _settings.EmailTo = EmailToBox.Text?.Trim() ?? "";
 
             _settings.DarkTheme = DarkThemeToggle.IsChecked == true;
-
+        
             if (int.TryParse(KeepDaysBox.Text, out int keepDays) && keepDays >= 1)
                 _settings.HistoryKeepDays = keepDays;
+
+            //”правление
+            _settings.CenterMapOnSelect = CenterMapOnSelectToggle.IsChecked == true;
+            _settings.ZoomOnSelect = ZoomOnSelectToggle.IsChecked == true;
 
             DialogResult = true;
             Close();

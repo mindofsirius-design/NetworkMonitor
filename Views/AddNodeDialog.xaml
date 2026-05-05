@@ -61,7 +61,7 @@
                     <TextBlock Text="SNMP" VerticalAlignment="Center" FontWeight="SemiBold"/>
                 </StackPanel>
                 <StackPanel Margin="28,4,0,0" IsEnabled="{Binding IsChecked, ElementName=SnmpToggle}">
-                    <TextBox x:Name="SnmpCommunityBox" md:HintAssist.Hint="Community" Text="public"
+                    <TextBox x:Name="SnmpCommunityBox" md:HintAssist.Hint="Сообщество" Text="public"
                              Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="0,0,0,4"/>
                     <ComboBox x:Name="SnmpVersionBox" md:HintAssist.Hint="Версия"
                               Style="{StaticResource MaterialDesignOutlinedComboBox}" SelectedIndex="1">

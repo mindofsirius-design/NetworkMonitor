@@ -9,6 +9,9 @@ namespace NetworkMonitor.Models
         public int UnstableThresholdMs { get; set; } = 200;
 
         // Карта
+        public double DefaultMapZoom { get; set; } = 10;
+        public double DefaultMapLat { get; set; } = 55.75;
+        public double DefaultMapLon { get; set; } = 37.61;
         public double MapZoom { get; set; } = 10;
         public double MapLat { get; set; } = 55.75;
         public double MapLon { get; set; } = 37.61;
@@ -30,6 +33,10 @@ namespace NetworkMonitor.Models
         public string SmtpPassword { get; set; } = "";
         public string EmailFrom { get; set; } = "";
         public string EmailTo { get; set; } = "";
+
+        // Управление
+        public bool CenterMapOnSelect { get; set; } = false;
+        public bool ZoomOnSelect { get; set; } = false;
 
         // Данные
         public int HistoryKeepDays { get; set; } = 90;

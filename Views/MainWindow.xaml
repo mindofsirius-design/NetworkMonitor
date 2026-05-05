@@ -43,8 +43,13 @@
                     <md:PackIcon Kind="ChartLine"/>
                 </Button>
                 <Button Click="EventLogButton_Click"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White">
+                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0">
                     <md:PackIcon Kind="FormatListBulleted"/>
+                </Button>
+                <Button Click="SaveMapPositionButton_Click"
+                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"
+                        ToolTip="Запомнить положение карты">
+                    <md:PackIcon Kind="MapMarkerCheck"/>
                 </Button>
             </StackPanel>
         </Border>
