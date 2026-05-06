@@ -42,15 +42,30 @@
                         Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0">
                     <md:PackIcon Kind="ChartLine"/>
                 </Button>
+                
                 <Button Click="EventLogButton_Click"
                         Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0">
                     <md:PackIcon Kind="FormatListBulleted"/>
                 </Button>
+                
+                <Button Click="ResetMapPositionButton_Click"
+                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"
+                        ToolTip="Вернуть карту к позиции по умолчанию">
+                    <md:PackIcon Kind="MapMarkerRadius"/>
+                </Button>
+                
                 <Button Click="SaveMapPositionButton_Click"
                         Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"
                         ToolTip="Запомнить положение карты">
                     <md:PackIcon Kind="MapMarkerCheck"/>
                 </Button>
+                
+                <Button Click="LockMapButton_Click"
+                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"
+                        ToolTip="Заблокировать/разблокировать карту">
+                    <md:PackIcon x:Name="LockIcon" Kind="LockOpenVariant"/>
+                </Button>
+                
             </StackPanel>
         </Border>
 
@@ -60,11 +75,21 @@
                 <ColumnDefinition Width="300"/>
             </Grid.ColumnDefinitions>
 
+            <md:PackIcon x:Name="LockBadge" Kind="Lock" Width="28" Height="28"
+             Foreground="#CC333333" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+             Margin="0,0,308,8" Visibility="Collapsed" IsHitTestVisible="False"/>
+
             <Grid Grid.Column="0">
                 <gmap:GMapControl x:Name="MainMap" Loaded="MainMap_Loaded"
-                                  Zoom="10" MinZoom="2" MaxZoom="18"
-                                  MouseWheelZoomType="MousePositionAndCenter"/>
-
+                      Zoom="10" MinZoom="2" MaxZoom="18"
+                      MouseWheelZoomType="MousePositionAndCenter"
+                      MouseLeftButtonDown="MainMap_MouseLeftButtonDown"
+                      SizeChanged="MainMap_SizeChanged"/>
+                <Canvas x:Name="CrosshairCanvas" IsHitTestVisible="False">
+                    <Line x:Name="CrossH" Stroke="#CC000000" StrokeThickness="1" StrokeDashArray="4,4"/>
+                    <Line x:Name="CrossV" Stroke="#CC000000" StrokeThickness="1" StrokeDashArray="4,4"/>
+                    <Ellipse x:Name="CrossDot" Width="8" Height="8" Fill="#CC000000"/>
+                </Canvas>
             </Grid>
 
             <Grid Grid.Column="1">

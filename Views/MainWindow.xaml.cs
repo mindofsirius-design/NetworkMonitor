@@ -22,6 +22,8 @@ namespace NetworkMonitor.Views
         private MainViewModel _vm;
         private DispatcherTimer _refreshTimer;
         private DispatcherTimer _toastTimer;
+        private Point _crosshairPos; // позиция перекрестия в пикселях
+        private bool _crosshairInitialized = false;
 
         public MainWindow()
         {
@@ -89,6 +91,79 @@ namespace NetworkMonitor.Views
 
             MainMap.MouseLeftButtonDown += MainMap_MouseLeftButtonDown;
             RefreshMarkers(_vm.SelectedNode?.Id);
+            UpdateCrosshairPosition();
+        }
+
+        private void ResetMapPositionButton_Click(object sender, RoutedEventArgs e)
+        {
+            var vm = DataContext as MainViewModel;
+            if (vm == null) return;
+            MainMap.Position = new GMap.NET.PointLatLng(vm.Settings.DefaultMapLat, vm.Settings.DefaultMapLon);
+            MainMap.Zoom = vm.Settings.DefaultMapZoom;
+        }
+
+        private void LockMapButton_Click(object sender, RoutedEventArgs e)
+        {
+            var vm = DataContext as MainViewModel;
+            if (vm == null) return;
+            vm.Settings.MapLocked = !vm.Settings.MapLocked;
+            ApplyMapLock(vm.Settings.MapLocked);
+        }
+
+        private void ApplyMapLock(bool locked)
+        {
+            MainMap.CanDragMap = !locked;
+            LockIcon.Kind = locked ? MaterialDesignThemes.Wpf.PackIconKind.Lock : MaterialDesignThemes.Wpf.PackIconKind.LockOpenVariant;
+            LockBadge.Visibility = locked ? Visibility.Visible : Visibility.Collapsed;
+            CrosshairCanvas.Visibility = locked ? Visibility.Collapsed : Visibility.Visible;
+        }
+
+        private void MainMap_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var vm = DataContext as MainViewModel;
+            if (vm == null) return;
+
+            // Если карта не заблокирована — перемещаем перекрестие
+            if (!vm.Settings.MapLocked)
+            {
+                _crosshairPos = e.GetPosition(MainMap);
+                UpdateCrosshairVisual();
+                e.Handled = false; // не мешаем drag карты
+                return;
+            }
+        }
+
+        private void MainMap_MouseMove(object sender, MouseEventArgs e) { }
+
+        private void MainMap_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            UpdateCrosshairVisual();
+        }
+
+        private void UpdateCrosshairPosition()
+        {
+            if (!_crosshairInitialized && MainMap.ActualWidth > 0)
+            {
+                _crosshairPos = new Point(MainMap.ActualWidth / 2, MainMap.ActualHeight / 2);
+                _crosshairInitialized = true;
+                UpdateCrosshairVisual();
+            }
+        }
+
+        private void UpdateCrosshairVisual()
+        {
+            double w = MainMap.ActualWidth;
+            double h = MainMap.ActualHeight;
+            if (w == 0 || h == 0) return;
+
+            CrossH.X1 = 0; CrossH.Y1 = _crosshairPos.Y;
+            CrossH.X2 = w; CrossH.Y2 = _crosshairPos.Y;
+
+            CrossV.X1 = _crosshairPos.X; CrossV.Y1 = 0;
+            CrossV.X2 = _crosshairPos.X; CrossV.Y2 = h;
+
+            Canvas.SetLeft(CrossDot, _crosshairPos.X - 4);
+            Canvas.SetTop(CrossDot, _crosshairPos.Y - 4);
         }
 
         private void RefreshMarkers(string selectedNodeId = null)
@@ -198,11 +273,16 @@ namespace NetworkMonitor.Views
 
         private void AddNodeButton_Click(object sender, RoutedEventArgs e)
         {
-            var center = MainMap.Position; // GMap.NET.PointLatLng
-            var dialog = new AddNodeDialog(center.Lat, center.Lng)
+            var vm = DataContext as MainViewModel;
+            if (vm.Settings.MapLocked)
             {
-                Owner = this
-            };
+                vm.Notifications.ShowToast("Карта заблокирована. Разблокируйте для добавления узлов.", ToastType.Warning);
+                return;
+            }
+
+            var latLng = MainMap.FromLocalToLatLng((int)_crosshairPos.X, (int)_crosshairPos.Y);
+            var dialog = new AddNodeDialog(latLng.Lat, latLng.Lng) { Owner = this };
+
             if (dialog.ShowDialog() == true)
             {
                 //_viewModel.Nodes.Add(dialog.ResultNode);
@@ -240,10 +320,21 @@ namespace NetworkMonitor.Views
         }
         private void SaveMapPositionButton_Click(object sender, RoutedEventArgs e)
         {
-            _vm.Settings.DefaultMapZoom = MainMap.Zoom;
-            _vm.Settings.DefaultMapLat = MainMap.Position.Lat;
-            _vm.Settings.DefaultMapLon = MainMap.Position.Lng;
-            _vm.Save();
+            var result = MessageBox.Show(
+                "Сохранить текущее положение карты как позицию по умолчанию?",
+                "Подтверждение",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question);
+
+            if (result != MessageBoxResult.Yes) return;
+
+            var vm = DataContext as MainViewModel;
+            if (vm == null) return;
+
+            vm.Settings.DefaultMapLat = MainMap.Position.Lat;
+            vm.Settings.DefaultMapLon = MainMap.Position.Lng;
+            vm.Settings.DefaultMapZoom = MainMap.Zoom;
+            vm.Save();
         }
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -256,21 +347,7 @@ namespace NetworkMonitor.Views
                     ((n.Name?.ToLower().Contains(filter) ?? false) ||
                      (n.IpAddress?.ToLower().Contains(filter) ?? false));
         }
-        private void MainMap_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            // Если клик пришёл именно на карту, а не всплыл от маркера
-            if (e.OriginalSource is GMapControl || e.OriginalSource is Image ||
-                e.OriginalSource is System.Windows.Shapes.Path)
-            {
-                _vm.SelectedNode = null;
-                NodeListView.SelectedItem = null;
-                RefreshMarkers(null);
 
-                // Возврат на позицию по умолчанию
-                MainMap.Position = new PointLatLng(_vm.Settings.DefaultMapLat, _vm.Settings.DefaultMapLon);
-                MainMap.Zoom = _vm.Settings.DefaultMapZoom;
-            }
-        }
         private void NodeListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (_vm.SelectedNode != null)

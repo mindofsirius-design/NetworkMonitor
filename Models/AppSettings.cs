@@ -37,6 +37,7 @@ namespace NetworkMonitor.Models
         // Управление
         public bool CenterMapOnSelect { get; set; } = false;
         public bool ZoomOnSelect { get; set; } = false;
+        public bool MapLocked { get; set; } = false; // кнопка на главном экране
 
         // Данные
         public int HistoryKeepDays { get; set; } = 90;

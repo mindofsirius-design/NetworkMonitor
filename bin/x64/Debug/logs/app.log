@@ -609,3 +609,22 @@
 2026-05-05 14:14:49.8242 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
 2026-05-05 14:16:05.0682 INFO MonitoringScheduler Scheduler stopped 
 2026-05-05 14:16:05.1012 INFO App Application exiting 
+2026-05-05 14:26:49.2252 INFO App Application starting 
+2026-05-05 14:26:50.5342 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-05 14:33:59.9882 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 14:34:00.0272 INFO App Application exiting 
+2026-05-05 14:48:54.0242 INFO App Application starting 
+2026-05-05 14:48:55.2612 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-05 14:53:23.0332 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 14:53:23.0332 INFO MonitoringScheduler Scheduler started with 3 nodes 
+2026-05-05 14:53:23.1442 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-05 14:53:23.2642 INFO PingModule Ping 56345 (3767): Offline, -1ms 
+2026-05-05 14:53:23.3292 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-05 14:53:25.9632 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-05 14:53:27.3122 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 14:53:44.3612 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 14:53:44.4332 INFO App Application exiting 
+2026-05-05 15:04:35.3812 INFO App Application starting 
+2026-05-05 15:04:36.6392 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-05 15:05:36.1012 INFO MonitoringScheduler Scheduler stopped 
+2026-05-05 15:05:36.1862 INFO App Application exiting 

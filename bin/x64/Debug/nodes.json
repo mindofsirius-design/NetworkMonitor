@@ -28,6 +28,12 @@
           80,
           443,
           80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
           443
         ]
       },
@@ -44,7 +50,7 @@
     "Longitude": 28.531494,
     "X": 0.0,
     "Y": 0.0,
-    "LastSeen": "2026-05-05T10:59:24.1066Z",
+    "LastSeen": "2026-05-05T11:53:23.0532Z",
     "Status": 3,
     "LastPingMs": -1,
     "StatusColor": "#F44336"
@@ -78,6 +84,12 @@
           80,
           443,
           80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
           443
         ]
       },
@@ -94,7 +106,45 @@
     "Longitude": 29.388428,
     "X": 0.0,
     "Y": 0.0,
-    "LastSeen": "2026-05-05T10:59:29.4546Z",
+    "LastSeen": "2026-05-05T11:53:23.0612Z",
+    "Status": 3,
+    "LastPingMs": -1,
+    "StatusColor": "#F44336"
+  },
+  {
+    "Id": "fa4ddc75-993e-4cca-871b-3f70b1ae946f",
+    "Name": "56345",
+    "IpAddress": "3767",
+    "DeviceType": "FS-1000",
+    "Description": "74567",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 54.565693,
+    "Longitude": 30.366211,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-05T11:53:23.1572Z",
     "Status": 3,
     "LastPingMs": -1,
     "StatusColor": "#F44336"

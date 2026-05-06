@@ -4,8 +4,8 @@
   "PingRetries": 3,
   "UnstableThresholdMs": 200,
   "DefaultMapZoom": 7.0,
-  "DefaultMapLat": 54.123822,
-  "DefaultMapLon": 29.388428,
+  "DefaultMapLat": 53.55336278552808,
+  "DefaultMapLon": 27.894287109375,
   "MapZoom": 10.0,
   "MapLat": 55.75,
   "MapLon": 37.61,
@@ -21,8 +21,9 @@
   "SmtpPassword": "",
   "EmailFrom": "",
   "EmailTo": "",
-  "CenterMapOnSelect": true,
+  "CenterMapOnSelect": false,
   "ZoomOnSelect": false,
+  "MapLocked": true,
   "HistoryKeepDays": 90,
   "Language": "ru"
 }
