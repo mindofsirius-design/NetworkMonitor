@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Egor\\Desktop\\NetworkMonitor\\",
+  "WorkspaceRootPath": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|c:\\users\\egor\\desktop\\networkmonitor\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|c:\\users\\egor\\source\\repos\\mindofsirius-design\\networkmonitor\\views\\addnodedialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|solutionrelative:views\\addnodedialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|c:\\users\\egor\\source\\repos\\mindofsirius-design\\networkmonitor\\views\\addnodedialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|solutionrelative:views\\addnodedialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|c:\\users\\egor\\source\\repos\\mindofsirius-design\\networkmonitor\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|solutionrelative:views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|c:\\users\\egor\\source\\repos\\mindofsirius-design\\networkmonitor\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|solutionrelative:views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|c:\\users\\egor\\source\\repos\\mindofsirius-design\\networkmonitor\\models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{732FD7F6-EAFF-4006-8933-544CDCFA7B07}|NetworkMonitor.csproj|solutionrelative:models\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,13 +35,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AddNodeDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Views\\AddNodeDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AddNodeDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Views\\AddNodeDialog.xaml.cs",
+              "RelativeToolTip": "Views\\AddNodeDialog.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvyUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T15:55:31.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddNodeDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Views\\AddNodeDialog.xaml",
+              "RelativeDocumentMoniker": "Views\\AddNodeDialog.xaml",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Views\\AddNodeDialog.xaml",
+              "RelativeToolTip": "Views\\AddNodeDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-07T15:55:24.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA7wCYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T15:29:35.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Egor\\Desktop\\NetworkMonitor\\Views\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Views\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Views\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Egor\\Desktop\\NetworkMonitor\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Views\\MainWindow.xaml",
               "RelativeToolTip": "Views\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-11T16:15:29.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Models\\AppSettings.cs",
+              "RelativeDocumentMoniker": "Models\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\Egor\\source\\repos\\mindofsirius-design\\NetworkMonitor\\Models\\AppSettings.cs",
+              "RelativeToolTip": "Models\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T15:43:30.843Z",
               "EditorCaption": ""
             }
           ]

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\User\Desktop\NetworkMonitor\obj\x64\Release\
+C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\x64\Release\
 NetworkMonitor
 none
 false
 
-C:\Users\User\Desktop\NetworkMonitor\App.xaml
-7-230205938
-27-1180950
-32197430113
-64-18578589
+C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\App.xaml
+7-1082002447
+2715529923
+32772515843
+64-289903392
 Views\AddNodeDialog.xaml;Views\EventLogView.xaml;Views\MainWindow.xaml;Views\NodeDetailView.xaml;Views\SettingsDialog.xaml;Views\StatisticsView.xaml;Themes\Theme.xaml;
 
 True

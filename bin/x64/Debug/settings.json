@@ -6,9 +6,9 @@
   "DefaultMapZoom": 7.0,
   "DefaultMapLat": 53.55336278552808,
   "DefaultMapLon": 27.894287109375,
-  "MapZoom": 10.0,
-  "MapLat": 55.75,
-  "MapLon": 37.61,
+  "MapZoom": 7.0,
+  "MapLat": 53.55336278552808,
+  "MapLon": 27.894287109375,
   "DarkTheme": false,
   "ToastEnabled": true,
   "SoundEnabled": true,
@@ -23,7 +23,7 @@
   "EmailTo": "",
   "CenterMapOnSelect": false,
   "ZoomOnSelect": false,
-  "MapLocked": true,
+  "MapLocked": false,
   "HistoryKeepDays": 90,
   "Language": "ru"
 }

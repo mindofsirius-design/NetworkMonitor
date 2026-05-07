@@ -34,6 +34,38 @@
           80,
           443,
           80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
           443
         ]
       },
@@ -50,7 +82,7 @@
     "Longitude": 28.531494,
     "X": 0.0,
     "Y": 0.0,
-    "LastSeen": "2026-05-05T11:53:23.0532Z",
+    "LastSeen": "2026-05-07T15:52:25.3351278Z",
     "Status": 3,
     "LastPingMs": -1,
     "StatusColor": "#F44336"
@@ -90,6 +122,38 @@
           80,
           443,
           80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
           443
         ]
       },
@@ -106,7 +170,7 @@
     "Longitude": 29.388428,
     "X": 0.0,
     "Y": 0.0,
-    "LastSeen": "2026-05-05T11:53:23.0612Z",
+    "LastSeen": "2026-05-07T15:52:25.3351278Z",
     "Status": 3,
     "LastPingMs": -1,
     "StatusColor": "#F44336"
@@ -128,6 +192,38 @@
           80,
           443,
           80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
           443
         ]
       },
@@ -144,9 +240,127 @@
     "Longitude": 30.366211,
     "X": 0.0,
     "Y": 0.0,
-    "LastSeen": "2026-05-05T11:53:23.1572Z",
+    "LastSeen": "2026-05-07T15:52:25.3579575Z",
     "Status": 3,
     "LastPingMs": -1,
     "StatusColor": "#F44336"
+  },
+  {
+    "Id": "2ee1901c-26e6-4959-9001-6b494879f3b0",
+    "Name": "Бобруйск",
+    "IpAddress": "192.168.155.132",
+    "DeviceType": "FS-1000",
+    "Description": "описание",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 53.153359,
+    "Longitude": 29.256592,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  },
+  {
+    "Id": "a8515f13-3ed8-485a-ad52-d76555f4a69f",
+    "Name": "гдшдлбдл",
+    "IpAddress": "192.168.155",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 54.027133,
+    "Longitude": 30.333252,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  },
+  {
+    "Id": "80cfb47d-8a20-4f9a-9266-06ce7ef7dc14",
+    "Name": "оленгл",
+    "IpAddress": "1.2.3",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 54.603892,
+    "Longitude": 28.861084,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
   }
 ]

@@ -88,7 +88,7 @@
                 <Canvas x:Name="CrosshairCanvas" IsHitTestVisible="False">
                     <Line x:Name="CrossH" Stroke="#CC000000" StrokeThickness="1" StrokeDashArray="4,4"/>
                     <Line x:Name="CrossV" Stroke="#CC000000" StrokeThickness="1" StrokeDashArray="4,4"/>
-                    <Ellipse x:Name="CrossDot" Width="8" Height="8" Fill="#CC000000"/>
+                    <Ellipse x:Name="CrossDot" Width="8" Height="8" Fill="red"/>
                 </Canvas>
             </Grid>
 

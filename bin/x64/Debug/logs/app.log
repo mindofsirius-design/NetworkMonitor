@@ -628,3 +628,97 @@
 2026-05-05 15:04:36.6392 INFO DatabaseService Database initialized: C:\Users\User\Desktop\NetworkMonitor\bin\x64\Debug\data\history.db 
 2026-05-05 15:05:36.1012 INFO MonitoringScheduler Scheduler stopped 
 2026-05-05 15:05:36.1862 INFO App Application exiting 
+2026-05-07 18:23:37.4350 INFO App Application starting 
+2026-05-07 18:23:38.0982 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:24:21.7024 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:24:21.7164 INFO App Application exiting 
+2026-05-07 18:24:23.8053 INFO App Application starting 
+2026-05-07 18:24:24.4485 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:24:42.3453 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:24:42.3613 INFO App Application exiting 
+2026-05-07 18:41:41.7972 INFO App Application starting 
+2026-05-07 18:41:42.4270 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:41:52.0980 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:41:52.1170 INFO App Application exiting 
+2026-05-07 18:44:10.1545 INFO App Application starting 
+2026-05-07 18:44:10.7698 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:44:14.6914 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:44:14.7064 INFO App Application exiting 
+2026-05-07 18:44:16.8061 INFO App Application starting 
+2026-05-07 18:44:17.4209 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:44:27.3781 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:44:27.3971 INFO App Application exiting 
+2026-05-07 18:45:17.0770 INFO App Application starting 
+2026-05-07 18:45:17.6949 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:45:25.8312 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:45:25.8492 INFO App Application exiting 
+2026-05-07 18:45:29.0514 INFO App Application starting 
+2026-05-07 18:45:29.6353 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:45:32.8705 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:45:32.8875 INFO App Application exiting 
+2026-05-07 18:45:34.8440 INFO App Application starting 
+2026-05-07 18:45:35.4546 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:45:38.9749 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:45:38.9919 INFO App Application exiting 
+2026-05-07 18:48:37.9398 INFO App Application starting 
+2026-05-07 18:48:38.5372 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:49:19.4375 INFO App Application starting 
+2026-05-07 18:49:20.0703 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:49:28.2199 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:49:28.2329 INFO App Application exiting 
+2026-05-07 18:49:32.6789 INFO App Application starting 
+2026-05-07 18:49:33.3170 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:51:18.9817 INFO App Application starting 
+2026-05-07 18:51:19.6063 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:51:25.2596 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:51:25.2736 INFO App Application exiting 
+2026-05-07 18:51:27.3824 INFO App Application starting 
+2026-05-07 18:51:27.9562 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:51:30.4981 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:51:30.5141 INFO App Application exiting 
+2026-05-07 18:51:35.1827 INFO App Application starting 
+2026-05-07 18:51:35.7881 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:51:52.8814 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:51:52.8814 INFO MonitoringScheduler Scheduler started with 3 nodes 
+2026-05-07 18:51:52.9294 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-07 18:51:52.9574 INFO PingModule Ping 56345 (3767): Offline, -1ms 
+2026-05-07 18:51:52.9805 INFO TcpModule TCP 3546: Closed: 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443, 80, 443 
+2026-05-07 18:51:55.8309 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-07 18:51:58.3638 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-07 18:51:58.3949 INFO PingModule Ping 56345 (3767): Offline, -1ms 
+2026-05-07 18:52:01.3329 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-07 18:52:03.8512 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-07 18:52:03.8822 INFO PingModule Ping 56345 (3767): Offline, -1ms 
+2026-05-07 18:52:06.8315 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-07 18:52:09.3510 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-07 18:52:09.3840 INFO PingModule Ping 56345 (3767): Offline, -1ms 
+2026-05-07 18:52:12.3306 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-07 18:52:14.8503 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-07 18:52:14.8813 INFO PingModule Ping 56345 (3767): Offline, -1ms 
+2026-05-07 18:52:17.8313 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-07 18:52:19.8663 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-07 18:52:19.8983 INFO PingModule Ping 56345 (3767): Offline, -1ms 
+2026-05-07 18:52:22.8314 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-07 18:52:25.3499 INFO PingModule Ping 3546 (63456): Offline, -1ms 
+2026-05-07 18:52:25.3799 INFO PingModule Ping 56345 (3767): Offline, -1ms 
+2026-05-07 18:52:28.3315 INFO PingModule Ping 34234 (253523523): Offline, -1ms 
+2026-05-07 18:52:28.4978 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:52:28.5259 INFO App Application exiting 
+2026-05-07 18:53:30.6782 INFO App Application starting 
+2026-05-07 18:53:31.2547 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 18:55:15.4736 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 18:55:15.4876 INFO App Application exiting 
+2026-05-07 18:59:38.4012 INFO App Application starting 
+2026-05-07 18:59:39.0592 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 19:03:32.4234 INFO App Application starting 
+2026-05-07 19:03:33.0428 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 19:05:25.6267 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 19:05:25.6377 INFO App Application exiting 
+2026-05-07 19:06:41.5726 INFO App Application starting 
+2026-05-07 19:06:42.1541 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 19:06:43.4678 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 19:06:43.4848 INFO App Application exiting 
+2026-05-07 19:06:49.1786 INFO App Application starting 
+2026-05-07 19:06:49.8427 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-07 19:07:18.2142 INFO MonitoringScheduler Scheduler stopped 
+2026-05-07 19:07:18.2267 INFO App Application exiting 

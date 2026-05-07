@@ -34,6 +34,8 @@ namespace NetworkMonitor.Views
             _vm = new MainViewModel();
             DataContext = _vm;
 
+            ApplyMapLock(_vm.Settings.MapLocked);
+
             DetailView.SetDatabase(_vm.Database);
             DetailView.DeleteRequested += (s, node) =>
             {
@@ -78,7 +80,7 @@ namespace NetworkMonitor.Views
         }
 
         private void MainMap_Loaded(object sender, RoutedEventArgs e)
-        {
+        {   
             // GMap.NET 2.x: вместо GMaps.Instance.Mode используетс€ статическое свойство
             GMap.NET.GMaps.Instance.Mode = AccessMode.ServerAndCache;
 
@@ -88,8 +90,13 @@ namespace NetworkMonitor.Views
 
             MainMap.Position = new PointLatLng(_vm.Settings.MapLat, _vm.Settings.MapLon);
             MainMap.Zoom = _vm.Settings.MapZoom;
-
+            MainMap.ShowCenter = false;
             MainMap.MouseLeftButtonDown += MainMap_MouseLeftButtonDown;
+            MainMap.PreviewMouseWheel += (s, ev) =>
+            {
+                if (_vm.Settings.MapLocked)
+                    ev.Handled = true;
+            };
             RefreshMarkers(_vm.SelectedNode?.Id);
             UpdateCrosshairPosition();
         }
@@ -102,20 +109,21 @@ namespace NetworkMonitor.Views
             MainMap.Zoom = vm.Settings.DefaultMapZoom;
         }
 
-        private void LockMapButton_Click(object sender, RoutedEventArgs e)
-        {
-            var vm = DataContext as MainViewModel;
-            if (vm == null) return;
-            vm.Settings.MapLocked = !vm.Settings.MapLocked;
-            ApplyMapLock(vm.Settings.MapLocked);
-        }
-
         private void ApplyMapLock(bool locked)
         {
             MainMap.CanDragMap = !locked;
-            LockIcon.Kind = locked ? MaterialDesignThemes.Wpf.PackIconKind.Lock : MaterialDesignThemes.Wpf.PackIconKind.LockOpenVariant;
+            MainMap.MouseWheelZoomEnabled = !locked;
+            LockIcon.Kind = locked
+                ? MaterialDesignThemes.Wpf.PackIconKind.Lock
+                : MaterialDesignThemes.Wpf.PackIconKind.LockOpenVariant;
             LockBadge.Visibility = locked ? Visibility.Visible : Visibility.Collapsed;
             CrosshairCanvas.Visibility = locked ? Visibility.Collapsed : Visibility.Visible;
+        }
+
+        private void LockMapButton_Click(object sender, RoutedEventArgs e)
+        {
+            _vm.Settings.MapLocked = !_vm.Settings.MapLocked;
+            ApplyMapLock(_vm.Settings.MapLocked);
         }
 
         private void MainMap_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -370,6 +378,9 @@ namespace NetworkMonitor.Views
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            _vm.Settings.MapLat = MainMap.Position.Lat;
+            _vm.Settings.MapLon = MainMap.Position.Lng;
+            _vm.Settings.MapZoom = MainMap.Zoom;
             _refreshTimer.Stop();
             _toastTimer.Stop();
             _vm.Save();

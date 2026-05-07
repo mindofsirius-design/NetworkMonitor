@@ -12,7 +12,11 @@
             <TextBox x:Name="NameBox" md:HintAssist.Hint="Имя устройства" Margin="0,0,0,8"
                      Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
             <TextBox x:Name="IpBox" md:HintAssist.Hint="IP-адрес" Margin="0,0,0,8"
-                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                     Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                     LostFocus="IpBox_LostFocus"
+                     PreviewTextInput="IpBox_PreviewTextInput"
+                     DataObject.Pasting="IpBox_Pasting"/>
+            
             <ComboBox x:Name="TypeBox" md:HintAssist.Hint="Тип устройства" Margin="0,0,0,8"
                       Style="{StaticResource MaterialDesignOutlinedComboBox}" SelectedIndex="0">
                 <ComboBoxItem Content="FS-1000"/>

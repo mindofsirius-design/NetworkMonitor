@@ -1,9 +1,11 @@
+using NetworkMonitor.Models;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows;
-using NetworkMonitor.Models;
+using System.Windows.Input;
+using System.Windows.Controls;
 
 namespace NetworkMonitor.Views
 {
@@ -29,9 +31,9 @@ namespace NetworkMonitor.Views
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(IpBox.Text))
+            if (string.IsNullOrWhiteSpace(IpBox.Text) || !System.Net.IPAddress.TryParse(IpBox.Text.Trim(), out _))
             {
-                MessageBox.Show("\u0412\u0432\u0435\u0434\u0438\u0442\u0435 IP-\u0430\u0434\u0440\u0435\u0441.", "\u041E\u0448\u0438\u0431\u043A\u0430", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Введите корректный IP-адрес.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -90,6 +92,59 @@ namespace NetworkMonitor.Views
             Close();
         }
 
+        private void IpBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            var tb = (TextBox)sender;
+            var newText = tb.Text.Insert(tb.CaretIndex, e.Text);
+            e.Handled = !IsValidIpInput(newText);
+        }
+
+        private void IpBox_Pasting(object sender, DataObjectPastingEventArgs e)
+        {
+            if (e.DataObject.GetDataPresent(typeof(string)))
+            {
+                var text = (string)e.DataObject.GetData(typeof(string));
+                if (!IsValidIpInput(text)) e.CancelCommand();
+            }
+            else e.CancelCommand();
+        }
+
+        private bool IsValidIpInput(string text)
+        {
+            // только цифры и точки
+            foreach (char c in text)
+                if (!char.IsDigit(c) && c != '.') return false;
+
+            var parts = text.Split('.');
+
+            // не более 4 октетов
+            if (parts.Length > 4) return false;
+
+            foreach (var part in parts)
+            {
+                // каждый октет не более 3 цифр
+                if (part.Length > 3) return false;
+                // значение 0-255
+                if (part.Length > 0 && int.TryParse(part, out int val) && val > 255) return false;
+            }
+
+            return true;
+        }
+
+        private void IpBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var text = IpBox.Text.Trim();
+            if (!string.IsNullOrEmpty(text) && !System.Net.IPAddress.TryParse(text, out _))
+            {
+                IpBox.BorderBrush = System.Windows.Media.Brushes.Red;
+                IpBox.ToolTip = "Некорректный IP-адрес";
+            }
+            else
+            {
+                IpBox.ClearValue(BorderBrushProperty);
+                IpBox.ToolTip = null;
+            }
+        }
         private bool TryParseCoordinate(string text, double min, double max, out double value)
         {
             value = 0;
