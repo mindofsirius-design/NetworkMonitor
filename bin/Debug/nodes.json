@@ -1,0 +1,44 @@
+[
+  {
+    "Id": "9dd64de4-2685-4beb-b014-4d436f9be816",
+    "Name": "123",
+    "IpAddress": "1.1.1.1",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 7
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 54.422126,
+    "Longitude": 29.657593,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-12T07:26:03.1322Z",
+    "Status": 0,
+    "LastPingMs": 32,
+    "StatusColor": "#4CAF50"
+  }
+]

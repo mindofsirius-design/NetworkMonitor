@@ -9,39 +9,47 @@
         <local:StatusToColorConverter x:Key="StatusToColor"/>
     </UserControl.Resources>
 
-    <ScrollViewer VerticalScrollBarVisibility="Auto">
-        <StackPanel Margin="12">
-            <TextBlock Text="{Binding Name}" FontSize="18" FontWeight="Bold" Margin="0,0,0,4"/>
-            <TextBlock Text="{Binding IpAddress}" FontSize="14" Foreground="Gray" Margin="0,0,0,8"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
-                <Ellipse Width="12" Height="12" Fill="{Binding Status, Converter={StaticResource StatusToColor}}" Margin="0,0,6,0"/>
-                <TextBlock Text="{Binding Status}" FontSize="14"/>
-            </StackPanel>
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="12">
+                <TextBlock Text="{Binding Name}" FontSize="18" FontWeight="Bold" Margin="0,0,0,4"/>
+                <TextBlock Text="{Binding IpAddress}" FontSize="14" Foreground="Gray" Margin="0,0,0,8"/>
 
-            <TextBlock Margin="0,0,0,4">
-                <Run Text="&#x0422;&#x0438;&#x043F;: " FontWeight="SemiBold"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
+                    <Ellipse Width="12" Height="12" Fill="{Binding Status, Converter={StaticResource StatusToColor}}" Margin="0,0,6,0"/>
+                    <TextBlock Text="{Binding Status}" FontSize="14"/>
+                </StackPanel>
+
+                <TextBlock Margin="0,0,0,4">
+                <Run Text="Тип: " FontWeight="SemiBold"/>
                 <Run Text="{Binding DeviceType, Mode=OneWay}"/>
-            </TextBlock>
-            <TextBlock Margin="0,0,0,4">
+                </TextBlock>
+                <TextBlock Margin="0,0,0,4">
                 <Run Text="Ping: " FontWeight="SemiBold"/>
                 <Run Text="{Binding LastPingMs, StringFormat={}{0} ms, Mode=OneWay}"/>
-            </TextBlock>
-            <TextBlock Margin="0,0,0,12">
-                <Run Text="&#x041F;&#x043E;&#x0441;&#x043B;&#x0435;&#x0434;&#x043D;&#x0438;&#x0439; &#x0440;&#x0430;&#x0437;: " FontWeight="SemiBold"/>
+                </TextBlock>
+                <TextBlock Margin="0,0,0,4">
+                <Run Text="Последний раз: " FontWeight="SemiBold"/>
                 <Run Text="{Binding LastSeen, StringFormat=HH:mm:ss, Mode=OneWay}"/>
-            </TextBlock>
+                </TextBlock>
 
-            <TextBlock Text="&#x0417;&#x0430;&#x0434;&#x0435;&#x0440;&#x0436;&#x043A;&#x0430;" FontWeight="SemiBold" Margin="0,0,0,4"/>
-            <oxy:PlotView x:Name="LatencyChart" Height="120" Margin="0,0,0,12"/>
-
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Content="Ping" Click="PingNow_Click" Margin="0,0,8,0"
-                        Style="{StaticResource MaterialDesignOutlinedButton}" Padding="8,4"/>
-                <Button Content="&#x0423;&#x0434;&#x0430;&#x043B;&#x0438;&#x0442;&#x044C;" Click="DeleteNode_Click"
-                        Style="{StaticResource MaterialDesignOutlinedButton}" Padding="8,4"
-                        Foreground="#F44336"/>
+                <TextBlock Text="Задержка" FontWeight="SemiBold" Margin="0,0,0,4"/>
+                <oxy:PlotView x:Name="LatencyChart" Height="110" Margin="0,0,0,4"
+                              IsMouseWheelEnabled="False"/>
             </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="12,4">
+            <Button Content="Ping" Click="PingNow_Click" Margin="0,0,8,0"
+                Style="{StaticResource MaterialDesignOutlinedButton}" Padding="8,4"/>
+            <Button Content="Удалить" Click="DeleteNode_Click"
+                Style="{StaticResource MaterialDesignOutlinedButton}" Padding="8,4"
+                Foreground="#F44336"/>
         </StackPanel>
-    </ScrollViewer>
+    </Grid>
 </UserControl>
