@@ -24,6 +24,7 @@
   "CenterMapOnSelect": false,
   "ZoomOnSelect": false,
   "MapLocked": false,
+  "TimeZoneOffsetHours": 3,
   "HistoryKeepDays": 90,
   "Language": "ru"
 }

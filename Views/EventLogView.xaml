@@ -30,7 +30,11 @@
         <DataGrid Grid.Row="1" ItemsSource="{Binding Events}" AutoGenerateColumns="False"
                   IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="&#x0412;&#x0440;&#x0435;&#x043C;&#x044F;" Binding="{Binding Timestamp, StringFormat=yyyy-MM-dd HH:mm:ss}" Width="150"/>
+                 <DataGridTextColumn Header="&#x0412;&#x0440;&#x0435;&#x043C;&#x044F;" Width="150">
+                    <DataGridTextColumn.Binding>
+                        <Binding Path="Timestamp" Converter="{StaticResource UtcToLocalConverter}" ConverterParameter="yyyy-MM-dd HH:mm:ss"/>
+                    </DataGridTextColumn.Binding>
+                </DataGridTextColumn>
                 <DataGridTextColumn Header="&#x0423;&#x0437;&#x0435;&#x043B;" Binding="{Binding NodeId}" Width="120"/>
                 <DataGridTextColumn Header="&#x0422;&#x0438;&#x043F;" Binding="{Binding EventType}" Width="120"/>
                 <DataGridTextColumn Header="&#x0421;&#x043E;&#x043E;&#x0431;&#x0449;&#x0435;&#x043D;&#x0438;&#x0435;" Binding="{Binding Message}" Width="*"/>

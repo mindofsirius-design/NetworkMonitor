@@ -132,7 +132,6 @@ C:\Users\Egor\Desktop\NetworkMonitor\obj\Debug\NetworkMonitor.csproj.CopyComplet
 C:\Users\Egor\Desktop\NetworkMonitor\obj\Debug\NetworkMonitor.exe
 C:\Users\Egor\Desktop\NetworkMonitor\obj\Debug\NetworkMonitor.pdb
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\Assets\Sounds\alert.wav
-C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\NLog.config
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\libHarfBuzzSharp.dylib
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\x86\libHarfBuzzSharp.dll
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\x64\libHarfBuzzSharp.dll
@@ -149,6 +148,7 @@ C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\x64\libS
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\arm\libSkiaSharp.so
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\arm64\libSkiaSharp.so
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\musl-x64\libSkiaSharp.so
+C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\NLog.config
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\NetworkMonitor.exe.config
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\NetworkMonitor.exe
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\NetworkMonitor.pdb
@@ -237,7 +237,6 @@ C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\System.T
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\System.ValueTuple.xml
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\Topten.RichTextKit.pdb
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\Topten.RichTextKit.xml
-C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\NetworkMonitor.csproj.AssemblyReference.cache
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\Views\AddNodeDialog.baml
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\Views\EventLogView.baml
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\Views\SettingsDialog.baml
@@ -264,3 +263,4 @@ C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\NetworkM
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\NetworkMonitor.csproj.CopyComplete
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\NetworkMonitor.exe
 C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\NetworkMonitor.pdb
+C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\NetworkMonitor.csproj.AssemblyReference.cache

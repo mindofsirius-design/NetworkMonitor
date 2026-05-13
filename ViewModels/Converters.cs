@@ -101,4 +101,25 @@ namespace NetworkMonitor.ViewModels
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
             => throw new NotImplementedException();
     }
+
+    public class UtcToLocalConverter : IValueConverter
+    {
+        public static int OffsetHours { get; set; } = 3;
+
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            if (value is DateTime dt)
+            {
+                var local = dt.Kind == DateTimeKind.Utc ? dt : DateTime.SpecifyKind(dt, DateTimeKind.Utc);
+                local = local.AddHours(OffsetHours);
+                var fmt = parameter as string ?? "HH:mm:ss";
+                return local.ToString(fmt);
+            }
+            return value;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+            => throw new NotImplementedException();
+    }
+
 }

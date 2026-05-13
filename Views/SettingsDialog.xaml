@@ -11,8 +11,9 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TabControl Style="{StaticResource MaterialDesignNavigationRailTabControl}" Margin="8">
-            <TabItem Header="Мониторинг" Width="100">
+        <TabControl x:Name="MainTabControl" Style="{StaticResource MaterialDesignNavigationRailTabControl}" Margin="0">
+
+            <TabItem Header="Мониторинг" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
                     <TextBox x:Name="IntervalBox" md:HintAssist.Hint="Интервал ping (сек)" Margin="0,0,0,8"
                              Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
@@ -25,7 +26,7 @@
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="Уведомления" Width="100">
+            <TabItem Header="Уведомления" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="ToastToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
@@ -40,7 +41,7 @@
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="Email" Width="99">
+            <TabItem Header="Email" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="EmailToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
@@ -65,7 +66,7 @@
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="Оформление" Width="100">
+            <TabItem Header="Оформление" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="DarkThemeToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}"
@@ -75,33 +76,37 @@
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="Данные" Width="100">
+            <TabItem Header="Данные" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
                     <TextBox x:Name="KeepDaysBox" md:HintAssist.Hint="Хранить историю (дней)" Margin="0,0,0,12"
                              Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                     <Button Content="Очистить историю" Click="ClearHistory_Click" Margin="0,0,0,8"
                             Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
-                    <Button Content="Экспорт конфигурации" Click="ExportConfig_Click"
+                    <Button Content="Экспорт конфигурации" Click="ExportConfig_Click " 
                             Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="TimeZoneOffsetBox" md:HintAssist.Hint="Часовой пояс " Margin="0,16,0,8"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="Управление" Width="100">
+            <TabItem Header="Управление" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
                     <!-- Первый переключатель: Перемещение при выборе -->
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="CenterMapOnSelectToggle" 
                           Style="{StaticResource MaterialDesignSwitchToggleButton}" 
-                          Margin="0,0,8,0"/>
-                        <TextBlock Text="Перемещение при выборе" VerticalAlignment="Center"/>
+                          Margin="0,0,8,0"
+                          Unchecked="CenterMapOnSelectToggle_Unchecked"/>
+                        <TextBlock Text="Перемещение при выборе узла" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <!-- Второй переключатель: Приближать при выборе -->
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="ZoomOnSelectToggle" 
                           Style="{StaticResource MaterialDesignSwitchToggleButton}" 
-                          Margin="0,0,8,0"/>
-                        <TextBlock Text="Приближать при выборе" VerticalAlignment="Center"/>
+                          Margin="0,0,8,0"
+                          IsEnabled="{Binding IsChecked, ElementName=CenterMapOnSelectToggle}"/>
+                        <TextBlock Text="Приближать при выборе узла" VerticalAlignment="Center"/>
                     </StackPanel>
                 </StackPanel>
             </TabItem>
@@ -112,7 +117,8 @@
             <Button Content="Отмена" IsCancel="True" Margin="0,0,8,0"
                     Style="{StaticResource MaterialDesignOutlinedButton}"/>
             <Button Content="Сохранить" Click="SaveButton_Click"
-                    Style="{StaticResource MaterialDesignRaisedButton}"/>
+                    Style="{StaticResource MaterialDesignRaisedButton}"
+                    Foreground="#F0F0F0"/>
         </StackPanel>
     </Grid>
 </Window>

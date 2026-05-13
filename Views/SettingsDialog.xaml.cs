@@ -6,6 +6,8 @@ using System.Windows;
 using MaterialDesignThemes.Wpf;
 using NetworkMonitor.Models;
 using NetworkMonitor.Services;
+using NetworkMonitor.ViewModels;
+using System.Windows.Input;
 
 namespace NetworkMonitor.Views
 {
@@ -20,6 +22,18 @@ namespace NetworkMonitor.Views
             _settings = settings;
             _database = database;
             LoadSettings();
+            Loaded += (s, e) =>     //для корректного выделения элементов
+            {
+                MainTabControl.SelectionChanged += (s2, e2) =>
+                {
+                    Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        FocusManager.SetFocusedElement(MainTabControl, null);
+                        Keyboard.ClearFocus();
+                    }), System.Windows.Threading.DispatcherPriority.Input);
+                };
+            };
+
         }
 
         private void LoadSettings()
@@ -47,6 +61,8 @@ namespace NetworkMonitor.Views
             //Вкладка "Управление"
             CenterMapOnSelectToggle.IsChecked = _settings.CenterMapOnSelect;
             ZoomOnSelectToggle.IsChecked = _settings.ZoomOnSelect;
+
+            TimeZoneOffsetBox.Text = _settings.TimeZoneOffsetHours.ToString();
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -85,6 +101,7 @@ namespace NetworkMonitor.Views
 
             _settings.EmailEnabled = EmailToggle.IsChecked == true;
             _settings.SmtpHost = SmtpHostBox.Text?.Trim() ?? "";
+
             if (int.TryParse(SmtpPortBox.Text, out int port)) _settings.SmtpPort = port;
             _settings.SmtpUser = SmtpUserBox.Text?.Trim() ?? "";
             _settings.SmtpPassword = SmtpPasswordBox.Password ?? "";
@@ -99,7 +116,12 @@ namespace NetworkMonitor.Views
             //Управление
             _settings.CenterMapOnSelect = CenterMapOnSelectToggle.IsChecked == true;
             _settings.ZoomOnSelect = ZoomOnSelectToggle.IsChecked == true;
-
+            //Данные
+            if (int.TryParse(TimeZoneOffsetBox.Text, out int tz))
+            {
+                _settings.TimeZoneOffsetHours = tz;
+                UtcToLocalConverter.OffsetHours = tz;
+            }
             DialogResult = true;
             Close();
         }
@@ -193,5 +215,12 @@ namespace NetworkMonitor.Views
                 }
             }
         }
+
+        //Выключение галочки на "Приближать при выборе узла", если галочка на "Перемешать при выборе узла" была выключенна
+        private void CenterMapOnSelectToggle_Unchecked(object sender, RoutedEventArgs e)
+        {
+            ZoomOnSelectToggle.IsChecked = false;
+        }
+
     }
 }

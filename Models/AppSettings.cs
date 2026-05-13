@@ -40,6 +40,7 @@ namespace NetworkMonitor.Models
         public bool MapLocked { get; set; } = false; // кнопка на главном экране
 
         // Данные
+        public int TimeZoneOffsetHours { get; set; } = 3;
         public int HistoryKeepDays { get; set; } = 90;
 
         // Язык

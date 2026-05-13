@@ -35,7 +35,7 @@
                 </TextBlock>
                 <TextBlock Margin="0,0,0,4">
                 <Run Text="Последний раз: " FontWeight="SemiBold"/>
-                <Run Text="{Binding LastSeen, StringFormat=HH:mm:ss, Mode=OneWay}"/>
+                <Run Text="{Binding LastSeen, Converter={StaticResource UtcToLocalConverter}, ConverterParameter=HH:mm:ss, Mode=OneWay}"/>
                 </TextBlock>
 
                 <TextBlock Text="Задержка" FontWeight="SemiBold" Margin="0,0,0,4"/>

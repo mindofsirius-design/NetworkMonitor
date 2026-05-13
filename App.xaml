@@ -17,6 +17,7 @@
             <vm:StatusToColorConverter x:Key="StatusToColorConverter"/>
             <vm:ToastTypeToColorConverter x:Key="ToastTypeToColorConverter"/>
             <vm:InverseBoolToVisibilityConverter x:Key="InverseBoolToVisibilityConverter"/>
+            <vm:UtcToLocalConverter x:Key="UtcToLocalConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

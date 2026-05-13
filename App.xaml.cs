@@ -3,6 +3,7 @@ using MaterialDesignThemes.Wpf;
 using NetworkMonitor.Services;
 using NLog;
 using System.Net;
+using NetworkMonitor.ViewModels;
 
 namespace NetworkMonitor
 {
@@ -27,6 +28,7 @@ namespace NetworkMonitor
                 theme.SetBaseTheme(BaseTheme.Dark);
                 helper.SetTheme(theme);
             }
+            UtcToLocalConverter.OffsetHours = settings.TimeZoneOffsetHours; //Часовой пояс
         }
 
         protected override void OnExit(ExitEventArgs e)
