@@ -117,8 +117,7 @@
             <Button Content="Отмена" IsCancel="True" Margin="0,0,8,0"
                     Style="{StaticResource MaterialDesignOutlinedButton}"/>
             <Button Content="Сохранить" Click="SaveButton_Click"
-                    Style="{StaticResource MaterialDesignRaisedButton}"
-                    Foreground="#F0F0F0"/>
+                    Style="{StaticResource MaterialDesignRaisedButton}"/>
         </StackPanel>
     </Grid>
 </Window>

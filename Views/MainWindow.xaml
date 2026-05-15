@@ -24,44 +24,48 @@
         </Grid.RowDefinitions>
 
         <Border Grid.Row="0" Background="{DynamicResource MaterialDesign.Brush.Primary}" Padding="12,0">
+            <Border.Resources>
+                <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignFlatLightBgButton}">
+                    <Setter Property="Foreground" Value="{DynamicResource MaterialDesign.Brush.Primary.Foreground}"/>
+                </Style>
+            </Border.Resources>
+
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                 <md:PackIcon Kind="LanConnect" Width="24" Height="24" Foreground="White" Margin="0,0,12,0"/>
                 <TextBlock Text="NetworkMonitor" FontSize="18" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" Margin="0,0,24,0"/>
 
-                <Button Content="{Binding MonitoringLabel}" Command="{Binding ToggleMonitoringCommand}"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"/>
+                <Button Content="{Binding MonitoringLabel}" Command="{Binding ToggleMonitoringCommand}" Margin="0,0,8,0"/>
+                
                 <Button Content="&#x0421;&#x043E;&#x0445;&#x0440;&#x0430;&#x043D;&#x0438;&#x0442;&#x044C;" Command="{Binding SaveCommand}"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"/>
+                        Margin="0,0,8,0"/>
+                
                 <Button Content="+ &#x0423;&#x0437;&#x0435;&#x043B;" Click="AddNodeButton_Click"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"/>
+                        Margin="0,0,8,0"/>
+                
                 <Button Click="SettingsButton_Click"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0">
+                        Margin="0,0,8,0">
                     <md:PackIcon Kind="Cog"/>
                 </Button>
-                <Button Click="StatisticsButton_Click"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0">
+                
+                <Button Click="StatisticsButton_Click" Margin="0,0,8,0">
                     <md:PackIcon Kind="ChartLine"/>
                 </Button>
                 
-                <Button Click="EventLogButton_Click"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0">
+                <Button Click="EventLogButton_Click" Margin="0,0,8,0">
                     <md:PackIcon Kind="FormatListBulleted"/>
                 </Button>
                 
-                <Button Click="ResetMapPositionButton_Click"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"
+                <Button Click="ResetMapPositionButton_Click" Margin="0,0,8,0"
                         ToolTip="Вернуть карту к позиции по умолчанию">
                     <md:PackIcon Kind="MapMarkerRadius"/>
                 </Button>
                 
-                <Button Click="SaveMapPositionButton_Click"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"
+                <Button Click="SaveMapPositionButton_Click" Margin="0,0,8,0"
                         ToolTip="Запомнить положение карты">
                     <md:PackIcon Kind="MapMarkerCheck"/>
                 </Button>
                 
-                <Button Click="LockMapButton_Click"
-                        Style="{StaticResource MaterialDesignFlatLightBgButton}" Foreground="White" Margin="0,0,8,0"
+                <Button Click="LockMapButton_Click" Margin="0,0,8,0"
                         ToolTip="Заблокировать/разблокировать карту">
                     <md:PackIcon x:Name="LockIcon" Kind="LockOpenVariant"/>
                 </Button>

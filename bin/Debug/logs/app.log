@@ -428,3 +428,134 @@
 2026-05-13 10:30:24.2410 INFO DatabaseService Database initialized: C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
 2026-05-13 10:30:45.7340 INFO MonitoringScheduler Scheduler stopped 
 2026-05-13 10:30:45.7450 INFO App Application exiting 
+2026-05-15 13:48:44.7872 INFO App Application starting 
+2026-05-15 13:48:45.9632 INFO DatabaseService Database initialized: C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-15 13:50:11.4162 INFO PingModule Ping 123 (1.1.1.1): Online, 33ms 
+2026-05-15 13:50:19.3232 INFO MonitoringScheduler Scheduler stopped 
+2026-05-15 13:50:19.3232 INFO MonitoringScheduler Scheduler started with 2 nodes 
+2026-05-15 13:50:19.4472 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:50:19.5292 INFO PingModule Ping 123 (1.1.1.1): Online, 42ms 
+2026-05-15 13:50:24.7022 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:50:26.8812 INFO PingModule Ping 123 (1.1.1.1): Online, 43ms 
+2026-05-15 13:50:30.0112 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:50:34.2312 INFO PingModule Ping 123 (1.1.1.1): Online, 41ms 
+2026-05-15 13:50:35.3142 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:50:40.4642 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:50:41.6192 INFO PingModule Ping 123 (1.1.1.1): Online, 42ms 
+2026-05-15 13:50:45.8002 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:50:48.9552 INFO PingModule Ping 123 (1.1.1.1): Online, 33ms 
+2026-05-15 13:50:51.0822 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:50:56.2982 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:50:56.3312 INFO PingModule Ping 123 (1.1.1.1): Online, 40ms 
+2026-05-15 13:51:01.5212 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:03.6952 INFO PingModule Ping 123 (1.1.1.1): Online, 43ms 
+2026-05-15 13:51:06.9412 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:11.1392 INFO PingModule Ping 123 (1.1.1.1): Online, 36ms 
+2026-05-15 13:51:12.2312 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:17.4032 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:18.5662 INFO PingModule Ping 123 (1.1.1.1): Online, 43ms 
+2026-05-15 13:51:22.7142 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:25.8872 INFO PingModule Ping 123 (1.1.1.1): Online, 38ms 
+2026-05-15 13:51:27.9952 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:33.1322 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:33.1782 INFO PingModule Ping 123 (1.1.1.1): Online, 36ms 
+2026-05-15 13:51:33.4942 INFO PingModule Ping 123 (1.1.1.1): Online, 31ms 
+2026-05-15 13:51:34.2852 INFO PingModule Ping 123 (1.1.1.1): Online, 40ms 
+2026-05-15 13:51:38.3292 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:40.0432 INFO PingModule Ping 123 (1.1.1.1): Online, 32ms 
+2026-05-15 13:51:40.4522 INFO PingModule Ping 123 (1.1.1.1): Online, 32ms 
+2026-05-15 13:51:40.8852 INFO PingModule Ping 123 (1.1.1.1): Online, 29ms 
+2026-05-15 13:51:41.5842 INFO PingModule Ping 123 (1.1.1.1): Online, 39ms 
+2026-05-15 13:51:41.7362 INFO PingModule Ping 123 (1.1.1.1): Online, 38ms 
+2026-05-15 13:51:41.8732 INFO PingModule Ping 123 (1.1.1.1): Online, 31ms 
+2026-05-15 13:51:41.9952 INFO PingModule Ping 123 (1.1.1.1): Online, 29ms 
+2026-05-15 13:51:43.5822 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:47.7482 INFO PingModule Ping 123 (1.1.1.1): Online, 32ms 
+2026-05-15 13:51:48.8892 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:54.0982 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:51:55.2362 INFO PingModule Ping 123 (1.1.1.1): Online, 41ms 
+2026-05-15 13:51:59.4202 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:02.5942 INFO PingModule Ping 123 (1.1.1.1): Online, 40ms 
+2026-05-15 13:52:04.7052 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:09.8382 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:09.9242 INFO PingModule Ping 123 (1.1.1.1): Online, 42ms 
+2026-05-15 13:52:15.0712 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:17.2442 INFO PingModule Ping 123 (1.1.1.1): Online, 45ms 
+2026-05-15 13:52:20.3712 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:24.5632 INFO PingModule Ping 123 (1.1.1.1): Online, 39ms 
+2026-05-15 13:52:25.6382 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:31.5402 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:32.3932 INFO PingModule Ping 123 (1.1.1.1): Online, 29ms 
+2026-05-15 13:52:36.7032 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:39.3802 INFO PingModule Ping 123 (1.1.1.1): Online, 40ms 
+2026-05-15 13:52:41.4702 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:46.6412 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:46.6762 INFO PingModule Ping 123 (1.1.1.1): Online, 35ms 
+2026-05-15 13:52:51.7992 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:52:53.9392 INFO PingModule Ping 123 (1.1.1.1): Online, 32ms 
+2026-05-15 13:52:57.0412 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:01.2372 INFO PingModule Ping 123 (1.1.1.1): Online, 41ms 
+2026-05-15 13:53:02.3262 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:07.5062 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:08.6472 INFO PingModule Ping 123 (1.1.1.1): Online, 41ms 
+2026-05-15 13:53:12.8062 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:15.9632 INFO PingModule Ping 123 (1.1.1.1): Online, 31ms 
+2026-05-15 13:53:18.0662 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:23.4832 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:23.6392 INFO PingModule Ping 123 (1.1.1.1): Online, 36ms 
+2026-05-15 13:53:28.5572 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:30.8232 INFO PingModule Ping 123 (1.1.1.1): Online, 28ms 
+2026-05-15 13:53:33.5472 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:37.7472 INFO PingModule Ping 123 (1.1.1.1): Online, 27ms 
+2026-05-15 13:53:39.7212 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:43.9212 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:45.0572 INFO PingModule Ping 123 (1.1.1.1): Online, 36ms 
+2026-05-15 13:53:49.1922 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:52.3392 INFO PingModule Ping 123 (1.1.1.1): Online, 29ms 
+2026-05-15 13:53:54.4812 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:59.7192 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:53:59.7642 INFO PingModule Ping 123 (1.1.1.1): Online, 38ms 
+2026-05-15 13:54:04.9302 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:07.0562 INFO PingModule Ping 123 (1.1.1.1): Online, 32ms 
+2026-05-15 13:54:10.1962 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:14.3432 INFO PingModule Ping 123 (1.1.1.1): Online, 28ms 
+2026-05-15 13:54:15.6282 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:20.8322 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:21.4512 INFO PingModule Ping 123 (1.1.1.1): Online, 34ms 
+2026-05-15 13:54:26.0922 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:28.7312 INFO PingModule Ping 123 (1.1.1.1): Online, 29ms 
+2026-05-15 13:54:31.3372 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:36.0222 INFO PingModule Ping 123 (1.1.1.1): Online, 41ms 
+2026-05-15 13:54:36.5872 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:41.7612 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:43.3982 INFO PingModule Ping 123 (1.1.1.1): Online, 29ms 
+2026-05-15 13:54:47.0372 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:50.6982 INFO PingModule Ping 123 (1.1.1.1): Online, 29ms 
+2026-05-15 13:54:52.5062 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:57.6502 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:54:58.3602 INFO PingModule Ping 123 (1.1.1.1): Online, 30ms 
+2026-05-15 13:55:02.9962 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:05.6362 INFO PingModule Ping 123 (1.1.1.1): Online, 27ms 
+2026-05-15 13:55:08.2302 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:12.9012 INFO PingModule Ping 123 (1.1.1.1): Online, 31ms 
+2026-05-15 13:55:13.5702 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:18.7212 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:20.3872 INFO PingModule Ping 123 (1.1.1.1): Online, 35ms 
+2026-05-15 13:55:24.0872 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:27.7452 INFO PingModule Ping 123 (1.1.1.1): Online, 28ms 
+2026-05-15 13:55:29.3642 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:34.5332 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:35.1342 INFO PingModule Ping 123 (1.1.1.1): Online, 32ms 
+2026-05-15 13:55:39.7882 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:42.4262 INFO PingModule Ping 123 (1.1.1.1): Online, 29ms 
+2026-05-15 13:55:45.0072 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:49.7152 INFO PingModule Ping 123 (1.1.1.1): Online, 40ms 
+2026-05-15 13:55:50.2992 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:55.5522 INFO PingModule Ping 2545 (34): Offline, -1ms 
+2026-05-15 13:55:57.1962 INFO PingModule Ping 123 (1.1.1.1): Online, 38ms 
+2026-05-15 13:56:00.1112 INFO MonitoringScheduler Scheduler stopped 
+2026-05-15 13:56:00.1452 INFO App Application exiting 
+2026-05-15 14:15:55.7332 INFO App Application starting 
+2026-05-15 14:15:58.1082 INFO DatabaseService Database initialized: C:\Users\User\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-15 14:16:53.5882 INFO MonitoringScheduler Scheduler stopped 
+2026-05-15 14:16:53.6872 INFO App Application exiting 
