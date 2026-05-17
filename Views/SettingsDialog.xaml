@@ -70,7 +70,7 @@
                 <StackPanel Margin="16">
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="DarkThemeToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}"
-                                      Checked="DarkThemeToggle_Checked" Unchecked="DarkThemeToggle_Unchecked" Margin="0,0,8,0"/>
+                                      Margin="0,0,8,0"/>
                         <TextBlock Text="Тёмная тема" VerticalAlignment="Center"/>
                     </StackPanel>
                 </StackPanel>

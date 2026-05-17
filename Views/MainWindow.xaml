@@ -26,11 +26,16 @@
         <Border Grid.Row="0" Background="{DynamicResource MaterialDesign.Brush.Primary}" Padding="12,0">
             <Border.Resources>
                 <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignFlatLightBgButton}">
-                    <Setter Property="Foreground" Value="{DynamicResource MaterialDesign.Brush.Primary.Foreground}"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Source={x:Static Application.Current}, Path=Resources[MaterialDesign.Brush.Primary.Foreground]}" Value="{x:Null}">
+                            <Setter Property="Foreground" Value="White"/>
+                        </DataTrigger>
+                    </Style.Triggers>
                 </Style>
             </Border.Resources>
 
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <StackPanel x:Name="HeaderPanel" Orientation="Horizontal" VerticalAlignment="Center">
                 <md:PackIcon Kind="LanConnect" Width="24" Height="24" Foreground="White" Margin="0,0,12,0"/>
                 <TextBlock Text="NetworkMonitor" FontSize="18" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" Margin="0,0,24,0"/>
 

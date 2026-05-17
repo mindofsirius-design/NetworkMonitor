@@ -15,12 +15,14 @@ namespace NetworkMonitor.Views
     {
         private readonly AppSettings _settings;
         private DatabaseService _database;
+        private readonly MainWindow _mainWindow; //Для темной темы для букв сверху
 
-        public SettingsDialog(AppSettings settings, DatabaseService database = null)
+        public SettingsDialog(AppSettings settings, DatabaseService database = null, MainWindow mainWindow = null)
         {
             InitializeComponent();
             _settings = settings;
             _database = database;
+            _mainWindow = mainWindow;
             LoadSettings();
             Loaded += (s, e) =>     //для корректного выделения элементов
             {
@@ -122,24 +124,16 @@ namespace NetworkMonitor.Views
                 _settings.TimeZoneOffsetHours = tz;
                 UtcToLocalConverter.OffsetHours = tz;
             }
+
+            //Тема тема
+            var helper = new PaletteHelper();
+            var theme = helper.GetTheme();
+            theme.SetBaseTheme(DarkThemeToggle.IsChecked == true ? BaseTheme.Dark : BaseTheme.Light);
+            helper.SetTheme(theme);
+            _mainWindow?.UpdateToolbarForeground(DarkThemeToggle.IsChecked == true);
+
             DialogResult = true;
             Close();
-        }
-
-        private void DarkThemeToggle_Checked(object sender, RoutedEventArgs e)
-        {
-            var helper = new PaletteHelper();
-            var theme = helper.GetTheme();
-            theme.SetBaseTheme(BaseTheme.Dark);
-            helper.SetTheme(theme);
-        }
-
-        private void DarkThemeToggle_Unchecked(object sender, RoutedEventArgs e)
-        {
-            var helper = new PaletteHelper();
-            var theme = helper.GetTheme();
-            theme.SetBaseTheme(BaseTheme.Light);
-            helper.SetTheme(theme);
         }
 
         private async void TestEmail_Click(object sender, RoutedEventArgs e)

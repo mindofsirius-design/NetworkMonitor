@@ -138,6 +138,22 @@
           80,
           443,
           80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
           443
         ]
       },
@@ -154,9 +170,9 @@
     "Longitude": 29.657593,
     "X": 0.0,
     "Y": 0.0,
-    "LastSeen": "2026-05-15T10:55:57.0782Z",
+    "LastSeen": "2026-05-15T17:56:04.2707914Z",
     "Status": 0,
-    "LastPingMs": 38,
+    "LastPingMs": 13,
     "StatusColor": "#4CAF50"
   },
   {
@@ -240,6 +256,22 @@
           80,
           443,
           80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
+          443,
+          80,
           443
         ]
       },
@@ -256,7 +288,45 @@
     "Longitude": 30.739746,
     "X": 0.0,
     "Y": 0.0,
-    "LastSeen": "2026-05-15T10:55:55.4722Z",
+    "LastSeen": "2026-05-15T17:56:05.3184475Z",
+    "Status": 3,
+    "LastPingMs": -1,
+    "StatusColor": "#F44336"
+  },
+  {
+    "Id": "cd30f3bc-53bd-4e2c-a0ef-8e0369219adb",
+    "Name": "4234523",
+    "IpAddress": "235",
+    "DeviceType": "Камера",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 54.613436,
+    "Longitude": 28.855591,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-15T17:56:05.3420421Z",
     "Status": 3,
     "LastPingMs": -1,
     "StatusColor": "#F44336"

@@ -14,6 +14,8 @@ using GMap.NET.WindowsPresentation;
 using NetworkMonitor.Models;
 using NetworkMonitor.Services;
 using NetworkMonitor.ViewModels;
+using MaterialDesignThemes.Wpf;
+
 
 namespace NetworkMonitor.Views
 {
@@ -77,6 +79,7 @@ namespace NetworkMonitor.Views
                     _vm.Notifications.Toasts.Remove(t);
             };
             _toastTimer.Start();
+            UpdateToolbarForeground(_vm.Settings.DarkTheme);
         }
 
         private void MainMap_Loaded(object sender, RoutedEventArgs e)
@@ -305,7 +308,7 @@ namespace NetworkMonitor.Views
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new SettingsDialog(_vm.Settings, _vm.Database) { Owner = this };
+            var dialog = new SettingsDialog(_vm.Settings, _vm.Database, this) { Owner = this };
             if (dialog.ShowDialog() == true)
             {
                 _vm.UpdateSettings();
@@ -385,6 +388,19 @@ namespace NetworkMonitor.Views
             _toastTimer.Stop();
             _vm.Save();
             _vm.Shutdown();
+        }
+
+        public void UpdateToolbarForeground(bool isDark)
+        {
+            var brush = new SolidColorBrush(isDark ? Colors.Black : Colors.White);
+            foreach (var btn in HeaderPanel.Children.OfType<Button>())
+                btn.Foreground = brush;
+            // для PackIcon внутри кнопок
+            foreach (var btn in HeaderPanel.Children.OfType<Button>())
+            {
+                if (btn.Content is PackIcon icon)
+                    icon.Foreground = brush;
+            }
         }
 
         private void DetailView_Loaded(object sender, RoutedEventArgs e)
