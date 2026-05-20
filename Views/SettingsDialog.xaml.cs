@@ -8,6 +8,7 @@ using NetworkMonitor.Models;
 using NetworkMonitor.Services;
 using NetworkMonitor.ViewModels;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace NetworkMonitor.Views
 {
@@ -36,6 +37,13 @@ namespace NetworkMonitor.Views
                 };
             };
 
+            //Отрисовка кнопки "Сохранить" в зависимости от установленной темы
+            var helper = new PaletteHelper();
+            var theme = helper.GetTheme();
+            bool isDark = theme.GetBaseTheme() == BaseTheme.Dark;
+            var brush = new SolidColorBrush(isDark ? Colors.Black : Colors.White);
+            SaveButton.Foreground = brush;
+
         }
 
         private void LoadSettings()
@@ -57,7 +65,11 @@ namespace NetworkMonitor.Views
             EmailFromBox.Text = _settings.EmailFrom;
             EmailToBox.Text = _settings.EmailTo;
 
+            //Оформление
             DarkThemeToggle.IsChecked = _settings.DarkTheme;
+            MarkerSizeSlider.Value = _settings.MarkerSize;
+            MarkerOpacitySlider.Value = _settings.MarkerOpacity;
+
             KeepDaysBox.Text = _settings.HistoryKeepDays.ToString();
 
             //Вкладка "Управление"
@@ -109,16 +121,20 @@ namespace NetworkMonitor.Views
             _settings.SmtpPassword = SmtpPasswordBox.Password ?? "";
             _settings.EmailFrom = EmailFromBox.Text?.Trim() ?? "";
             _settings.EmailTo = EmailToBox.Text?.Trim() ?? "";
-
+            
+            //Вкладка "Оформление"
             _settings.DarkTheme = DarkThemeToggle.IsChecked == true;
-        
+            _settings.MarkerSize = (int)MarkerSizeSlider.Value;
+            _settings.MarkerOpacity = MarkerOpacitySlider.Value;
+
             if (int.TryParse(KeepDaysBox.Text, out int keepDays) && keepDays >= 1)
                 _settings.HistoryKeepDays = keepDays;
 
-            //Управление
+            //Вкладка "Управление"
             _settings.CenterMapOnSelect = CenterMapOnSelectToggle.IsChecked == true;
             _settings.ZoomOnSelect = ZoomOnSelectToggle.IsChecked == true;
-            //Данные
+            
+            //Вкладка "Данные"
             if (int.TryParse(TimeZoneOffsetBox.Text, out int tz))
             {
                 _settings.TimeZoneOffsetHours = tz;

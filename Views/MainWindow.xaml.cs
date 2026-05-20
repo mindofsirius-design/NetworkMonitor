@@ -219,8 +219,10 @@ namespace NetworkMonitor.Views
             foreach (var node in _vm.Nodes)
             {
                 bool isSelected = node.Id == selectedNodeId;
-                double size = isSelected ? 44 : 36;
-                double iconSize = isSelected ? 22 : 18;
+                double baseSize = _vm.Settings.MarkerSize;
+                double size = isSelected ? baseSize * 1.22 : baseSize;
+                double iconSize = size * 0.5;
+                double opacity = isSelected? 1 : _vm.Settings.MarkerOpacity;
 
                 Color markerColor;
                 switch (node.Status)
@@ -232,7 +234,7 @@ namespace NetworkMonitor.Views
                 }
 
                 var iconKind = GetIconKind(node.DeviceType);
-                var grid = new Grid { Width = size, Height = size };
+                var grid = new Grid { Width = size, Height = size, Opacity = opacity };
                 grid.Children.Add(new Ellipse
                 {
                     Fill = new SolidColorBrush(markerColor),
@@ -292,6 +294,7 @@ namespace NetworkMonitor.Views
             }
 
             var latLng = MainMap.FromLocalToLatLng((int)_crosshairPos.X, (int)_crosshairPos.Y);
+
             var dialog = new AddNodeDialog(latLng.Lat, latLng.Lng) { Owner = this };
 
             if (dialog.ShowDialog() == true)
@@ -300,7 +303,7 @@ namespace NetworkMonitor.Views
                 //_viewModel.UpdateSchedulerNodes();
                 //RefreshMapMarkers();
 
-                _vm.Nodes.Add(dialog.ResultNode);
+                _vm.Nodes.Add(dialog.ResultNode); //Добавляется новый узел в коллекцию
                 _vm.UpdateSchedulerNodes();
                 RefreshMarkers(_vm.SelectedNode?.Id);
             }
@@ -313,6 +316,7 @@ namespace NetworkMonitor.Views
             {
                 _vm.UpdateSettings();
                 _vm.Save();
+                RefreshMarkers();
             }
         }
 
@@ -329,6 +333,7 @@ namespace NetworkMonitor.Views
             var window = new EventLogView(logVm) { Owner = this };
             window.Show();
         }
+        
         private void SaveMapPositionButton_Click(object sender, RoutedEventArgs e)
         {
             var result = MessageBox.Show(
@@ -347,6 +352,7 @@ namespace NetworkMonitor.Views
             vm.Settings.DefaultMapZoom = MainMap.Zoom;
             vm.Save();
         }
+        
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             var view = System.Windows.Data.CollectionViewSource.GetDefaultView(_vm.Nodes);

@@ -2,10 +2,12 @@ using NetworkMonitor.Models;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using MaterialDesignThemes.Wpf;
 using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace NetworkMonitor.Views
 {
@@ -21,6 +23,13 @@ namespace NetworkMonitor.Views
                 LatBox.Text = lat.ToString("F6", System.Globalization.CultureInfo.InvariantCulture);
                 LonBox.Text = lon.ToString("F6", System.Globalization.CultureInfo.InvariantCulture);
             }
+
+            //Отрисовка кнопки "Добавить" в зависимости от установленной темы
+            var helper = new PaletteHelper();
+            var theme = helper.GetTheme();
+            bool isDark = theme.GetBaseTheme() == BaseTheme.Dark;
+            var brush = new SolidColorBrush(isDark ? Colors.Black : Colors.White);
+            AddButton.Foreground = brush;
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)

@@ -18,6 +18,8 @@ namespace NetworkMonitor.Models
 
         // Оформление
         public bool DarkTheme { get; set; } = false;
+        public int MarkerSize { get; set; } = 36;
+        public double MarkerOpacity { get; set; } = 1.0;
 
         // Уведомления
         public bool ToastEnabled { get; set; } = true;

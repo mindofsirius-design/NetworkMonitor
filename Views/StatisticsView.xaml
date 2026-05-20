@@ -9,44 +9,57 @@
     <Grid Margin="16">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,12">
-            <TextBlock Text="Приборная панель" FontSize="22" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,20,0"/>
-            <TextBlock Text="&#x041F;&#x0435;&#x0440;&#x0438;&#x043E;&#x0434;:" VerticalAlignment="Center" Margin="0,0,8,0"/>
-            <ComboBox x:Name="PeriodBox" ItemsSource="{Binding Periods}" SelectedItem="{Binding SelectedPeriod}"
-                      Style="{StaticResource MaterialDesignOutlinedComboBox}" Width="100"/>
-        </StackPanel>
+        <Grid Grid.Row="0" Margin="0,0,0,12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,12">
-            <Border Background="#4CAF50" CornerRadius="8" Padding="20,12" Margin="0,0,8,0">
+            <Border Grid.Column="0" Background="#4CAF50" CornerRadius="8" Padding="20,12" Margin="0,0,8,0">
                 <StackPanel>
                     <TextBlock Text="В сети" Foreground="White" FontSize="13"/>
                     <TextBlock Text="{Binding OnlineCount}" Foreground="White" FontSize="28" FontWeight="Bold"/>
                 </StackPanel>
             </Border>
-            <Border Background="#F44336" CornerRadius="8" Padding="20,12" Margin="0,0,8,0">
+
+            <Border Grid.Column="1" Background="#F44336" CornerRadius="8" Padding="20,12" Margin="0,0,8,0">
                 <StackPanel>
                     <TextBlock Text="Не в сети" Foreground="White" FontSize="13"/>
                     <TextBlock Text="{Binding OfflineCount}" Foreground="White" FontSize="28" FontWeight="Bold"/>
                 </StackPanel>
             </Border>
-            <Border Background="#FFC107" CornerRadius="8" Padding="20,12">
+
+            <Border Grid.Column="2" Background="#FFC107" CornerRadius="8" Padding="20,12">
                 <StackPanel>
                     <TextBlock Text="Не стабильно" FontSize="13"/>
                     <TextBlock Text="{Binding UnstableCount}" FontSize="28" FontWeight="Bold"/>
                 </StackPanel>
             </Border>
-        </StackPanel>
 
-        <oxy:PlotView Grid.Row="2" Model="{Binding LatencyPlot}" Margin="0,0,0,8"/>
-        <oxy:PlotView Grid.Row="3" Model="{Binding PacketLossPlot}" Margin="0,0,0,8"/>
+            <TextBlock Grid.Column="4" Text="Период:"
+               VerticalAlignment="Center"
+               Margin="0,0,8,0"/>
 
-        <DataGrid Grid.Row="4" ItemsSource="{Binding UptimeRows}" AutoGenerateColumns="False"
+            <ComboBox Grid.Column="5" x:Name="PeriodBox"
+              ItemsSource="{Binding Periods}"
+              SelectedItem="{Binding SelectedPeriod}"
+              Style="{StaticResource MaterialDesignOutlinedComboBox}"
+              Width="100"/>
+        </Grid>
+
+        <oxy:PlotView Grid.Row="1" Model="{Binding LatencyPlot}" Margin="0,0,0,8"/>
+        <oxy:PlotView Grid.Row="2" Model="{Binding PacketLossPlot}" Margin="0,0,0,8"/>
+
+        <DataGrid Grid.Row="3" ItemsSource="{Binding UptimeRows}" AutoGenerateColumns="False"
                   IsReadOnly="True" MaxHeight="200">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="&#x0423;&#x0437;&#x0435;&#x043B;" Binding="{Binding NodeName}" Width="*"/>
