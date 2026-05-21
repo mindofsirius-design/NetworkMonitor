@@ -15,7 +15,7 @@ using NetworkMonitor.Models;
 using NetworkMonitor.Services;
 using NetworkMonitor.ViewModels;
 using MaterialDesignThemes.Wpf;
-
+using System.Runtime.InteropServices;
 
 namespace NetworkMonitor.Views
 {
@@ -26,6 +26,10 @@ namespace NetworkMonitor.Views
         private DispatcherTimer _toastTimer;
         private Point _crosshairPos; // позиция перекрестия в пикселях
         private bool _crosshairInitialized = false;
+
+        //Для изменения шапки программы
+        [DllImport("dwmapi.dll", PreserveSig = true)]   
+        private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
 
         public MainWindow()
         {
@@ -399,14 +403,29 @@ namespace NetworkMonitor.Views
         public void UpdateToolbarForeground(bool isDark)
         {
             var brush = new SolidColorBrush(isDark ? Colors.Black : Colors.White);
+
+            //Для надписи лого
+            var logoText = HeaderPanel.FindName("LogoText") as TextBlock;
+            if (logoText != null)
+                logoText.Foreground = brush;
+
+            //Для текста внутри кнопок
             foreach (var btn in HeaderPanel.Children.OfType<Button>())
                 btn.Foreground = brush;
-            // для PackIcon внутри кнопок
-            foreach (var btn in HeaderPanel.Children.OfType<Button>())
-            {
-                if (btn.Content is PackIcon icon)
-                    icon.Foreground = brush;
-            }
+
+            //Для всех иконок
+            foreach (var icon in HeaderPanel.Children.OfType<PackIcon>())
+                icon.Foreground = brush;
+
+            ApplyDarkTitleBar(isDark);  //для шапки окна программы
+
+        }
+        public void ApplyDarkTitleBar(bool dark)
+        {
+            var hwnd = new System.Windows.Interop.WindowInteropHelper(this).Handle;
+            int value = dark ? 1 : 0;
+            if (DwmSetWindowAttribute(hwnd, 20, ref value, sizeof(int)) != 0)
+                DwmSetWindowAttribute(hwnd, 19, ref value, sizeof(int));
         }
 
         private void DetailView_Loaded(object sender, RoutedEventArgs e)

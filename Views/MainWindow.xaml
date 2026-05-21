@@ -5,6 +5,7 @@
         xmlns:gmap="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
         xmlns:views="clr-namespace:NetworkMonitor.Views"
         xmlns:vm="clr-namespace:NetworkMonitor.ViewModels"
+        Icon="pack://application:,,,/Resources/app.ico"
         Title="NetworkMonitor" Width="1100" Height="700"
         MinWidth="900" MinHeight="600"
         Style="{StaticResource MaterialDesignWindow}"
@@ -36,9 +37,10 @@
             </Border.Resources>
 
             <StackPanel x:Name="HeaderPanel" Orientation="Horizontal" VerticalAlignment="Center">
+
                 <md:PackIcon Kind="LanConnect" Width="24" Height="24" Foreground="White" Margin="0,0,12,0"/>
-                
-                <TextBlock Text="NetworkMonitor" FontSize="18" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" Margin="0,0,24,0"/>
+
+                <TextBlock x:Name="LogoText" Text="NetworkMonitor" FontSize="18" FontWeight="Bold" VerticalAlignment="Center" Margin="0,0,24,0"/>
 
                 <Button Content="{Binding MonitoringLabel}" Command="{Binding ToggleMonitoringCommand}" Margin="0,0,8,0"/>
                 
