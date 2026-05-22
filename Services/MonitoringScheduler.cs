@@ -12,6 +12,8 @@ namespace NetworkMonitor.Services
 {
     public class MonitoringScheduler
     {
+        public TracerouteGroupingService GroupingService { get; set; }
+
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
         private readonly ModuleRegistry _registry;
@@ -81,6 +83,10 @@ namespace NetworkMonitor.Services
                             var nextTime = _nextRun.GetOrAdd(key, DateTime.MinValue);
 
                             if (now < nextTime)
+                                continue;
+
+                            // Для не-терминальных членов группы пропускаем traceroute
+                            if (module.Name == "traceroute" && GroupingService?.IsNonTerminalGroupMember(node.Id) == true)
                                 continue;
 
                             int interval = GetInterval(node, module);

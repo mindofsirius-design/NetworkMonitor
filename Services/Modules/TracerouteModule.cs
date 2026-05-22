@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NetworkMonitor.Models;
 using NLog;
+using System.Text.RegularExpressions;
 
 namespace NetworkMonitor.Services.Modules
 {
@@ -69,6 +70,13 @@ namespace NetworkMonitor.Services.Modules
 
             Logger.Info("Traceroute {0}: {1} hops, reached={2}", node.Name, hops.Count, reachedTarget);
 
+            var hopIps = new List<string>();
+            foreach (var hop in hops)
+            {
+                var m = Regex.Match(hop, @"\b(\d{1,3}\.){3}\d{1,3}\b");
+                if (m.Success) hopIps.Add(m.Value);
+            }
+
             return new MonitoringResult
             {
                 NodeId = node.Id,
@@ -76,6 +84,7 @@ namespace NetworkMonitor.Services.Modules
                 Success = reachedTarget,
                 Status = reachedTarget ? NodeStatus.Online : NodeStatus.Offline,
                 Details = sb.ToString().TrimEnd(),
+                Hops = hopIps,
                 Timestamp = DateTime.UtcNow
             };
         }

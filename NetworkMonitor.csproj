@@ -7,7 +7,7 @@
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
   <PropertyGroup>
-	<ApplicationIcon>Resources\app.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{732FD7F6-EAFF-4006-8933-544CDCFA7B07}</ProjectGuid>
@@ -232,6 +232,7 @@
     <Compile Include="Models\NetworkNode.cs" />
     <Compile Include="Models\NodeEvent.cs" />
     <Compile Include="Models\NodeLink.cs" />
+    <Compile Include="Models\RouteGroup.cs" />
     <!-- Services -->
     <Compile Include="Services\DatabaseService.cs" />
     <Compile Include="Services\EventBus.cs" />
@@ -245,6 +246,7 @@
     <Compile Include="Services\Modules\TcpModule.cs" />
     <Compile Include="Services\Modules\SnmpModule.cs" />
     <Compile Include="Services\Modules\TracerouteModule.cs" />
+    <Compile Include="Services\TracerouteGroupingService.cs" />
     <!-- ViewModels -->
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\Converters.cs" />
@@ -329,7 +331,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-	<Resource Include="Resources\app.ico"/>
+    <Resource Include="Resources\app.ico" />
     <Resource Include="Resources\Noto\NotoSans-Bold.ttf" />
     <Resource Include="Resources\Noto\NotoSans-BoldItalic.ttf" />
     <Resource Include="Resources\Noto\NotoSans-Italic.ttf" />

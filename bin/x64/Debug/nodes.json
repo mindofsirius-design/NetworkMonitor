@@ -1,10 +1,10 @@
 [
   {
-    "Id": "2ee1901c-26e6-4959-9001-6b494879f3b0",
-    "Name": "Бобруйск",
-    "IpAddress": "192.168.155.132",
+    "Id": "de5dcbea-46fa-4e80-a157-e984b6b67ce4",
+    "Name": "11111",
+    "IpAddress": "1.1.1.1",
     "DeviceType": "FS-1000",
-    "Description": "описание",
+    "Description": "",
     "Monitoring": {
       "Ping": {
         "Enabled": true,
@@ -13,100 +13,6 @@
       "Tcp": {
         "Enabled": false,
         "Ports": [
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
-          80,
-          443,
           80,
           443,
           80,
@@ -121,16 +27,282 @@
         "Version": "2c"
       },
       "Traceroute": {
-        "Enabled": false
+        "Enabled": true
       }
     },
-    "Latitude": 53.153359,
-    "Longitude": 29.256592,
+    "Latitude": 53.448807,
+    "Longitude": 29.333496,
     "X": 0.0,
     "Y": 0.0,
-    "LastSeen": "2026-05-22T08:30:02.1487341Z",
-    "Status": 3,
-    "LastPingMs": -1,
-    "StatusColor": "#F44336"
+    "LastSeen": "2026-05-22T11:41:36.5003375Z",
+    "Status": 0,
+    "LastPingMs": 33,
+    "StatusColor": "#4CAF50"
+  },
+  {
+    "Id": "894ef357-0187-4e9e-8296-1279e56a8ddb",
+    "Name": "4",
+    "IpAddress": "195.50.14.0",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": true
+      }
+    },
+    "Latitude": 53.962549,
+    "Longitude": 30.487061,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-22T11:41:36.5013495Z",
+    "Status": 0,
+    "LastPingMs": 23,
+    "StatusColor": "#4CAF50"
+  },
+  {
+    "Id": "5577b7ee-50c3-4629-a440-52f7f4dc2fd5",
+    "Name": "1",
+    "IpAddress": "10.123.121.159",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": true
+      }
+    },
+    "Latitude": 54.010997,
+    "Longitude": 29.608154,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-22T11:41:36.5023479Z",
+    "Status": 0,
+    "LastPingMs": 0,
+    "StatusColor": "#4CAF50"
+  },
+  {
+    "Id": "dccd4c66-e36d-4a64-a7b1-df119fbe34a8",
+    "Name": "2",
+    "IpAddress": "172.26.236.132",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": true
+      }
+    },
+    "Latitude": 54.278055,
+    "Longitude": 30.053101,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-22T11:41:36.5033447Z",
+    "Status": 0,
+    "LastPingMs": 22,
+    "StatusColor": "#4CAF50"
+  },
+  {
+    "Id": "6f750a7e-ef0c-4223-aa1b-00874d6b3542",
+    "Name": "3",
+    "IpAddress": "195.50.14.1",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": true
+      }
+    },
+    "Latitude": 54.319727,
+    "Longitude": 30.745239,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-22T11:41:36.5043481Z",
+    "Status": 0,
+    "LastPingMs": 22,
+    "StatusColor": "#4CAF50"
+  },
+  {
+    "Id": "dc7a07ec-4d06-4873-888b-b1f194a205cf",
+    "Name": "5",
+    "IpAddress": "185.11.76.60",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": true
+      }
+    },
+    "Latitude": 53.859007,
+    "Longitude": 31.272583,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-22T11:41:36.5043481Z",
+    "Status": 0,
+    "LastPingMs": 32,
+    "StatusColor": "#4CAF50"
+  },
+  {
+    "Id": "af6ec372-1079-43ff-9f0d-840a7bdeddd1",
+    "Name": "6",
+    "IpAddress": "185.11.76.28",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": true
+      }
+    },
+    "Latitude": 53.484777,
+    "Longitude": 30.882568,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-22T11:41:36.5053484Z",
+    "Status": 0,
+    "LastPingMs": 29,
+    "StatusColor": "#4CAF50"
+  },
+  {
+    "Id": "f3b11393-fb17-4cf1-acf9-9c783738dbb3",
+    "Name": "7",
+    "IpAddress": "162.158.100.61",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 5
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443,
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": true
+      }
+    },
+    "Latitude": 53.291489,
+    "Longitude": 30.283813,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "2026-05-22T11:41:36.5063512Z",
+    "Status": 0,
+    "LastPingMs": 40,
+    "StatusColor": "#4CAF50"
   }
 ]

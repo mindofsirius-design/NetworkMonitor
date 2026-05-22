@@ -37,6 +37,7 @@ namespace NetworkMonitor.ViewModels
         private readonly DatabaseService _database;
         private readonly NotificationService _notifications;
 
+        public TracerouteGroupingService TracerouteGroups { get; } = new TracerouteGroupingService();
         public ObservableCollection<NetworkNode> Nodes { get; set; }
         public ObservableCollection<NodeLink> Links { get; set; }
         public AppSettings Settings { get; set; }
@@ -89,6 +90,7 @@ namespace NetworkMonitor.ViewModels
             {
                 DefaultIntervalSec = Settings.PingIntervalSeconds
             };
+            _scheduler.GroupingService = TracerouteGroups;
 
             _database = new DatabaseService();
             _database.Initialize();
@@ -146,6 +148,9 @@ namespace NetworkMonitor.ViewModels
                 _database.SavePingResult(result);
             else
                 _database.SaveModuleResult(result);
+
+            if (result.ModuleName == "traceroute" && result.Hops?.Count > 0)
+                TracerouteGroups.UpdateNodeHops(result.NodeId, result.Hops);
         }
 
         private void OnNodeEvent(NodeEvent nodeEvent)

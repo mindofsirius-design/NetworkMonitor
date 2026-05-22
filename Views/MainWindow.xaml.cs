@@ -16,6 +16,9 @@ using NetworkMonitor.Services;
 using NetworkMonitor.ViewModels;
 using MaterialDesignThemes.Wpf;
 using System.Runtime.InteropServices;
+using GMap.NET;
+using System.Windows.Shapes;
+using System.Windows.Media;
 
 namespace NetworkMonitor.Views
 {
@@ -104,6 +107,12 @@ namespace NetworkMonitor.Views
                 if (_vm.Settings.MapLocked)
                     ev.Handled = true;
             };
+
+            //Подписка на маршруты
+            MainMap.OnMapZoomChanged += () => DrawRouteLines();
+            MainMap.OnPositionChanged += _ => DrawRouteLines();
+            _vm.TracerouteGroups.GroupsChanged += DrawRouteLines;
+
             RefreshMarkers(_vm.SelectedNode?.Id);
             UpdateCrosshairPosition();
         }
@@ -275,6 +284,59 @@ namespace NetworkMonitor.Views
             }
         }
 
+        private void DrawRouteLines()
+        {
+            RouteCanvas.Children.Clear();
+
+            foreach (var group in _vm.TracerouteGroups.Groups)
+            {
+                var nodes = group.OrderedNodeIds
+                    .Select(id => _vm.Nodes.FirstOrDefault(n => n.Id == id))
+                    .Where(n => n != null)
+                    .ToList();
+
+                for (int i = 0; i < nodes.Count - 1; i++)
+                {
+                    var fp = MainMap.FromLatLngToLocal(new PointLatLng(nodes[i].Latitude, nodes[i].Longitude));
+                    var tp = MainMap.FromLatLngToLocal(new PointLatLng(nodes[i + 1].Latitude, nodes[i + 1].Longitude));
+                    DrawDashedArrow(new Point(fp.X, fp.Y), new Point(tp.X, tp.Y));
+                }
+            }
+        }
+
+        private void DrawDashedArrow(Point from, Point to)
+        {
+            var brush = new SolidColorBrush(Color.FromArgb(200, 100, 149, 237)); // CornflowerBlue
+
+            RouteCanvas.Children.Add(new Line
+            {
+                X1 = from.X,
+                Y1 = from.Y,
+                X2 = to.X,
+                Y2 = to.Y,
+                Stroke = brush,
+                StrokeThickness = 2,
+                StrokeDashArray = new DoubleCollection { 6, 3 }
+            });
+
+            // Стрелка на середине отрезка
+            double angle = Math.Atan2(to.Y - from.Y, to.X - from.X);
+            double len = 12;
+            double spread = 25 * Math.PI / 180;
+            double mx = (from.X + to.X) / 2, my = (from.Y + to.Y) / 2;
+
+            RouteCanvas.Children.Add(new Polygon
+            {
+                Points = new PointCollection
+        {
+            new Point(mx, my),
+            new Point(mx - len * Math.Cos(angle - spread), my - len * Math.Sin(angle - spread)),
+            new Point(mx - len * Math.Cos(angle + spread), my - len * Math.Sin(angle + spread))
+        },
+                Fill = brush
+            });
+        }
+
         private MaterialDesignThemes.Wpf.PackIconKind GetIconKind(string deviceType)
         {
             switch (deviceType?.ToLower())
@@ -432,6 +494,7 @@ namespace NetworkMonitor.Views
                 _vm.UpdateSchedulerNodes();
                 RefreshMarkers();
             }
+            _vm.TracerouteGroups.RemoveNode(node.Id);    //Для удаления из групп
         }
 
         public void UpdateToolbarForeground(bool isDark)

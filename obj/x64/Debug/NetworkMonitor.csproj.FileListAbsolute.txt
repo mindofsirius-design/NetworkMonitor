@@ -395,3 +395,4 @@ C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\x64\Debug\Netw
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\x64\Debug\NetworkMonitor.csproj.CopyComplete
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\x64\Debug\NetworkMonitor.exe
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\x64\Debug\NetworkMonitor.pdb
+C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\x64\Debug\NetworkMonitor.csproj.AssemblyReference.cache

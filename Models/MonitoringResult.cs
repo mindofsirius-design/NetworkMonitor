@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace NetworkMonitor.Models
 {
@@ -12,5 +13,6 @@ namespace NetworkMonitor.Models
         public NodeStatus Status { get; set; }
         public string Details { get; set; }
         public DateTime Timestamp { get; set; } = DateTime.UtcNow;
+        public List<string> Hops { get; set; }   // IP-адреса хопов из traceroute
     }
 }
