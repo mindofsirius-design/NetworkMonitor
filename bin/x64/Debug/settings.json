@@ -9,7 +9,7 @@
   "MapZoom": 7.0,
   "MapLat": 53.943154702249281,
   "MapLon": 30.047607421875,
-  "DarkTheme": false,
+  "DarkTheme": true,
   "MarkerSize": 36,
   "MarkerOpacity": 0.8,
   "ToastEnabled": true,

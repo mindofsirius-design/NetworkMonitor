@@ -400,6 +400,40 @@ namespace NetworkMonitor.Views
             _vm.Shutdown();
         }
 
+        private void EditNodeButton_Click(object sender, RoutedEventArgs e)
+        {
+            var node = (NetworkNode)((Button)sender).Tag;
+            var dlg = new AddNodeDialog(node) { Owner = this };
+            if (dlg.ShowDialog() == true)
+            {
+                var updated = dlg.ResultNode;
+                // Копируем поля, сохраняя объект в коллекции
+                node.Name = updated.Name;
+                node.IpAddress = updated.IpAddress;
+                node.DeviceType = updated.DeviceType;
+                node.Description = updated.Description;
+                node.Latitude = updated.Latitude;
+                node.Longitude = updated.Longitude;
+                node.Monitoring = updated.Monitoring;
+                _vm.Save();
+                _vm.UpdateSchedulerNodes();
+                RefreshMarkers();
+            }
+        }
+
+        private void DeleteNodeButton_Click(object sender, RoutedEventArgs e)
+        {
+            var node = (NetworkNode)((Button)sender).Tag;
+            if (MessageBox.Show($"Удалить узел «{node.Name}»?", "Подтверждение",
+                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                _vm.Nodes.Remove(node);
+                _vm.Save();
+                _vm.UpdateSchedulerNodes();
+                RefreshMarkers();
+            }
+        }
+
         public void UpdateToolbarForeground(bool isDark)
         {
             var brush = new SolidColorBrush(isDark ? Colors.Black : Colors.White);

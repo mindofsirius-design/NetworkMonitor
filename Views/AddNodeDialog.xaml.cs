@@ -14,10 +14,11 @@ namespace NetworkMonitor.Views
     public partial class AddNodeDialog : Window
     {
         public NetworkNode ResultNode { get; private set; }
-
+        //Конструктор создания
         public AddNodeDialog(double lat = 0, double lon = 0)
         {
             InitializeComponent();
+
             if (lat != 0 || lon != 0)
             {
                 LatBox.Text = lat.ToString("F6", System.Globalization.CultureInfo.InvariantCulture);
@@ -31,6 +32,43 @@ namespace NetworkMonitor.Views
             var brush = new SolidColorBrush(isDark ? Colors.Black : Colors.White);
             AddButton.Foreground = brush;
         }
+        //Конструктор редактирования
+        public AddNodeDialog(NetworkNode existingNode)
+        {
+            InitializeComponent();
+
+            NameBox.Text = existingNode.Name;
+            IpBox.Text = existingNode.IpAddress;
+            DescBox.Text = existingNode.Description;
+            LatBox.Text = existingNode.Latitude.ToString("F6", CultureInfo.InvariantCulture);
+            LonBox.Text = existingNode.Longitude.ToString("F6", CultureInfo.InvariantCulture);
+
+            // Тип устройства
+            foreach (ComboBoxItem item in TypeBox.Items)
+                if (item.Content?.ToString() == existingNode.DeviceType)
+                { TypeBox.SelectedItem = item; break; }
+
+            // Ping
+            PingIntervalBox.Text = existingNode.Monitoring?.Ping?.IntervalSec.ToString() ?? "5";
+
+            // TCP
+            TcpToggle.IsChecked = existingNode.Monitoring?.Tcp?.Enabled ?? false;
+            TcpPortsBox.Text = string.Join(", ", existingNode.Monitoring?.Tcp?.Ports ?? new List<int>());
+
+            // SNMP
+            SnmpToggle.IsChecked = existingNode.Monitoring?.Snmp?.Enabled ?? false;
+            SnmpCommunityBox.Text = existingNode.Monitoring?.Snmp?.Community ?? "public";
+            SnmpVersionBox.SelectedIndex = existingNode.Monitoring?.Snmp?.Version == "1" ? 0 : 1;
+
+            // Traceroute
+            TracerouteToggle.IsChecked = existingNode.Monitoring?.Traceroute?.Enabled ?? false;
+
+            // Сохранить ID
+            _editingId = existingNode.Id;
+            Title = "Редактировать узел";
+            AddButton.Content = "Сохранить";
+        }
+        private string _editingId = null;
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
@@ -96,6 +134,9 @@ namespace NetworkMonitor.Views
                 }
             };
 
+            if (_editingId != null)
+                node.Id = _editingId;
+
             ResultNode = node;
             DialogResult = true;
             Close();
@@ -154,6 +195,7 @@ namespace NetworkMonitor.Views
                 IpBox.ToolTip = null;
             }
         }
+       
         private bool TryParseCoordinate(string text, double min, double max, out double value)
         {
             value = 0;

@@ -47,9 +47,6 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="12,4">
             <Button Content="Ping" Click="PingNow_Click" Margin="0,0,8,0"
                 Style="{StaticResource MaterialDesignOutlinedButton}" Padding="8,4"/>
-            <Button Content="Удалить" Click="DeleteNode_Click"
-                Style="{StaticResource MaterialDesignOutlinedButton}" Padding="8,4"
-                Foreground="#F44336"/>
         </StackPanel>
     </Grid>
 </UserControl>
