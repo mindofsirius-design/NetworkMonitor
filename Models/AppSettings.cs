@@ -2,6 +2,10 @@ namespace NetworkMonitor.Models
 {
     public class AppSettings
     {
+        //Общие
+        public bool StartWithWindows { get; set; } = false;
+        public bool AutoStartMonitoring { get; set; } = false;
+
         // Мониторинг
         public int PingIntervalSeconds { get; set; } = 30;
         public int PingTimeoutMs { get; set; } = 1000;
@@ -39,6 +43,7 @@ namespace NetworkMonitor.Models
         // Управление
         public bool CenterMapOnSelect { get; set; } = false;
         public bool ZoomOnSelect { get; set; } = false;
+        public bool AlwaysZoomToCenter { get; set; } = false;
         public bool MapLocked { get; set; } = false; // кнопка на главном экране
 
         // Данные

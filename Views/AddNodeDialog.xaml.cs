@@ -13,17 +13,23 @@ namespace NetworkMonitor.Views
 {
     public partial class AddNodeDialog : Window
     {
+        private readonly List<NetworkNode> _existingNodes;  //для проверки на уникальность
         public NetworkNode ResultNode { get; private set; }
         //Конструктор создания
-        public AddNodeDialog(double lat = 0, double lon = 0)
+        public AddNodeDialog(double lat = 0, double lon = 0, int defaultPingInterval = 30, IEnumerable<NetworkNode> existingNodes = null)
         {
             InitializeComponent();
+
+            _existingNodes = existingNodes?.ToList() ?? new List<NetworkNode>();    //для проверки на уникальность
 
             if (lat != 0 || lon != 0)
             {
                 LatBox.Text = lat.ToString("F6", System.Globalization.CultureInfo.InvariantCulture);
                 LonBox.Text = lon.ToString("F6", System.Globalization.CultureInfo.InvariantCulture);
             }
+
+            // Ping
+            PingIntervalBox.Text = defaultPingInterval.ToString();
 
             //Отрисовка кнопки "Добавить" в зависимости от установленной темы
             var helper = new PaletteHelper();
@@ -33,10 +39,11 @@ namespace NetworkMonitor.Views
             AddButton.Foreground = brush;
         }
         //Конструктор редактирования
-        public AddNodeDialog(NetworkNode existingNode)
+        public AddNodeDialog(NetworkNode existingNode, int defaultPingInterval = 30, IEnumerable<NetworkNode> existingNodes = null)
         {
             InitializeComponent();
 
+            _existingNodes = existingNodes?.ToList() ?? new List<NetworkNode>();    //для проверки на уникальность
             NameBox.Text = existingNode.Name;
             IpBox.Text = existingNode.IpAddress;
             DescBox.Text = existingNode.Description;
@@ -49,7 +56,8 @@ namespace NetworkMonitor.Views
                 { TypeBox.SelectedItem = item; break; }
 
             // Ping
-            PingIntervalBox.Text = existingNode.Monitoring?.Ping?.IntervalSec.ToString() ?? "5";
+            PingIntervalBox.Text = existingNode.Monitoring?.Ping?.IntervalSec.ToString()
+                                   ?? defaultPingInterval.ToString();
 
             // TCP
             TcpToggle.IsChecked = existingNode.Monitoring?.Tcp?.Enabled ?? false;
@@ -70,17 +78,21 @@ namespace NetworkMonitor.Views
         }
         private string _editingId = null;
 
-        private void AddButton_Click(object sender, RoutedEventArgs e)
+        private async void AddButton_Click(object sender, RoutedEventArgs e)
         {
+            //Проверка на правильное заполнение полей
             if (string.IsNullOrWhiteSpace(NameBox.Text))
             {
                 MessageBox.Show("\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043C\u044F \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u0430.", "\u041E\u0448\u0438\u0431\u043A\u0430", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(IpBox.Text) || !System.Net.IPAddress.TryParse(IpBox.Text.Trim(), out _))
+            if (string.IsNullOrWhiteSpace(IpBox.Text) ||
+                !System.Net.IPAddress.TryParse(IpBox.Text.Trim(), out var parsedIp) ||
+                parsedIp.GetAddressBytes().Length != 4 ||
+                IpBox.Text.Trim().Split('.').Length != 4)
             {
-                MessageBox.Show("Введите корректный IP-адрес.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Введите корректный IP-адрес (формат: X.X.X.X).", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -96,8 +108,51 @@ namespace NetworkMonitor.Views
                 return;
             }
 
-            if (!int.TryParse(PingIntervalBox.Text, out int pingInterval) || pingInterval < 1)
-                pingInterval = 5;
+            // Проверка IP и имени на уникальность
+            var nameInput = NameBox.Text.Trim();
+            var ipInput = IpBox.Text.Trim();
+
+            var dupName = _existingNodes.FirstOrDefault(n =>
+                n.Name.Equals(nameInput, StringComparison.OrdinalIgnoreCase) && n.Id != _editingId);
+            if (dupName != null)
+            {
+                MessageBox.Show($"Узел с именем «{nameInput}» уже существует.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            var dupIp = _existingNodes.FirstOrDefault(n =>
+                n.IpAddress == ipInput && n.Id != _editingId);
+            if (dupIp != null)
+            {
+                MessageBox.Show($"Узел с IP {ipInput} уже существует ({dupIp.Name}).", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Ping-проверка введенного IP
+            AddButton.IsEnabled = false;
+            AddButton.Content = "Проверка...";
+            bool pingOk = false;
+            try
+            {
+                using (var pinger = new System.Net.NetworkInformation.Ping())
+                {
+                    var reply = await pinger.SendPingAsync(ipInput, 1500);
+                    pingOk = reply.Status == System.Net.NetworkInformation.IPStatus.Success;
+                }
+            }
+            catch { }
+
+            AddButton.IsEnabled = true;
+            AddButton.Content = _editingId == null ? "Добавить" : "Сохранить";
+
+            if (!pingOk)
+            {
+                var result = MessageBox.Show(
+                    $"Хост {ipInput} не отвечает на ping.\nДобавить узел всё равно?",
+                    "Предупреждение", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                if (result != MessageBoxResult.Yes)
+                    return;
+            }
 
             var ports = new List<int>();
             if (TcpToggle.IsChecked == true)
@@ -122,7 +177,11 @@ namespace NetworkMonitor.Views
                 Status = NodeStatus.Unknown,
                 Monitoring = new MonitoringConfig
                 {
-                    Ping = new PingConfig { Enabled = true, IntervalSec = pingInterval },
+                    Ping = new PingConfig
+                    {
+                        Enabled = PingToggle.IsChecked == true,
+                        IntervalSec = (int.TryParse(PingIntervalBox.Text, out int pi) && pi >= 1) ? pi : 30
+                    },
                     Tcp = new TcpConfig { Enabled = TcpToggle.IsChecked == true, Ports = ports.Any() ? ports : new List<int> { 80, 443 } },
                     Snmp = new SnmpConfig
                     {

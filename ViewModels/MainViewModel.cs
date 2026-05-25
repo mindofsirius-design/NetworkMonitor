@@ -34,6 +34,7 @@ namespace NetworkMonitor.ViewModels
         private readonly StorageService _storage = new StorageService();
         private readonly ModuleRegistry _moduleRegistry;
         private readonly MonitoringScheduler _scheduler;
+        public MonitoringScheduler Scheduler => _scheduler; //публичная копия
         private readonly DatabaseService _database;
         private readonly NotificationService _notifications;
 
@@ -176,6 +177,7 @@ namespace NetworkMonitor.ViewModels
         {
             _moduleRegistry.UpdateSettings(Settings);
             _scheduler.DefaultIntervalSec = Settings.PingIntervalSeconds;
+            _scheduler.ResetSchedule(); //Сброс расписания ping
             _notifications.UpdateSettings(Settings);
         }
 

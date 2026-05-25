@@ -9,7 +9,9 @@
         Title="NetworkMonitor" Width="1100" Height="700"
         MinWidth="900" MinHeight="600"
         Style="{StaticResource MaterialDesignWindow}"
-        Closing="Window_Closing">
+        Closing="Window_Closing"
+        StateChanged="Window_StateChanged">
+
     <Window.Resources>
         <vm:StatusToColorConverter x:Key="StatusToColor"/>
         <vm:ToastTypeToColorConverter x:Key="ToastTypeToColor"/>
@@ -91,7 +93,7 @@
              Foreground="#CC333333" HorizontalAlignment="Right" VerticalAlignment="Bottom"
              Margin="0,0,308,8" Visibility="Collapsed" IsHitTestVisible="False"/>
 
-            <Grid Grid.Column="0">
+            <Grid Grid.Column="0" ClipToBounds="True">
                 <gmap:GMapControl x:Name="MainMap" Loaded="MainMap_Loaded"
                       Zoom="10" MinZoom="2" MaxZoom="18"
                       MouseWheelZoomType="MousePositionAndCenter"

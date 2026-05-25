@@ -12,10 +12,27 @@
         </Grid.RowDefinitions>
 
         <TabControl x:Name="MainTabControl" Style="{StaticResource MaterialDesignNavigationRailTabControl}" Margin="0">
+            
+            <TabItem Header="Общие" Width="100" IsTabStop="False">
+                <StackPanel Margin="16">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                        <ToggleButton x:Name="StartWithWindowsToggle"
+                          Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                          Margin="0,0,8,0"/>
+                        <TextBlock Text="Запуск с Windows" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleButton x:Name="AutoStartMonitoringToggle"
+                          Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                          Margin="0,0,8,0"/>
+                        <TextBlock Text="Автозапуск мониторинга" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
 
             <TabItem Header="Мониторинг" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
-                    <TextBox x:Name="IntervalBox" md:HintAssist.Hint="Интервал ping (сек)" Margin="0,0,0,8"
+                    <TextBox x:Name="IntervalBox" md:HintAssist.Hint="Интервал ping (сек) по умолчанию" Margin="0,0,0,8"
                              Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                     <TextBox x:Name="TimeoutBox" md:HintAssist.Hint="Таймаут ping (мс)" Margin="0,0,0,8"
                              Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
@@ -105,7 +122,7 @@
 
             <TabItem Header="Управление" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
-                    <!-- Первый переключатель: Перемещение при выборе -->
+                    <!-- 1 переключатель: Перемещение при выборе -->
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="CenterMapOnSelectToggle" 
                           Style="{StaticResource MaterialDesignSwitchToggleButton}" 
@@ -114,7 +131,7 @@
                         <TextBlock Text="Перемещение при выборе узла" VerticalAlignment="Center"/>
                     </StackPanel>
 
-                    <!-- Второй переключатель: Приближать при выборе -->
+                    <!-- 2 переключатель: Приближать при выборе -->
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="ZoomOnSelectToggle" 
                           Style="{StaticResource MaterialDesignSwitchToggleButton}" 
@@ -122,6 +139,15 @@
                           IsEnabled="{Binding IsChecked, ElementName=CenterMapOnSelectToggle}"/>
                         <TextBlock Text="Приближать при выборе узла" VerticalAlignment="Center"/>
                     </StackPanel>
+
+                    <!-- 3 переключатель: Приближать карту всегда к центру -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                        <ToggleButton x:Name="AlwaysZoomToCenterToggle"
+                                      Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                                      Margin="0,0,8,0"/>
+                        <TextBlock Text="Приближать карту всегда к центру" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    
                 </StackPanel>
             </TabItem>
 

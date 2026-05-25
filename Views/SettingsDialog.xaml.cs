@@ -48,6 +48,10 @@ namespace NetworkMonitor.Views
 
         private void LoadSettings()
         {
+            //Общие
+            StartWithWindowsToggle.IsChecked = _settings.StartWithWindows;
+            AutoStartMonitoringToggle.IsChecked = _settings.AutoStartMonitoring;
+
             IntervalBox.Text = _settings.PingIntervalSeconds.ToString();
             TimeoutBox.Text = _settings.PingTimeoutMs.ToString();
             RetriesBox.Text = _settings.PingRetries.ToString();
@@ -75,12 +79,18 @@ namespace NetworkMonitor.Views
             //Вкладка "Управление"
             CenterMapOnSelectToggle.IsChecked = _settings.CenterMapOnSelect;
             ZoomOnSelectToggle.IsChecked = _settings.ZoomOnSelect;
+            AlwaysZoomToCenterToggle.IsChecked = _settings.AlwaysZoomToCenter;
 
             TimeZoneOffsetBox.Text = _settings.TimeZoneOffsetHours.ToString();
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            //Общие
+            _settings.StartWithWindows = StartWithWindowsToggle.IsChecked == true;
+            _settings.AutoStartMonitoring = AutoStartMonitoringToggle.IsChecked == true;
+            ApplyStartWithWindows(_settings.StartWithWindows);
+
             if (!int.TryParse(IntervalBox.Text, out int interval) || interval < 1)
             {
                 MessageBox.Show("\u0418\u043D\u0442\u0435\u0440\u0432\u0430\u043B \u0434\u043E\u043B\u0436\u0435\u043D \u0431\u044B\u0442\u044C >= 1 \u0441\u0435\u043A.", "\u041E\u0448\u0438\u0431\u043A\u0430", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -133,7 +143,8 @@ namespace NetworkMonitor.Views
             //Вкладка "Управление"
             _settings.CenterMapOnSelect = CenterMapOnSelectToggle.IsChecked == true;
             _settings.ZoomOnSelect = ZoomOnSelectToggle.IsChecked == true;
-            
+            _settings.AlwaysZoomToCenter = AlwaysZoomToCenterToggle.IsChecked == true;
+
             //Вкладка "Данные"
             if (int.TryParse(TimeZoneOffsetBox.Text, out int tz))
             {
@@ -230,6 +241,19 @@ namespace NetworkMonitor.Views
         private void CenterMapOnSelectToggle_Unchecked(object sender, RoutedEventArgs e)
         {
             ZoomOnSelectToggle.IsChecked = false;
+        }
+
+        private void ApplyStartWithWindows(bool enable)
+        {
+            const string keyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Run";
+            const string appName = "NetworkMonitor";
+            using (var key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(keyPath, true))
+            {
+                if (enable)
+                    key.SetValue(appName, $"\"{System.Reflection.Assembly.GetExecutingAssembly().Location}\"");
+                else
+                    key.DeleteValue(appName, false);
+            }
         }
 
     }

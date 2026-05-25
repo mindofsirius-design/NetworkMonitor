@@ -188,5 +188,19 @@ namespace NetworkMonitor.Services
                 return node.Monitoring?.Ping?.IntervalSec ?? DefaultIntervalSec;
             return DefaultIntervalSec * 2;
         }
+
+        public void ResetSchedule(string nodeId = null)
+        {
+            if (nodeId == null)
+            {
+                _nextRun.Clear();
+            }
+            else
+            {
+                foreach (var key in _nextRun.Keys.Where(k => k.StartsWith(nodeId + ":")).ToList())
+                    _nextRun.TryRemove(key, out _);
+            }
+        }
+
     }
 }

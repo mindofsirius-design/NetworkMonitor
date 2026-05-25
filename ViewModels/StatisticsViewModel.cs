@@ -7,6 +7,7 @@ using NetworkMonitor.Services;
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
+using MaterialDesignThemes.Wpf;
 
 namespace NetworkMonitor.ViewModels
 {
@@ -80,20 +81,67 @@ namespace NetworkMonitor.ViewModels
 
         private void BuildLatencyPlot(DateTime from, DateTime to)
         {
-            var model = new PlotModel { Title = "Latency (ms)" };
-            model.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "HH:mm" });
-            model.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Minimum = 0 });
+            // Определяем тёмную тему
+            var helper = new MaterialDesignThemes.Wpf.PaletteHelper();
+            var theme = helper.GetTheme();
+            bool isDark = theme.GetBaseTheme() == MaterialDesignThemes.Wpf.BaseTheme.Dark;
+            var bgColor = isDark ? OxyColor.FromRgb(30, 30, 30) : OxyColors.White;
+            var textColor = isDark ? OxyColors.LightGray : OxyColors.Black;
+            var gridColor = isDark ? OxyColor.FromRgb(60, 60, 60) : OxyColor.FromRgb(220, 220, 220);
 
-            foreach (var node in _nodes.Take(10))
+            //Создаем полотно
+            var model = new PlotModel { Title = "Задержка (мс)",
+                                        Background = bgColor,
+                                        PlotAreaBackground = bgColor,
+                                        TextColor = textColor,
+                                        PlotAreaBorderColor = gridColor
+            };
+            //model.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "HH:mm" });
+            //model.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Minimum = 0 });
+
+            model.Axes.Add(new DateTimeAxis
+            {
+                Position = AxisPosition.Bottom,
+                StringFormat = "HH:mm",
+                AxislineColor = textColor,
+                TextColor = textColor,
+                TicklineColor = textColor,
+                MajorGridlineStyle = LineStyle.Solid,
+                MajorGridlineColor = gridColor
+            });
+            model.Axes.Add(new LinearAxis
+            {
+                Position = AxisPosition.Left,
+                Minimum = 0,
+                AxislineColor = textColor,
+                TextColor = textColor,
+                TicklineColor = textColor,
+                MajorGridlineStyle = LineStyle.Solid,
+                MajorGridlineColor = gridColor
+            });
+
+            // Собираем все точки по всем узлам, группируем по минуте, берём среднее
+            var allPoints = new Dictionary<DateTime, List<long>>();
+
+            foreach (var node in _nodes)
             {
                 var history = _database.GetPingHistory(node.Id, from, to);
-                if (history.Count == 0) continue;
-
-                var series = new LineSeries { Title = node.Name };
                 foreach (var r in history.Where(h => h.LatencyMs >= 0))
                 {
-                    series.Points.Add(new DataPoint(DateTimeAxis.ToDouble(r.Timestamp), r.LatencyMs));
+                    var bucket = new DateTime(r.Timestamp.Year, r.Timestamp.Month, r.Timestamp.Day,
+                                              r.Timestamp.Hour, r.Timestamp.Minute, 0, DateTimeKind.Utc);
+                    if (!allPoints.ContainsKey(bucket))
+                        allPoints[bucket] = new List<long>();
+                    allPoints[bucket].Add(r.LatencyMs);
                 }
+            }
+
+            if (allPoints.Count > 0)
+            {
+                var series = new LineSeries { Title = "Среднее",
+                                              TrackerFormatString = "{0}\nВремя: {2:HH:mm}\nЗадержка: {4:F1} мс" };
+                foreach (var kvp in allPoints.OrderBy(k => k.Key))
+                    series.Points.Add(new DataPoint(DateTimeAxis.ToDouble(kvp.Key), kvp.Value.Average()));
                 model.Series.Add(series);
             }
 
@@ -103,24 +151,50 @@ namespace NetworkMonitor.ViewModels
 
         private void BuildPacketLossPlot(DateTime from, DateTime to)
         {
-            var model = new PlotModel { Title = "Packet Loss (%)" };
-            var categoryAxis = new CategoryAxis { Position = AxisPosition.Left };
-            model.Axes.Add(categoryAxis);
-            model.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, Minimum = 0, Maximum = 100 });
+            // Определяем тёмную тему
+            var helper = new MaterialDesignThemes.Wpf.PaletteHelper();
+            var theme = helper.GetTheme();
+            bool isDark = theme.GetBaseTheme() == MaterialDesignThemes.Wpf.BaseTheme.Dark;
+           
+            var bgColor = isDark ? OxyColor.FromRgb(30, 30, 30) : OxyColors.White;
+            var textColor = isDark ? OxyColors.LightGray : OxyColors.Black;
+            var gridColor = isDark ? OxyColor.FromRgb(60, 60, 60) : OxyColor.FromRgb(220, 220, 220);
+            
+            //Создаем полотно
+            var model = new PlotModel { Title = "Потери пакетов (%)",              
+                                        Background = bgColor,
+                                        PlotAreaBackground = bgColor,
+                                        TextColor = textColor,
+                                        PlotAreaBorderColor = gridColor
+            };
+            model.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "HH:mm" });
+            model.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Minimum = 0, Maximum = 100 });
 
-            var series = new BarSeries();
+            var allPoints = new Dictionary<DateTime, List<double>>();
 
             foreach (var node in _nodes)
             {
                 var history = _database.GetPingHistory(node.Id, from, to);
-                if (history.Count == 0) continue;
-
-                double avgLoss = history.Average(h => h.PacketLoss) * 100;
-                categoryAxis.Labels.Add(node.Name);
-                series.Items.Add(new BarItem(avgLoss));
+                foreach (var r in history)
+                {
+                    var bucket = new DateTime(r.Timestamp.Year, r.Timestamp.Month, r.Timestamp.Day,
+                                              r.Timestamp.Hour, r.Timestamp.Minute, 0, DateTimeKind.Utc);
+                    if (!allPoints.ContainsKey(bucket))
+                        allPoints[bucket] = new List<double>();
+                    allPoints[bucket].Add(r.PacketLoss * 100);
+                }
             }
 
-            model.Series.Add(series);
+            if (allPoints.Count > 0)
+            {
+                var series = new LineSeries { Title = "Среднее",
+                                              TrackerFormatString = "{0}\nВремя: {2:HH:mm}\nПотери: {4:F1} %"
+                };
+                foreach (var kvp in allPoints.OrderBy(k => k.Key))
+                    series.Points.Add(new DataPoint(DateTimeAxis.ToDouble(kvp.Key), kvp.Value.Average()));
+                model.Series.Add(series);
+            }
+
             PacketLossPlot = model;
             OnPropertyChanged(nameof(PacketLossPlot));
         }

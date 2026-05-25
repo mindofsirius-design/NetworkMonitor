@@ -6,6 +6,16 @@
         Title="&#x0421;&#x0442;&#x0430;&#x0442;&#x0438;&#x0441;&#x0442;&#x0438;&#x043A;&#x0430;" Width="900" Height="700"
         WindowStartupLocation="CenterOwner"
         Style="{StaticResource MaterialDesignWindow}">
+    
+    <Window.Resources>
+        <ControlTemplate x:Key="DarkTrackerTemplate">
+            <oxy:TrackerControl Position="{Binding Position}" LineExtents="{Binding PlotModel.PlotArea}"
+                            Background="#FF2B2B2B" BorderBrush="#FF555555">
+                <TextBlock Text="{Binding Text}" Foreground="White" Margin="7"/>
+            </oxy:TrackerControl>
+        </ControlTemplate>
+    </Window.Resources>
+    
     <Grid Margin="16">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -38,7 +48,7 @@
                 </StackPanel>
             </Border>
 
-            <Border Grid.Column="2" Background="#FFC107" CornerRadius="8" Padding="20,12">
+            <Border Grid.Column="2" Background="#F59F00 " CornerRadius="8" Padding="20,12">
                 <StackPanel>
                     <TextBlock Text="Не стабильно" FontSize="13"/>
                     <TextBlock Text="{Binding UnstableCount}" FontSize="28" FontWeight="Bold"/>
@@ -56,8 +66,10 @@
               Width="100"/>
         </Grid>
 
-        <oxy:PlotView Grid.Row="1" Model="{Binding LatencyPlot}" Margin="0,0,0,8"/>
-        <oxy:PlotView Grid.Row="2" Model="{Binding PacketLossPlot}" Margin="0,0,0,8"/>
+        <oxy:PlotView Grid.Row="1" Model="{Binding LatencyPlot}" Margin="0,0,0,8"
+                      DefaultTrackerTemplate="{StaticResource DarkTrackerTemplate}"/>
+        <oxy:PlotView Grid.Row="2" Model="{Binding PacketLossPlot}" Margin="0,0,0,8"
+                      DefaultTrackerTemplate="{StaticResource DarkTrackerTemplate}"/>
 
         <DataGrid Grid.Row="3" ItemsSource="{Binding UptimeRows}" AutoGenerateColumns="False"
                   IsReadOnly="True" MaxHeight="200">

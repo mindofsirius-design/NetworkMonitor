@@ -38,13 +38,15 @@
 
             <StackPanel Margin="0,0,0,8">
                 <StackPanel Orientation="Horizontal">
-                    <md:PackIcon Kind="LanConnect" VerticalAlignment="Center" Margin="0,0,8,0"/>
-                    <TextBlock Text="Ping (всегда включён)" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                    <ToggleButton x:Name="PingToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" 
+                      Margin="0,0,8,0" IsChecked="True"/>
+                    <TextBlock Text="Ping" VerticalAlignment="Center" FontWeight="SemiBold"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="28,4,0,0">
+                <StackPanel Orientation="Horizontal" Margin="28,4,0,0"
+                IsEnabled="{Binding IsChecked, ElementName=PingToggle}">
                     <TextBlock Text="Интервал (сек):" VerticalAlignment="Center" Margin="0,0,8,0"/>
                     <TextBox x:Name="PingIntervalBox" Width="60" Text="5"
-                             Style="{StaticResource MaterialDesignOutlinedTextBox}" Padding="4,2"/>
+                 Style="{StaticResource MaterialDesignOutlinedTextBox}" Padding="4,2"/>
                 </StackPanel>
             </StackPanel>
 

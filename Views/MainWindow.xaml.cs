@@ -16,9 +16,6 @@ using NetworkMonitor.Services;
 using NetworkMonitor.ViewModels;
 using MaterialDesignThemes.Wpf;
 using System.Runtime.InteropServices;
-using GMap.NET;
-using System.Windows.Shapes;
-using System.Windows.Media;
 
 namespace NetworkMonitor.Views
 {
@@ -29,6 +26,10 @@ namespace NetworkMonitor.Views
         private DispatcherTimer _toastTimer;
         private Point _crosshairPos; // позиция перекрестия в пикселях
         private bool _crosshairInitialized = false;
+
+        // Для трея
+        private System.Windows.Forms.NotifyIcon _trayIcon;
+        private bool _forceClose = false;
 
         //Для изменения шапки программы
         [DllImport("dwmapi.dll", PreserveSig = true)]   
@@ -42,6 +43,8 @@ namespace NetworkMonitor.Views
             InitializeComponent();
             _vm = new MainViewModel();
             DataContext = _vm;
+
+            InitTray();
 
             ApplyMapLock(_vm.Settings.MapLocked);
 
@@ -115,6 +118,14 @@ namespace NetworkMonitor.Views
 
             RefreshMarkers(_vm.SelectedNode?.Id);
             UpdateCrosshairPosition();
+
+            MainMap.MouseWheelZoomType = _vm.Settings.AlwaysZoomToCenter
+                ? GMap.NET.MouseWheelZoomType.ViewCenter
+                : GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+
+            //Автозупуск ping (если включен)
+            if (_vm.Settings.AutoStartMonitoring)
+                _vm.ToggleMonitoringCommand.Execute(null);
         }
 
         private void ResetMapPositionButton_Click(object sender, RoutedEventArgs e)
@@ -361,7 +372,7 @@ namespace NetworkMonitor.Views
 
             var latLng = MainMap.FromLocalToLatLng((int)_crosshairPos.X, (int)_crosshairPos.Y);
 
-            var dialog = new AddNodeDialog(latLng.Lat, latLng.Lng) { Owner = this };
+            var dialog = new AddNodeDialog(latLng.Lat, latLng.Lng, _vm.Settings.PingIntervalSeconds, _vm.Nodes) { Owner = this };
 
             if (dialog.ShowDialog() == true)
             {
@@ -383,6 +394,10 @@ namespace NetworkMonitor.Views
                 _vm.UpdateSettings();
                 _vm.Save();
                 RefreshMarkers();
+
+                MainMap.MouseWheelZoomType = _vm.Settings.AlwaysZoomToCenter
+                    ? GMap.NET.MouseWheelZoomType.ViewCenter
+                    : GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
             }
         }
 
@@ -453,6 +468,14 @@ namespace NetworkMonitor.Views
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            if (!_forceClose)
+            {
+                e.Cancel = true;
+                WindowState = WindowState.Minimized;
+                return;
+            }
+
+            _trayIcon.Dispose();
             _vm.Settings.MapLat = MainMap.Position.Lat;
             _vm.Settings.MapLon = MainMap.Position.Lng;
             _vm.Settings.MapZoom = MainMap.Zoom;
@@ -465,7 +488,7 @@ namespace NetworkMonitor.Views
         private void EditNodeButton_Click(object sender, RoutedEventArgs e)
         {
             var node = (NetworkNode)((Button)sender).Tag;
-            var dlg = new AddNodeDialog(node) { Owner = this };
+            var dlg = new AddNodeDialog(node, _vm.Settings.PingIntervalSeconds, _vm.Nodes) { Owner = this };
             if (dlg.ShowDialog() == true)
             {
                 var updated = dlg.ResultNode;
@@ -479,6 +502,7 @@ namespace NetworkMonitor.Views
                 node.Monitoring = updated.Monitoring;
                 _vm.Save();
                 _vm.UpdateSchedulerNodes();
+                _vm.Scheduler.ResetSchedule(node.Id);   //сброс времени ping для этого узла
                 RefreshMarkers();
             }
         }
@@ -525,6 +549,41 @@ namespace NetworkMonitor.Views
                 DwmSetWindowAttribute(hwnd, 19, ref value, sizeof(int));
         }
 
+        //Обработка трея
+        private void InitTray()
+        {
+            _trayIcon = new System.Windows.Forms.NotifyIcon
+            {
+                Icon = new System.Drawing.Icon(
+                    Application.GetResourceStream(
+                        new Uri("pack://application:,,,/Resources/app.ico")).Stream),
+                Visible = false,
+                Text = "NetworkMonitor"
+            };
+
+            var menu = new System.Windows.Forms.ContextMenuStrip();
+            menu.Items.Add("Открыть", null, (s, e) => ShowFromTray());
+            menu.Items.Add("Выход", null, (s, e) => { _forceClose = true; Close(); });
+            _trayIcon.ContextMenuStrip = menu;
+            _trayIcon.DoubleClick += (s, e) => ShowFromTray();
+        }
+
+        private void ShowFromTray()
+        {
+            Show();
+            WindowState = WindowState.Normal;
+            Activate();
+            _trayIcon.Visible = false;
+        }
+
+        private void Window_StateChanged(object sender, EventArgs e)
+        {
+            if (WindowState == WindowState.Minimized)
+            {
+                Hide();
+                _trayIcon.Visible = true;
+            }
+        }
         private void DetailView_Loaded(object sender, RoutedEventArgs e)
         {
 
