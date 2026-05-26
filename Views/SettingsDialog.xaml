@@ -15,18 +15,28 @@
             
             <TabItem Header="Общие" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
+                    
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="StartWithWindowsToggle"
                           Style="{StaticResource MaterialDesignSwitchToggleButton}"
                           Margin="0,0,8,0"/>
                         <TextBlock Text="Запуск с Windows" VerticalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="AutoStartMonitoringToggle"
                           Style="{StaticResource MaterialDesignSwitchToggleButton}"
                           Margin="0,0,8,0"/>
                         <TextBlock Text="Автозапуск мониторинга" VerticalAlignment="Center"/>
                     </StackPanel>
+
+                    <TextBox x:Name="TimeZoneOffsetBox" md:HintAssist.Hint="Часовой пояс (UTC+)" Margin="0,0,0,12"
+                             Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                    <Button Content="Экспорт конфигурации" Click="ExportConfig_Click"
+                            Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left" Margin="0,0,0,8"/>
+                    <Button Content="Импорт конфигурации" Click="ImportConfig_Click"
+                            Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
+                    
                 </StackPanel>
             </TabItem>
 
@@ -109,14 +119,13 @@
 
             <TabItem Header="Данные" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
+                    
                     <TextBox x:Name="KeepDaysBox" md:HintAssist.Hint="Хранить историю (дней)" Margin="0,0,0,12"
                              Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                    
                     <Button Content="Очистить историю" Click="ClearHistory_Click" Margin="0,0,0,8"
                             Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
-                    <Button Content="Экспорт конфигурации" Click="ExportConfig_Click " 
-                            Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
-                    <TextBox x:Name="TimeZoneOffsetBox" md:HintAssist.Hint="Часовой пояс " Margin="0,16,0,8"
-                            Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+               
                 </StackPanel>
             </TabItem>
 

@@ -388,7 +388,7 @@ namespace NetworkMonitor.Views
 
         private void SettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new SettingsDialog(_vm.Settings, _vm.Database, this) { Owner = this };
+            var dialog = new SettingsDialog(_vm.Settings, _vm.Database,  this, _vm.Storage) { Owner = this };
             if (dialog.ShowDialog() == true)
             {
                 _vm.UpdateSettings();

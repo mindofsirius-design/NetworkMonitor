@@ -14,18 +14,22 @@ namespace NetworkMonitor.Views
 {
     public partial class SettingsDialog : Window
     {
-        private readonly AppSettings _settings;
+        private AppSettings _settings;
         private DatabaseService _database;
-        private readonly MainWindow _mainWindow; //Для темной темы для букв сверху
+        private readonly MainWindow _mainWindow;    //для темной темы для букв сверху
+        private readonly StorageService _storageService;    //для импорта узлов
 
-        public SettingsDialog(AppSettings settings, DatabaseService database = null, MainWindow mainWindow = null)
+        public SettingsDialog(AppSettings settings, DatabaseService database = null, MainWindow mainWindow = null, StorageService storageService)
         {
             InitializeComponent();
+
             _settings = settings;
             _database = database;
             _mainWindow = mainWindow;
+            _storageService = storageService;
+
             LoadSettings();
-            Loaded += (s, e) =>     //для корректного выделения элементов
+            Loaded += (s, e) =>     //для корректного фокуса на элементах
             {
                 MainTabControl.SelectionChanged += (s2, e2) =>
                 {
@@ -253,6 +257,49 @@ namespace NetworkMonitor.Views
                     key.SetValue(appName, $"\"{System.Reflection.Assembly.GetExecutingAssembly().Location}\"");
                 else
                     key.DeleteValue(appName, false);
+            }
+        }
+
+        private void ImportConfig_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new Microsoft.Win32.OpenFileDialog
+            {
+                Filter = "JSON файлы (*.json)|*.json",
+                Title = "Импорт конфигурации"
+            };
+            if (dlg.ShowDialog() != true) return;
+
+            try
+            {
+                var json = System.IO.File.ReadAllText(dlg.FileName);
+                var export = Newtonsoft.Json.JsonConvert.DeserializeObject<ConfigExport>(json);
+                if (export == null) throw new Exception("Пустой файл");
+
+                // Фикс дублирующихся портов
+                if (export.Nodes != null)
+                    foreach (var node in export.Nodes)
+                        if (node.Monitoring?.Tcp?.Ports != null)
+                            node.Monitoring.Tcp.Ports = node.Monitoring.Tcp.Ports.Distinct().ToList();
+
+                // Сохраняем узлы и связи на диск
+                if (export.Nodes != null)
+                    _storageService.SaveNodes(export.Nodes);
+                if (export.Links != null)
+                    _storageService.SaveLinks(export.Links);
+
+                // Применяем настройки
+                if (export.Settings != null)
+                {
+                    var s = Newtonsoft.Json.JsonConvert.SerializeObject(export.Settings);
+                    Newtonsoft.Json.JsonConvert.PopulateObject(s, _settings);
+                    LoadSettings();
+                }
+
+                MessageBox.Show("Импорт выполнен. Перезапустите приложение.", "Импорт", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка импорта: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

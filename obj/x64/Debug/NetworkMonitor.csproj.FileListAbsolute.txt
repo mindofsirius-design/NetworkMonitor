@@ -399,3 +399,4 @@ C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\Netw
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\NetworkMonitor.application
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\x64\Debug\NetworkMonitor.exe.manifest
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\x64\Debug\NetworkMonitor.application
+C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\x64\Debug\NetworkMonitor.csproj.AssemblyReference.cache

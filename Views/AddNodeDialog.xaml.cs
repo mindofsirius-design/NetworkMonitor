@@ -15,6 +15,7 @@ namespace NetworkMonitor.Views
     {
         private readonly List<NetworkNode> _existingNodes;  //для проверки на уникальность
         public NetworkNode ResultNode { get; private set; }
+
         //Конструктор создания
         public AddNodeDialog(double lat = 0, double lon = 0, int defaultPingInterval = 30, IEnumerable<NetworkNode> existingNodes = null)
         {
@@ -38,6 +39,7 @@ namespace NetworkMonitor.Views
             var brush = new SolidColorBrush(isDark ? Colors.Black : Colors.White);
             AddButton.Foreground = brush;
         }
+        
         //Конструктор редактирования
         public AddNodeDialog(NetworkNode existingNode, int defaultPingInterval = 30, IEnumerable<NetworkNode> existingNodes = null)
         {
