@@ -115,7 +115,15 @@ namespace NetworkMonitor.Services
 
         private async Task RunModuleAsync(NetworkNode node, IMonitoringModule module, CancellationToken ct)
         {
-            await _semaphore.WaitAsync(ct);
+            try 
+            {
+                await _semaphore.WaitAsync(ct);
+            }
+            catch (OperationCanceledException)
+            {
+                return;
+            }
+
             try
             {
                 using (var timeoutCts = new CancellationTokenSource(TaskTimeoutMs))
@@ -140,9 +148,11 @@ namespace NetworkMonitor.Services
                             EventBus.Instance.PublishEvent(nodeEvent);
                         }
                     }
+
                     catch (OperationCanceledException) when (timeoutCts.IsCancellationRequested)
                     {
                         Logger.Warn("Module {0} timed out for {1}", module.Name, node.Name);
+                        if (ct.IsCancellationRequested) return;  // ← не делать retry при остановке
                         await Task.Delay(2000, ct);
                         try
                         {
@@ -169,9 +179,7 @@ namespace NetworkMonitor.Services
                     }
                 }
             }
-            catch (OperationCanceledException)
-            {
-            }
+            catch (OperationCanceledException) { }
             catch (Exception ex)
             {
                 Logger.Error(ex, "RunModuleAsync error: {0} for {1}", module.Name, node.Name);

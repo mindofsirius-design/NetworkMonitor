@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -35,16 +35,14 @@ namespace NetworkMonitor.Services.Modules
                 {
                     for (int ttl = 1; ttl <= MaxHops; ttl++)
                     {
-                        ct.ThrowIfCancellationRequested();
+                        if (ct.IsCancellationRequested) return; // ← вместо ThrowIfCancellationRequested
                         var options = new PingOptions(ttl, true);
                         try
                         {
                             var reply = pinger.Send(node.IpAddress, TimeoutMs, buffer, options);
 
                             if (reply.Status == IPStatus.TtlExpired)
-                            {
                                 hops.Add($"{ttl}: {reply.Address} ({reply.RoundtripTime}ms)");
-                            }
                             else if (reply.Status == IPStatus.Success)
                             {
                                 hops.Add($"{ttl}: {reply.Address} ({reply.RoundtripTime}ms)");
@@ -52,9 +50,7 @@ namespace NetworkMonitor.Services.Modules
                                 break;
                             }
                             else
-                            {
                                 hops.Add($"{ttl}: * ({reply.Status})");
-                            }
                         }
                         catch (PingException)
                         {
