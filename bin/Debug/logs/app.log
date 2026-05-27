@@ -901,3 +901,7 @@
 2026-05-15 20:57:34.4695 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\NetworkMonitor\bin\Debug\data\history.db 
 2026-05-15 20:57:49.4787 INFO MonitoringScheduler Scheduler stopped 
 2026-05-15 20:57:49.4938 INFO App Application exiting 
+2026-05-27 08:29:13.2989 INFO App Application starting 
+2026-05-27 08:29:13.8860 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-27 08:29:19.0796 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:29:19.0856 INFO App Application exiting 

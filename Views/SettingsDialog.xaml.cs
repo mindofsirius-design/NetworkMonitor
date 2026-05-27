@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.IO;
 using System.Net;
 using System.Net.Mail;
@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json.Linq;
+using System.Reflection;
 
 namespace NetworkMonitor.Views
 {
@@ -18,15 +20,11 @@ namespace NetworkMonitor.Views
     {
         private AppSettings _settings;
         private DatabaseService _database;
-        private readonly MainWindow _mainWindow;    //для темной темы для букв сверху
-        private readonly StorageService _storageService;    //для импорта узлов
-
-        private class ConfigExport
-        {
-            public List<NetworkNode> Nodes { get; set; }
-            public List<NodeLink> Links { get; set; }
-            public AppSettings Settings { get; set; }
-        }
+        private readonly MainWindow _mainWindow;    // РґР»СЏ С‚РµРјРЅРѕР№ С‚РµРјС‹ СЌР»РµРјРµРЅС‚РѕРІ РІРІРµСЂС…Сѓ РѕСЃРЅРѕРІРЅРѕРіРѕ РѕРєРЅР°
+        private readonly StorageService _storageService;    // РґР»СЏ РёРјРїРѕСЂС‚Р° СѓР·Р»РѕРІ
+        // Р”Р»СЏ РґСѓР±Р»РёСЂРѕРІР°РЅРёСЏ РїРѕР»РµР№ РІ РїРѕС‡С‚Рµ
+        private bool _emailFromEdited = false;
+        private bool _emailToEdited = false;
 
         public SettingsDialog(AppSettings settings, DatabaseService database = null, MainWindow mainWindow = null, StorageService storageService = null)
         {
@@ -38,7 +36,8 @@ namespace NetworkMonitor.Views
             _storageService = storageService;
 
             LoadSettings();
-            Loaded += (s, e) =>     //для корректного фокуса на элементах
+
+            Loaded += (s, e) =>     //РґР»СЏ РєРѕСЂСЂРµРєС‚РЅРѕРіРѕ С„РѕРєСѓСЃР° РЅР° СЌР»РµРјРµРЅС‚Р°С…
             {
                 MainTabControl.SelectionChanged += (s2, e2) =>
                 {
@@ -50,7 +49,7 @@ namespace NetworkMonitor.Views
                 };
             };
 
-            //Отрисовка кнопки "Сохранить" в зависимости от установленной темы
+            //РћС‚СЂРёСЃРѕРІРєР° РєРЅРѕРїРєРё "РЎРѕС…СЂР°РЅРёС‚СЊ" РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅРѕР№ С‚РµРјС‹
             var helper = new PaletteHelper();
             var theme = helper.GetTheme();
             bool isDark = theme.GetBaseTheme() == BaseTheme.Dark;
@@ -61,7 +60,7 @@ namespace NetworkMonitor.Views
 
         private void LoadSettings()
         {
-            //Общие
+            //РћР±С‰РёРµ
             StartWithWindowsToggle.IsChecked = _settings.StartWithWindows;
             AutoStartMonitoringToggle.IsChecked = _settings.AutoStartMonitoring;
 
@@ -82,14 +81,14 @@ namespace NetworkMonitor.Views
             EmailFromBox.Text = _settings.EmailFrom;
             EmailToBox.Text = _settings.EmailTo;
 
-            //Оформление
+            //РћС„РѕСЂРјР»РµРЅРёРµ
             DarkThemeToggle.IsChecked = _settings.DarkTheme;
             MarkerSizeSlider.Value = _settings.MarkerSize;
             MarkerOpacitySlider.Value = _settings.MarkerOpacity;
 
             KeepDaysBox.Text = _settings.HistoryKeepDays.ToString();
 
-            //Вкладка "Управление"
+            //Р’РєР»Р°РґРєР° "РЈРїСЂР°РІР»РµРЅРёРµ"
             CenterMapOnSelectToggle.IsChecked = _settings.CenterMapOnSelect;
             ZoomOnSelectToggle.IsChecked = _settings.ZoomOnSelect;
             AlwaysZoomToCenterToggle.IsChecked = _settings.AlwaysZoomToCenter;
@@ -97,9 +96,154 @@ namespace NetworkMonitor.Views
             TimeZoneOffsetBox.Text = _settings.TimeZoneOffsetHours.ToString();
         }
 
+        private async void TestEmail_Click(object sender, RoutedEventArgs e)
+        {
+            var host = SmtpHostBox.Text?.Trim();
+            var port = int.TryParse(SmtpPortBox.Text, out int p) ? p : 587;
+            var user = SmtpUserBox.Text?.Trim();
+            var pass = SmtpPasswordBox.Password;
+            var from = EmailFromBox.Text?.Trim();
+            var to = EmailToBox.Text?.Trim();
+
+            try
+            {
+                await System.Threading.Tasks.Task.Run(() =>
+                {
+                    using (var client = new SmtpClient(host, port))
+                    {
+                        client.EnableSsl = true;
+                        client.Credentials = new NetworkCredential(user, pass);
+                        client.Timeout = 10000;
+                        using (var msg = new MailMessage(from, to,
+                            "[NetworkMonitor] \u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
+                            "\u0415\u0441\u043B\u0438 \u0432\u044B \u0432\u0438\u0434\u0438\u0442\u0435 \u044D\u0442\u043E \u043F\u0438\u0441\u044C\u043C\u043E \u2014 email-\u0443\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u044F \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442."))
+                        {
+                            client.Send(msg);
+                        }
+                    }
+                });
+                MessageBox.Show("\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u043F\u0438\u0441\u044C\u043C\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E!", "\u0423\u0441\u043F\u0435\u0445", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"\u041E\u0448\u0438\u0431\u043A\u0430: {ex.Message}", "\u041E\u0448\u0438\u0431\u043A\u0430", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        private void ClearHistory_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0432\u0441\u044E \u0438\u0441\u0442\u043E\u0440\u0438\u044E?", "\u041F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043D\u0438\u0435", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                _database?.Cleanup(0);
+                MessageBox.Show("\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u043E\u0447\u0438\u0449\u0435\u043D\u0430.", "\u0413\u043E\u0442\u043E\u0432\u043E", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+        private void ExportConfig_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new Microsoft.Win32.SaveFileDialog
+            {
+                FileName = "networkmonitor_backup",
+                DefaultExt = ".json",
+                Filter = "JSON|*.json"
+            };
+
+            if (dlg.ShowDialog() == true)
+            {
+                try
+                {
+                    var storage = new StorageService();
+                    var backup = new
+                    {
+                        Nodes = storage.LoadNodes(),
+                        Links = storage.LoadLinks(),
+                        Settings = _settings
+                    };
+                    File.WriteAllText(dlg.FileName, Newtonsoft.Json.JsonConvert.SerializeObject(backup, Newtonsoft.Json.Formatting.Indented));
+                    MessageBox.Show("\u041A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u044F \u044D\u043A\u0441\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0430.", "\u0413\u043E\u0442\u043E\u0432\u043E", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"\u041E\u0448\u0438\u0431\u043A\u0430: {ex.Message}", "\u041E\u0448\u0438\u0431\u043A\u0430", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+        private void ImportConfig_Click(object sender, RoutedEventArgs e)
+        {
+            var dlg = new Microsoft.Win32.OpenFileDialog
+            {
+                Filter = "JSON С„Р°Р№Р»С‹ (*.json)|*.json",
+                Title = "РРјРїРѕСЂС‚ РєРѕРЅС„РёРіСѓСЂР°С†РёРё"
+            };
+
+            if (dlg.ShowDialog() != true)
+                return;
+
+            try
+            {
+                var json = File.ReadAllText(dlg.FileName);
+
+                // РџР°СЂСЃРёРј РєР°Рє JObject
+                var root = JObject.Parse(json);
+
+                // РРјРїРѕСЂС‚ СѓР·Р»РѕРІ
+                var nodes = root["Nodes"]?.ToObject<List<NetworkNode>>();
+
+                if (nodes != null)
+                {
+                    NormalizeImportedNodes(nodes); // РЅРѕСЂРјР°Р»РёР·Р°С†РёСЏ РґР°РЅРЅС‹С…
+                    _storageService.SaveNodes(nodes); // СЃРѕС…СЂР°РЅРµРЅРёРµ СѓР·Р»РѕРІ РІ С„Р°Р№Р»
+                    _storageService.LoadNodes(); // Р·Р°РіСЂСѓР·РєР° СѓР·Р»РѕРІ РёР· С„Р°Р№Р»Р°
+                }
+
+                // РРјРїРѕСЂС‚ СЃРІСЏР·РµР№
+                var links = root["Links"]?.ToObject<List<NodeLink>>();
+
+                if (links != null)
+                {
+                    _storageService.SaveLinks(links);
+                }
+
+                // РРјРїРѕСЂС‚ РЅР°СЃС‚СЂРѕРµРє
+                if (root["Settings"] is JObject settingsJson)
+                {
+                    ApplySettingsFromJson(settingsJson);
+
+                    _storageService.SaveSettings(_settings);
+
+                    // РџСЂРёРјРµРЅСЏРµРј С‚РµРјСѓ СЃСЂР°Р·Сѓ
+                    var helper = new PaletteHelper();
+                    var theme = helper.GetTheme();
+
+                    theme.SetBaseTheme(
+                        _settings.DarkTheme
+                            ? BaseTheme.Dark
+                            : BaseTheme.Light);
+
+                    helper.SetTheme(theme);
+
+                    _mainWindow?.UpdateToolbarForeground(_settings.DarkTheme);
+
+                    LoadSettings();
+                }
+
+                MessageBox.Show(
+                    "РРјРїРѕСЂС‚ РІС‹РїРѕР»РЅРµРЅ.\n\nРЎСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ СѓР·Р»С‹ Р±СѓРґСѓС‚ РїРµСЂРµР·Р°РїРёСЃР°РЅРЅС‹ РїРѕСЃР»Рµ РїРµСЂРµР·Р°РїСѓСЃРєР° РїСЂРёР»РѕР¶РµРЅРёСЏ (РїРѕСЃР»Рµ Р·Р°РєСЂС‹С‚РёСЏ РѕРєРЅР° РїСЂРёР»РѕР¶РµРЅРёРµ С‚Р°Рє Р¶Рµ РЅСѓР¶РЅРѕ Р±РґСѓРµС‚ РµС‰Рµ Р·Р°РєСЂС‹С‚СЊ С‡РµСЂРµР· С‚СЂРµР№). ",
+                    "РРјРїРѕСЂС‚",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"РћС€РёР±РєР° РёРјРїРѕСЂС‚Р°: {ex.Message}",
+                    "РћС€РёР±РєР°",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+        }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            //Общие
+            // РћР±С‰РёРµ
             _settings.StartWithWindows = StartWithWindowsToggle.IsChecked == true;
             _settings.AutoStartMonitoring = AutoStartMonitoringToggle.IsChecked == true;
             ApplyStartWithWindows(_settings.StartWithWindows);
@@ -136,16 +280,21 @@ namespace NetworkMonitor.Views
             if (int.TryParse(SoundDebounceBox.Text, out int debounce) && debounce >= 1)
                 _settings.SoundDebounceSec = debounce;
 
+            // РџРѕС‡С‚Р° 
             _settings.EmailEnabled = EmailToggle.IsChecked == true;
             _settings.SmtpHost = SmtpHostBox.Text?.Trim() ?? "";
 
             if (int.TryParse(SmtpPortBox.Text, out int port)) _settings.SmtpPort = port;
             _settings.SmtpUser = SmtpUserBox.Text?.Trim() ?? "";
             _settings.SmtpPassword = SmtpPasswordBox.Password ?? "";
-            _settings.EmailFrom = EmailFromBox.Text?.Trim() ?? "";
-            _settings.EmailTo = EmailToBox.Text?.Trim() ?? "";
-            
-            //Вкладка "Оформление"
+            _settings.EmailFrom = string.IsNullOrWhiteSpace(EmailFromBox.Text)
+                 ? SmtpUserBox.Text.Trim()
+                 : EmailFromBox.Text.Trim();
+            _settings.EmailTo = string.IsNullOrWhiteSpace(EmailToBox.Text)
+                ? SmtpUserBox.Text.Trim()
+                : EmailToBox.Text.Trim();
+
+            // РћС„РѕСЂРјР»РµРЅРёРµ
             _settings.DarkTheme = DarkThemeToggle.IsChecked == true;
             _settings.MarkerSize = (int)MarkerSizeSlider.Value;
             _settings.MarkerOpacity = MarkerOpacitySlider.Value;
@@ -153,109 +302,40 @@ namespace NetworkMonitor.Views
             if (int.TryParse(KeepDaysBox.Text, out int keepDays) && keepDays >= 1)
                 _settings.HistoryKeepDays = keepDays;
 
-            //Вкладка "Управление"
+            // РЈРїСЂР°РІР»РµРЅРёРµ
             _settings.CenterMapOnSelect = CenterMapOnSelectToggle.IsChecked == true;
             _settings.ZoomOnSelect = ZoomOnSelectToggle.IsChecked == true;
             _settings.AlwaysZoomToCenter = AlwaysZoomToCenterToggle.IsChecked == true;
 
-            //Вкладка "Данные"
+            // Р’РєР»Р°РґРєР° "Р”Р°РЅРЅС‹Рµ"
             if (int.TryParse(TimeZoneOffsetBox.Text, out int tz))
             {
                 _settings.TimeZoneOffsetHours = tz;
                 UtcToLocalConverter.OffsetHours = tz;
             }
 
-            //Тема тема
+            // РўРµРјР° С‚РµРјР°
             var helper = new PaletteHelper();
             var theme = helper.GetTheme();
             theme.SetBaseTheme(DarkThemeToggle.IsChecked == true ? BaseTheme.Dark : BaseTheme.Light);
             helper.SetTheme(theme);
             _mainWindow?.UpdateToolbarForeground(DarkThemeToggle.IsChecked == true);
 
+            _storageService.SaveSettings(_settings); // СЃРѕС…СЂР°РЅСЏРµРј РЅР°СЃС‚СЂРѕР№РєРё РІ С„Р°Р№Р»
+
             DialogResult = true;
             Close();
         }
 
-        private async void TestEmail_Click(object sender, RoutedEventArgs e)
-        {
-            var host = SmtpHostBox.Text?.Trim();
-            var port = int.TryParse(SmtpPortBox.Text, out int p) ? p : 587;
-            var user = SmtpUserBox.Text?.Trim();
-            var pass = SmtpPasswordBox.Password;
-            var from = EmailFromBox.Text?.Trim();
-            var to = EmailToBox.Text?.Trim();
+        // -----------------Р”Р°Р»РµРµ РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹Рµ РјРµС‚РѕРґС‹---------------------
 
-            try
-            {
-                await System.Threading.Tasks.Task.Run(() =>
-                {
-                    using (var client = new SmtpClient(host, port))
-                    {
-                        client.EnableSsl = true;
-                        client.Credentials = new NetworkCredential(user, pass);
-                        client.Timeout = 10000;
-                        using (var msg = new MailMessage(from, to,
-                            "[NetworkMonitor] \u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0435",
-                            "\u0415\u0441\u043B\u0438 \u0432\u044B \u0432\u0438\u0434\u0438\u0442\u0435 \u044D\u0442\u043E \u043F\u0438\u0441\u044C\u043C\u043E \u2014 email-\u0443\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u044F \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442."))
-                        {
-                            client.Send(msg);
-                        }
-                    }
-                });
-                MessageBox.Show("\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435 \u043F\u0438\u0441\u044C\u043C\u043E \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E!", "\u0423\u0441\u043F\u0435\u0445", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"\u041E\u0448\u0438\u0431\u043A\u0430: {ex.Message}", "\u041E\u0448\u0438\u0431\u043A\u0430", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private void ClearHistory_Click(object sender, RoutedEventArgs e)
-        {
-            var result = MessageBox.Show("\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0432\u0441\u044E \u0438\u0441\u0442\u043E\u0440\u0438\u044E?", "\u041F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043D\u0438\u0435", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (result == MessageBoxResult.Yes)
-            {
-                _database?.Cleanup(0);
-                MessageBox.Show("\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u043E\u0447\u0438\u0449\u0435\u043D\u0430.", "\u0413\u043E\u0442\u043E\u0432\u043E", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-        }
-
-        private void ExportConfig_Click(object sender, RoutedEventArgs e)
-        {
-            var dlg = new Microsoft.Win32.SaveFileDialog
-            {
-                FileName = "networkmonitor_backup",
-                DefaultExt = ".json",
-                Filter = "JSON|*.json"
-            };
-
-            if (dlg.ShowDialog() == true)
-            {
-                try
-                {
-                    var storage = new StorageService();
-                    var backup = new
-                    {
-                        Nodes = storage.LoadNodes(),
-                        Links = storage.LoadLinks(),
-                        Settings = _settings
-                    };
-                    File.WriteAllText(dlg.FileName, Newtonsoft.Json.JsonConvert.SerializeObject(backup, Newtonsoft.Json.Formatting.Indented));
-                    MessageBox.Show("\u041A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0430\u0446\u0438\u044F \u044D\u043A\u0441\u043F\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0430.", "\u0413\u043E\u0442\u043E\u0432\u043E", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"\u041E\u0448\u0438\u0431\u043A\u0430: {ex.Message}", "\u041E\u0448\u0438\u0431\u043A\u0430", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-            }
-        }
-
-        //Выключение галочки на "Приближать при выборе узла", если галочка на "Перемешать при выборе узла" была выключенна
+        // Р’С‹РєР»СЋС‡РµРЅРёРµ РіР°Р»РѕС‡РєРё РЅР° "РџСЂРёР±Р»РёР¶Р°С‚СЊ РїСЂРё РІС‹Р±РѕСЂРµ СѓР·Р»Р°", РµСЃР»Рё РіР°Р»РѕС‡РєР° РЅР° "РџРµСЂРµРјРµС€Р°С‚СЊ РїСЂРё РІС‹Р±РѕСЂРµ СѓР·Р»Р°" Р±С‹Р»Р° РІС‹РєР»СЋС‡РµРЅРЅР°
         private void CenterMapOnSelectToggle_Unchecked(object sender, RoutedEventArgs e)
         {
             ZoomOnSelectToggle.IsChecked = false;
         }
 
+        // РџСЂРµРјРµРЅРёС‚СЊ РЅР°СЃС‚СЂРѕР№РєСѓ "РЎС‚Р°СЂС‚РѕРІР°С‚СЊ СЃ Windows"
         private void ApplyStartWithWindows(bool enable)
         {
             const string keyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Run";
@@ -269,47 +349,118 @@ namespace NetworkMonitor.Views
             }
         }
 
-        private void ImportConfig_Click(object sender, RoutedEventArgs e)
+        // РџРѕРјРѕС‰СЊ РІ РёРјРїРѕСЂС‚Рµ СѓР·Р»РѕРІ
+        private void NormalizeImportedNodes(List<NetworkNode> nodes)
         {
-            var dlg = new Microsoft.Win32.OpenFileDialog
+            foreach (var node in nodes.Where(n => n != null))
             {
-                Filter = "JSON файлы (*.json)|*.json",
-                Title = "Импорт конфигурации"
-            };
-            if (dlg.ShowDialog() != true) return;
+                // ID (Сѓ РІР°СЃ string)
+                if (string.IsNullOrWhiteSpace(node.Id))
+                    node.Id = Guid.NewGuid().ToString();
 
-            try
-            {
-                var json = System.IO.File.ReadAllText(dlg.FileName);
-                var export = Newtonsoft.Json.JsonConvert.DeserializeObject<ConfigExport>(json);
-                if (export == null) throw new Exception("Пустой файл");
+                // РЎС‚СЂРѕРєРё
+                if (node.Name == null)
+                    node.Name = string.Empty;
 
-                // Фикс дублирующихся портов
-                if (export.Nodes != null)
-                    foreach (var node in export.Nodes)
-                        if (node.Monitoring?.Tcp?.Ports != null)
-                            node.Monitoring.Tcp.Ports = node.Monitoring.Tcp.Ports.Distinct().ToList();
+                if (node.Description == null)
+                    node.Description = string.Empty;
 
-                // Сохраняем узлы и связи на диск
-                if (export.Nodes != null)
-                    _storageService.SaveNodes(export.Nodes);
-                if (export.Links != null)
-                    _storageService.SaveLinks(export.Links);
+                if (node.DeviceType == null)
+                    node.DeviceType = string.Empty;
 
-                // Применяем настройки
-                if (export.Settings != null)
+                if (node.IpAddress == null)
+                    node.IpAddress = string.Empty;
+
+                // Monitoring
+                if (node.Monitoring != null)
                 {
-                    var s = Newtonsoft.Json.JsonConvert.SerializeObject(export.Settings);
-                    Newtonsoft.Json.JsonConvert.PopulateObject(s, _settings);
-                    LoadSettings();
+                    // Ping
+                    if (node.Monitoring.Ping != null)
+                    {
+                        if (node.Monitoring.Ping.IntervalSec < 1)
+                            node.Monitoring.Ping.IntervalSec = 30;
+                    }
+
+                    // TCP
+                    if (node.Monitoring.Tcp != null)
+                    {
+                        if (node.Monitoring.Tcp.Ports == null)
+                        {
+                            node.Monitoring.Tcp.Ports = new List<int>();
+                        }
+                        else
+                        {
+                            node.Monitoring.Tcp.Ports =
+                                node.Monitoring.Tcp.Ports
+                                    .Where(p => p > 0 && p <= 65535)
+                                    .Distinct()
+                                    .ToList();
+                        }
+                    }
+
+                    // SNMP
+                    if (node.Monitoring.Snmp != null)
+                    {
+                        if (string.IsNullOrWhiteSpace(node.Monitoring.Snmp.Community))
+                            node.Monitoring.Snmp.Community = "public";
+
+                        if (string.IsNullOrWhiteSpace(node.Monitoring.Snmp.Version))
+                            node.Monitoring.Snmp.Version = "2c";
+                    }
                 }
 
-                MessageBox.Show("Импорт выполнен. Перезапустите приложение.", "Импорт", MessageBoxButton.OK, MessageBoxImage.Information);
+                // LastSeen
+                if (node.LastSeen == default(DateTime))
+                    node.LastSeen = DateTime.MinValue;
+
+                // LastPing
+                if (node.LastPingMs < -1)
+                    node.LastPingMs = -1;
+
+                // РљРѕРѕСЂРґРёРЅР°С‚С‹
+                if (double.IsNaN(node.X))
+                    node.X = 0;
+
+                if (double.IsNaN(node.Y))
+                    node.Y = 0;
             }
-            catch (Exception ex)
+        }
+
+        // РџРѕРјРѕС‰СЊ РІ РёРјРїРѕСЂС‚Рµ РЅР°СЃС‚СЂРѕРµРє
+        private void ApplySettingsFromJson(JObject settingsJson)
+        {
+            if (settingsJson == null)
+                return;
+
+            var settingsType = typeof(AppSettings);
+
+            foreach (var property in settingsType.GetProperties(BindingFlags.Public | BindingFlags.Instance))
             {
-                MessageBox.Show($"Ошибка импорта: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                if (!property.CanWrite)
+                    continue;
+
+                try
+                {
+                    // РС‰РµРј РїРѕР»Рµ СЃ С‚Р°РєРёРј Р¶Рµ РёРјРµРЅРµРј РєР°Рє СЃРІРѕР№СЃС‚РІРѕ
+                    var token = settingsJson[property.Name];
+
+                    if (token == null || token.Type == JTokenType.Null)
+                        continue;
+
+                    // РљРѕРЅРІРµСЂС‚РёСЂСѓРµРј РІ РЅСѓР¶РЅС‹Р№ С‚РёРї СЃРІРѕР№СЃС‚РІР°
+                    var value = token.ToObject(property.PropertyType);
+
+                    property.SetValue(_settings, value);
+                }
+                catch
+                {
+                    // Р•СЃР»Рё РїРѕР»Рµ РЅРµСЃРѕРІРјРµСЃС‚РёРјРѕ вЂ” РїСЂРѕРїСѓСЃРєР°РµРј
+                }
             }
+
+            // РџСЂРёРјРµРЅСЏРµРј "Р¶РёРІС‹Рµ" РЅР°СЃС‚СЂРѕР№РєРё СЃСЂР°Р·Сѓ
+            ApplyStartWithWindows(_settings.StartWithWindows);
+            UtcToLocalConverter.OffsetHours = _settings.TimeZoneOffsetHours;
         }
 
     }

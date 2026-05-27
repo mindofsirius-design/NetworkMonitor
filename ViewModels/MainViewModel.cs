@@ -124,9 +124,9 @@ namespace NetworkMonitor.ViewModels
 
         public void Save()
         {
-            _storage.SaveNodes(Nodes.ToList());
+            //_storage.SaveNodes(Nodes.ToList());
             _storage.SaveLinks(Links.ToList());
-            _storage.SaveSettings(Settings);
+            _storage.SaveSettings(Settings); // оставил чисто для замочка
         }
 
         private void OnMonitoringResult(MonitoringResult result)

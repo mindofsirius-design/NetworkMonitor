@@ -2,12 +2,13 @@ using System;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Media;
-using System.Net;
-using System.Net.Mail;
 using System.Threading.Tasks;
 using System.Windows;
 using NetworkMonitor.Models;
 using NLog;
+using MailKit.Net.Smtp;
+using MailKit.Security;
+using MimeKit;
 
 namespace NetworkMonitor.Services
 {
@@ -121,17 +122,20 @@ namespace NetworkMonitor.Services
         {
             try
             {
-                using (var client = new SmtpClient(_settings.SmtpHost, _settings.SmtpPort))
-                {
-                    client.EnableSsl = true;
-                    client.Credentials = new NetworkCredential(_settings.SmtpUser, _settings.SmtpPassword);
+                var message = new MimeMessage();
+                message.From.Add(MailboxAddress.Parse(_settings.EmailFrom));
+                message.To.Add(MailboxAddress.Parse(_settings.EmailTo));
+                message.Subject = subject;
+                message.Body = new TextPart("plain") { Text = body };
 
-                    using (var msg = new MailMessage(_settings.EmailFrom, _settings.EmailTo, subject, body))
-                    {
-                        client.Send(msg);
-                    }
-                    Logger.Info("Email sent: {0}", subject);
+                using (var client = new SmtpClient())
+                {
+                    client.Connect(_settings.SmtpHost, _settings.SmtpPort, SecureSocketOptions.StartTls);
+                    client.Authenticate(_settings.SmtpUser, _settings.SmtpPassword);
+                    client.Send(message);
+                    client.Disconnect(true);
                 }
+                Logger.Info("Email sent: {0}", subject);
             }
             catch (Exception ex)
             {

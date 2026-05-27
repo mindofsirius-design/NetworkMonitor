@@ -15,7 +15,7 @@ namespace NetworkMonitor.Services
         public TracerouteGroupingService GroupingService { get; set; }
 
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
-
+        private volatile bool _isWarmingUp = false; // флаг первого запуска
         private readonly ModuleRegistry _registry;
         private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(50, 50);
         private readonly ConcurrentDictionary<string, DateTime> _nextRun = new ConcurrentDictionary<string, DateTime>();
@@ -40,6 +40,7 @@ namespace NetworkMonitor.Services
             }
             _nextRun.Clear();
             _cts = new CancellationTokenSource();
+            _isWarmingUp = true;    // флаг первого запуска
             Task.Run(() => RunLoop(_cts.Token));
             Logger.Info("Scheduler started with {0} nodes", _nodes.Count);
         }
@@ -99,6 +100,9 @@ namespace NetworkMonitor.Services
                     if (tasks.Count > 0)
                         await Task.WhenAll(tasks);
 
+                    if (_isWarmingUp)
+                        _isWarmingUp = false;
+
                     await Task.Delay(500, ct);
                 }
                 catch (OperationCanceledException)
@@ -132,14 +136,12 @@ namespace NetworkMonitor.Services
                     try
                     {
                         var result = await module.CheckAsync(node, linkedCts.Token);
-                        EventBus.Instance.PublishResult(result);
-
-                        if (module.Name == "ping" && node.Status != result.Status)
+                        if (module.Name == "ping" && node.Status != result.Status && !_isWarmingUp)
                         {
                             var nodeEvent = new NodeEvent
                             {
-                                NodeId = node.Id,
-                                EventType = "StatusChanged",
+                                NodeId = node.Name,
+                                EventType = "Смена статуса",
                                 Message = $"{node.Name}: {node.Status} → {result.Status}",
                                 OldStatus = node.Status,
                                 NewStatus = result.Status,
@@ -147,6 +149,7 @@ namespace NetworkMonitor.Services
                             };
                             EventBus.Instance.PublishEvent(nodeEvent);
                         }
+                        EventBus.Instance.PublishResult(result);
                     }
 
                     catch (OperationCanceledException) when (timeoutCts.IsCancellationRequested)
@@ -160,6 +163,20 @@ namespace NetworkMonitor.Services
                             using (var retryLinked = CancellationTokenSource.CreateLinkedTokenSource(ct, retryCts.Token))
                             {
                                 var result = await module.CheckAsync(node, retryLinked.Token);
+                                
+                                if (module.Name == "ping" && node.Status != result.Status && !_isWarmingUp)
+                                {
+                                    var nodeEvent = new NodeEvent
+                                    {
+                                        NodeId = node.Name,
+                                        EventType = "Смена статуса",
+                                        Message = $"{node.Name}: {node.Status} → {result.Status}",
+                                        OldStatus = node.Status,
+                                        NewStatus = result.Status,
+                                        Timestamp = DateTime.UtcNow
+                                    };
+                                    EventBus.Instance.PublishEvent(nodeEvent);
+                                }
                                 EventBus.Instance.PublishResult(result);
                             }
                         }

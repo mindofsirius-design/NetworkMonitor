@@ -21,7 +21,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>  <!-- Row 3 — подпись таблицы -->
+            <RowDefinition Height="Auto"/>  <!-- Row 4 — таблица -->
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" Margin="0,0,0,12">
@@ -71,14 +72,17 @@
         <oxy:PlotView Grid.Row="2" Model="{Binding PacketLossPlot}" Margin="0,0,0,8"
                       DefaultTrackerTemplate="{StaticResource DarkTrackerTemplate}"/>
 
-        <DataGrid Grid.Row="3" ItemsSource="{Binding UptimeRows}" AutoGenerateColumns="False"
+        <TextBlock Grid.Row="3" Text="Доступность узлов (процент успешных ping-ответов за период)" 
+           FontWeight="SemiBold" Margin="0,8,0,4"/>
+        <DataGrid Grid.Row="4" ItemsSource="{Binding UptimeRows}" AutoGenerateColumns="False"
                   IsReadOnly="True" MaxHeight="200">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="&#x0423;&#x0437;&#x0435;&#x043B;" Binding="{Binding NodeName}" Width="*"/>
-                <DataGridTextColumn Header="24&#x0447;" Binding="{Binding Uptime24h}" Width="80"/>
-                <DataGridTextColumn Header="7&#x0434;" Binding="{Binding Uptime7d}" Width="80"/>
-                <DataGridTextColumn Header="30&#x0434;" Binding="{Binding Uptime30d}" Width="80"/>
+                <DataGridTextColumn Header="Узел" Binding="{Binding NodeName}" Width="*"/>
+                    <DataGridTextColumn Header="24ч" Binding="{Binding Uptime24h}" Width="80"/>
+                <DataGridTextColumn Header="7д" Binding="{Binding Uptime7d}" Width="80"/>
+                <DataGridTextColumn Header="30д" Binding="{Binding Uptime30d}" Width="80"/>
             </DataGrid.Columns>
         </DataGrid>
+        
     </Grid>
 </Window>

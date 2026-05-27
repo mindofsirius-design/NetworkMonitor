@@ -376,11 +376,8 @@ namespace NetworkMonitor.Views
 
             if (dialog.ShowDialog() == true)
             {
-                //_viewModel.Nodes.Add(dialog.ResultNode);
-                //_viewModel.UpdateSchedulerNodes();
-                //RefreshMapMarkers();
-
-                _vm.Nodes.Add(dialog.ResultNode); //Добавляется новый узел в коллекцию
+                _vm.Nodes.Add(dialog.ResultNode); // Добавляется новый узел в коллекцию
+                _vm.Storage.SaveNodes(_vm.Nodes.ToList()); // Запись колекции в файл
                 _vm.UpdateSchedulerNodes();
                 RefreshMarkers(_vm.SelectedNode?.Id);
             }
@@ -503,6 +500,8 @@ namespace NetworkMonitor.Views
                 _vm.Save();
                 _vm.UpdateSchedulerNodes();
                 _vm.Scheduler.ResetSchedule(node.Id);   //сброс времени ping для этого узла
+
+                _vm.Storage.SaveNodes(_vm.Nodes.ToList()); // Запись колекции в файл
                 RefreshMarkers();
             }
         }
@@ -513,12 +512,13 @@ namespace NetworkMonitor.Views
             if (MessageBox.Show($"Удалить узел «{node.Name}»?", "Подтверждение",
                 MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
-                _vm.Nodes.Remove(node);
+                _vm.Nodes.Remove(node); // удаляем узел из коллекции
+                _vm.Storage.SaveNodes(_vm.Nodes.ToList());  // запись коллекции в файл
                 _vm.Save();
                 _vm.UpdateSchedulerNodes();
                 RefreshMarkers();
             }
-            _vm.TracerouteGroups.RemoveNode(node.Id);    //Для удаления из групп
+            _vm.TracerouteGroups.RemoveNode(node.Id);   // для удаления из групп
         }
 
         public void UpdateToolbarForeground(bool isDark)

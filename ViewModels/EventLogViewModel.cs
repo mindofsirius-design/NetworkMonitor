@@ -14,16 +14,16 @@ namespace NetworkMonitor.ViewModels
 
         public ObservableCollection<NodeEvent> Events { get; } = new ObservableCollection<NodeEvent>();
         public List<string> NodeNames { get; } = new List<string>();
-        public List<string> EventTypes { get; } = new List<string> { "All", "StatusChanged", "Alert", "ModuleError" };
+        public List<string> EventTypes { get; } = new List<string> { "Все", "Смена статуса", "Оповещение", "Ошибка модуля" };
 
-        private string _selectedNodeName = "All";
+        private string _selectedNodeName = "Все";
         public string SelectedNodeName
         {
             get => _selectedNodeName;
             set { _selectedNodeName = value; OnPropertyChanged(); Refresh(); }
         }
 
-        private string _selectedEventType = "All";
+        private string _selectedEventType = "Все";
         public string SelectedEventType
         {
             get => _selectedEventType;
@@ -49,7 +49,7 @@ namespace NetworkMonitor.ViewModels
             _database = database;
             _nodes = nodes;
 
-            NodeNames.Add("All");
+            NodeNames.Add("Все");
             NodeNames.AddRange(nodes.Select(n => n.Name));
 
             Refresh();
@@ -63,14 +63,14 @@ namespace NetworkMonitor.ViewModels
 
             var filtered = allEvents.AsEnumerable();
 
-            if (_selectedNodeName != "All")
+            if (_selectedNodeName != "Все")
             {
                 var node = _nodes.FirstOrDefault(n => n.Name == _selectedNodeName);
                 if (node != null)
                     filtered = filtered.Where(e => e.NodeId == node.Id);
             }
 
-            if (_selectedEventType != "All")
+            if (_selectedEventType != "Все")
                 filtered = filtered.Where(e => e.EventType == _selectedEventType);
 
             if (_dateFrom.HasValue)

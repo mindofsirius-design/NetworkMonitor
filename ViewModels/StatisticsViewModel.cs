@@ -90,7 +90,7 @@ namespace NetworkMonitor.ViewModels
             var gridColor = isDark ? OxyColor.FromRgb(60, 60, 60) : OxyColor.FromRgb(220, 220, 220);
 
             //Создаем полотно
-            var model = new PlotModel { Title = "Задержка (мс)",
+            var model = new PlotModel { Title = "Задержка(общая) (мс)",
                                         Background = bgColor,
                                         PlotAreaBackground = bgColor,
                                         TextColor = textColor,
@@ -112,6 +112,8 @@ namespace NetworkMonitor.ViewModels
             model.Axes.Add(new LinearAxis
             {
                 Position = AxisPosition.Left,
+                IsZoomEnabled = false,
+                IsPanEnabled = false,
                 Minimum = 0,
                 AxislineColor = textColor,
                 TextColor = textColor,
@@ -161,14 +163,23 @@ namespace NetworkMonitor.ViewModels
             var gridColor = isDark ? OxyColor.FromRgb(60, 60, 60) : OxyColor.FromRgb(220, 220, 220);
             
             //Создаем полотно
-            var model = new PlotModel { Title = "Потери пакетов (%)",              
+            var model = new PlotModel { Title = "Потери пакетов (общие) (%)",              
                                         Background = bgColor,
                                         PlotAreaBackground = bgColor,
                                         TextColor = textColor,
                                         PlotAreaBorderColor = gridColor
             };
-            model.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "HH:mm" });
-            model.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Minimum = 0, Maximum = 100 });
+
+            model.Axes.Add(new DateTimeAxis {
+                Position = AxisPosition.Bottom, 
+                StringFormat = "HH:mm" });
+
+            model.Axes.Add(new LinearAxis { 
+                Position = AxisPosition.Left,
+                IsZoomEnabled = false,
+                IsPanEnabled = false,
+                Minimum = 0, 
+                Maximum = 100 });
 
             var allPoints = new Dictionary<DateTime, List<double>>();
 

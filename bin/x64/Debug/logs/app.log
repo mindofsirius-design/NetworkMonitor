@@ -4358,3 +4358,1729 @@
 2026-05-27 08:15:40.9944 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
 2026-05-27 08:16:16.1246 INFO MonitoringScheduler Scheduler stopped 
 2026-05-27 08:16:16.1246 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 08:28:47.1812 INFO App Application starting 
+2026-05-27 08:28:47.7718 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:28:58.3565 INFO App Application starting 
+2026-05-27 08:28:58.8815 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:30:41.7494 INFO App Application starting 
+2026-05-27 08:30:42.2992 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:32:07.7051 INFO App Application starting 
+2026-05-27 08:32:08.2682 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:32:29.0531 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:32:29.0531 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 08:32:29.1000 INFO PingModule Ping 232 (244.242.242.24): Offline, -1ms 
+2026-05-27 08:32:51.5034 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:32:51.5150 INFO App Application exiting 
+2026-05-27 08:32:52.6554 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:32:52.6554 INFO App Application exiting 
+2026-05-27 08:32:57.5733 INFO App Application starting 
+2026-05-27 08:32:58.0095 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:33:16.1909 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:33:16.1969 INFO App Application exiting 
+2026-05-27 08:33:18.6037 INFO App Application starting 
+2026-05-27 08:33:19.0253 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:33:48.5402 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:33:48.5402 INFO App Application exiting 
+2026-05-27 08:33:49.8437 INFO App Application starting 
+2026-05-27 08:33:50.2613 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:33:55.3773 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:33:55.3773 INFO App Application exiting 
+2026-05-27 08:33:56.7549 INFO App Application starting 
+2026-05-27 08:33:57.1646 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:34:06.2294 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:34:06.2294 INFO App Application exiting 
+2026-05-27 08:34:09.2223 INFO App Application starting 
+2026-05-27 08:34:09.6331 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:46:51.0116 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:46:51.0116 INFO App Application exiting 
+2026-05-27 08:46:52.9059 INFO App Application starting 
+2026-05-27 08:46:53.4595 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:47:08.7939 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:47:08.7939 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 08:47:10.3202 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:47:16.2958 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:47:16.2958 INFO App Application exiting 
+2026-05-27 08:47:18.1446 INFO App Application starting 
+2026-05-27 08:47:18.7222 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:48:21.0407 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:48:21.0407 INFO App Application exiting 
+2026-05-27 08:48:23.3024 INFO App Application starting 
+2026-05-27 08:48:23.8639 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:49:19.8056 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:49:19.8056 INFO App Application exiting 
+2026-05-27 08:49:21.8751 INFO App Application starting 
+2026-05-27 08:49:22.4288 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:50:00.0301 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:50:00.0301 INFO App Application exiting 
+2026-05-27 08:50:01.8852 INFO App Application starting 
+2026-05-27 08:50:02.4544 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:51:09.1602 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:51:09.1652 INFO App Application exiting 
+2026-05-27 08:51:11.0215 INFO App Application starting 
+2026-05-27 08:51:11.5882 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:51:12.0748 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:51:12.0989 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 08:51:24.4977 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:51:24.5127 INFO App Application exiting 
+2026-05-27 08:51:26.3659 INFO App Application starting 
+2026-05-27 08:51:26.9601 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:51:27.5184 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:51:27.5464 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 09:03:16.3048 INFO App Application starting 
+2026-05-27 09:03:16.8765 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 09:03:28.1982 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 09:03:28.1982 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 09:03:28.9149 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 09:03:31.3628 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 09:03:31.3708 INFO App Application exiting 
+2026-05-27 09:03:33.5343 INFO App Application starting 
+2026-05-27 09:03:34.1039 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 09:03:57.0437 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 09:03:57.0437 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 09:04:00.5199 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 09:04:07.2316 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 09:04:07.2316 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 09:04:09.2136 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 09:04:12.3712 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 09:04:12.3712 INFO App Application exiting 
+2026-05-27 09:05:16.9396 INFO App Application starting 
+2026-05-27 09:05:17.4893 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 09:05:38.6217 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 09:05:38.6217 INFO App Application exiting 
+2026-05-27 09:05:50.7500 INFO App Application starting 
+2026-05-27 09:05:51.2861 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 09:21:57.6432 INFO App Application starting 
+2026-05-27 09:21:58.2483 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 09:27:58.6237 INFO App Application starting 
+2026-05-27 09:27:59.1800 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:02:37.1015 INFO App Application starting 
+2026-05-27 10:02:37.6832 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:04:08.9800 INFO App Application starting 
+2026-05-27 10:04:09.5656 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:05:24.8270 INFO App Application starting 
+2026-05-27 10:05:25.3868 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:12:09.8476 INFO App Application starting 
+2026-05-27 10:12:10.4299 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:12:22.6102 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:12:22.6102 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 10:12:23.0844 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:16:02.5869 INFO App Application starting 
+2026-05-27 10:16:03.1655 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:16:55.7906 INFO App Application starting 
+2026-05-27 10:16:56.3797 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:18:37.6722 INFO App Application starting 
+2026-05-27 10:18:38.2649 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:19:08.5550 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:19:08.5550 INFO App Application exiting 
+2026-05-27 10:19:12.9581 INFO App Application starting 
+2026-05-27 10:19:13.5165 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:19:35.3209 INFO PingModule Ping 45235 (235.253.235.25): Offline, -1ms 
+2026-05-27 10:19:36.3188 INFO PingModule Ping 45235 (235.253.235.25): Offline, -1ms 
+2026-05-27 10:19:44.3001 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:19:44.3001 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 10:19:46.8180 INFO PingModule Ping 45235 (235.253.235.25): Offline, -1ms 
+2026-05-27 10:19:48.3153 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:19:56.4800 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:19:56.4800 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 10:19:59.3189 INFO PingModule Ping 45235 (235.253.235.25): Offline, -1ms 
+2026-05-27 10:20:07.3190 INFO PingModule Ping 45235 (235.253.235.25): Offline, -1ms 
+2026-05-27 10:20:12.3198 INFO PingModule Ping 45235 (235.253.235.25): Offline, -1ms 
+2026-05-27 10:20:15.1399 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:20:33.3489 INFO DatabaseService Database cleanup: removed records older than 0 days 
+2026-05-27 10:22:05.1633 INFO App Application starting 
+2026-05-27 10:22:05.7464 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:22:40.9692 INFO App Application starting 
+2026-05-27 10:22:41.5324 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:23:27.1978 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:23:27.1978 INFO App Application exiting 
+2026-05-27 10:23:29.6315 INFO App Application starting 
+2026-05-27 10:23:30.1841 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:23:47.7200 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:23:47.7250 INFO App Application exiting 
+2026-05-27 10:23:49.7476 INFO App Application starting 
+2026-05-27 10:23:50.3128 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:23:58.3079 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:23:58.3079 INFO App Application exiting 
+2026-05-27 10:24:20.1474 INFO App Application starting 
+2026-05-27 10:24:20.7388 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:29:09.5650 INFO App Application starting 
+2026-05-27 10:29:10.1553 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:29:33.3567 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:29:33.3567 INFO App Application exiting 
+2026-05-27 10:29:36.1239 INFO App Application starting 
+2026-05-27 10:29:36.7038 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:29:37.2395 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:29:37.2439 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 10:29:48.7077 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:29:48.7243 INFO App Application exiting 
+2026-05-27 10:29:50.6922 INFO App Application starting 
+2026-05-27 10:29:51.2469 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:29:51.7941 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:29:51.7941 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 10:36:59.0827 INFO App Application starting 
+2026-05-27 10:36:59.6698 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:37:00.2285 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:37:00.2531 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 10:37:58.6263 INFO App Application starting 
+2026-05-27 10:38:57.5410 INFO App Application starting 
+2026-05-27 10:40:33.6648 INFO App Application starting 
+2026-05-27 10:40:34.2667 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:40:34.7477 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:40:34.7477 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 10:41:34.0118 INFO App Application starting 
+2026-05-27 10:41:34.5883 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:41:35.1719 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:41:35.1719 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 10:41:40.2324 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:41:40.2492 INFO App Application exiting 
+2026-05-27 10:41:42.0945 INFO App Application starting 
+2026-05-27 10:41:42.6659 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:41:43.2523 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:41:43.2566 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 10:44:22.7959 INFO App Application starting 
+2026-05-27 10:44:23.3824 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:44:23.9657 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:44:23.9657 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 10:44:42.1211 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 10:44:43.9333 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 10:44:44.1699 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 10:44:44.3074 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 10:44:44.4411 INFO PingModule Ping 1 (1.1.1.1): Online, 24ms 
+2026-05-27 10:44:44.5810 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 10:44:44.7308 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 10:44:44.8496 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 10:44:44.9551 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 10:44:54.1857 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:44:55.6666 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:45:10.2438 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:45:11.7809 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:45:13.3074 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:45:14.8125 INFO PingModule Ping 1 (123.123.123.123): Unstable, 332ms 
+2026-05-27 10:45:16.3501 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:45:17.8968 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:45:19.4391 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:45:21.0021 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:45:22.5463 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:45:24.1053 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:45:25.6413 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:45:27.1714 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:45:28.7311 INFO PingModule Ping 1 (123.123.123.123): Unstable, 350ms 
+2026-05-27 10:45:30.8265 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:45:32.3880 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:45:33.9677 INFO PingModule Ping 1 (123.123.123.123): Unstable, 358ms 
+2026-05-27 10:45:35.5284 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:45:37.0803 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:45:38.6293 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:45:40.1743 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:45:41.7213 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:45:43.2763 INFO PingModule Ping 1 (123.123.123.123): Unstable, 350ms 
+2026-05-27 10:45:44.8313 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:45:47.0106 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:45:48.5832 INFO PingModule Ping 1 (123.123.123.123): Unstable, 355ms 
+2026-05-27 10:45:50.1101 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:45:51.6663 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:45:53.2203 INFO PingModule Ping 1 (123.123.123.123): Unstable, 349ms 
+2026-05-27 10:45:54.7618 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:45:56.8204 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:45:58.3703 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:45:59.9684 INFO PingModule Ping 1 (123.123.123.123): Unstable, 360ms 
+2026-05-27 10:46:01.5244 INFO PingModule Ping 1 (123.123.123.123): Unstable, 349ms 
+2026-05-27 10:46:03.6813 INFO PingModule Ping 1 (123.123.123.123): Unstable, 356ms 
+2026-05-27 10:46:05.2231 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:47:12.2253 INFO App Application starting 
+2026-05-27 10:47:12.8025 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:47:13.3782 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:47:13.3782 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 10:47:14.4494 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:47:15.9872 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:47:17.5156 INFO PingModule Ping 1 (123.123.123.123): Unstable, 338ms 
+2026-05-27 10:47:19.0758 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:47:20.6195 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:47:22.2420 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:47:23.8102 INFO PingModule Ping 1 (123.123.123.123): Unstable, 354ms 
+2026-05-27 10:47:25.3263 INFO PingModule Ping 1 (123.123.123.123): Unstable, 336ms 
+2026-05-27 10:47:26.8587 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:47:28.3863 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:47:29.9163 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:47:31.4555 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:47:32.9890 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:47:34.5164 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:47:36.0379 INFO PingModule Ping 1 (123.123.123.123): Unstable, 337ms 
+2026-05-27 10:47:37.5641 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:47:39.1127 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:47:40.6643 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:47:42.1953 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:47:43.7380 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:47:45.3058 INFO PingModule Ping 1 (123.123.123.123): Unstable, 353ms 
+2026-05-27 10:47:46.8438 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:47:48.3813 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:47:49.9144 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:47:51.4759 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:47:53.5178 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:47:55.0823 INFO PingModule Ping 1 (123.123.123.123): Unstable, 352ms 
+2026-05-27 10:47:56.6810 INFO PingModule Ping 1 (123.123.123.123): Unstable, 363ms 
+2026-05-27 10:47:58.2821 INFO PingModule Ping 1 (123.123.123.123): Unstable, 364ms 
+2026-05-27 10:47:59.8398 INFO PingModule Ping 1 (123.123.123.123): Unstable, 350ms 
+2026-05-27 10:48:01.4000 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:48:02.9661 INFO PingModule Ping 1 (123.123.123.123): Unstable, 353ms 
+2026-05-27 10:48:04.5091 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:48:06.0408 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:48:07.5770 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:48:09.1197 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:48:10.6640 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:48:12.1973 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:48:13.7306 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:48:15.2464 INFO PingModule Ping 1 (123.123.123.123): Unstable, 336ms 
+2026-05-27 10:48:17.3300 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:48:18.8841 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:48:21.0061 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:48:22.5250 INFO PingModule Ping 1 (123.123.123.123): Unstable, 337ms 
+2026-05-27 10:48:24.0482 INFO PingModule Ping 1 (123.123.123.123): Unstable, 334ms 
+2026-05-27 10:48:25.5847 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:48:27.1598 INFO PingModule Ping 1 (123.123.123.123): Unstable, 355ms 
+2026-05-27 10:48:28.7196 INFO PingModule Ping 1 (123.123.123.123): Unstable, 350ms 
+2026-05-27 10:48:30.2656 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:48:31.8066 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:48:33.3603 INFO PingModule Ping 1 (123.123.123.123): Unstable, 349ms 
+2026-05-27 10:48:34.9194 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:48:36.4792 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:48:38.0193 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:48:39.5772 INFO PingModule Ping 1 (123.123.123.123): Unstable, 350ms 
+2026-05-27 10:48:41.1022 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:48:42.6298 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:48:44.1697 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:48:45.6965 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:48:47.6836 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:48:49.2225 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:48:51.3283 INFO PingModule Ping 1 (123.123.123.123): Unstable, 355ms 
+2026-05-27 10:48:52.9018 INFO PingModule Ping 1 (123.123.123.123): Unstable, 355ms 
+2026-05-27 10:48:54.4318 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:48:55.9819 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:48:57.5228 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:48:59.0806 INFO PingModule Ping 1 (123.123.123.123): Unstable, 350ms 
+2026-05-27 10:49:01.3188 INFO PingModule Ping 1 (123.123.123.123): Unstable, 352ms 
+2026-05-27 10:49:02.8611 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:49:04.4119 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:49:05.9610 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:49:07.5224 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:49:09.3298 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:49:10.8690 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:49:12.4379 INFO PingModule Ping 1 (123.123.123.123): Unstable, 354ms 
+2026-05-27 10:49:14.0200 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:49:15.5975 INFO PingModule Ping 1 (123.123.123.123): Unstable, 357ms 
+2026-05-27 10:49:17.1236 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:49:18.6616 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:49:20.1844 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:49:21.7326 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:49:23.3183 INFO PingModule Ping 1 (123.123.123.123): Unstable, 359ms 
+2026-05-27 10:49:24.8713 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:49:26.4311 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:49:28.3236 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:49:29.8900 INFO PingModule Ping 1 (123.123.123.123): Unstable, 353ms 
+2026-05-27 10:49:31.4778 INFO PingModule Ping 1 (123.123.123.123): Unstable, 360ms 
+2026-05-27 10:49:33.0792 INFO PingModule Ping 1 (123.123.123.123): Unstable, 365ms 
+2026-05-27 10:49:34.8272 INFO PingModule Ping 1 (123.123.123.123): Unstable, 359ms 
+2026-05-27 10:49:36.6802 INFO PingModule Ping 1 (123.123.123.123): Unstable, 374ms 
+2026-05-27 10:49:38.2762 INFO PingModule Ping 1 (123.123.123.123): Unstable, 363ms 
+2026-05-27 10:49:39.8402 INFO PingModule Ping 1 (123.123.123.123): Unstable, 353ms 
+2026-05-27 10:49:41.3991 INFO PingModule Ping 1 (123.123.123.123): Unstable, 350ms 
+2026-05-27 10:49:42.9479 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:49:44.4876 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:49:46.0234 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:49:47.5635 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:49:49.1191 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:49:50.6612 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:49:52.2026 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:49:53.7718 INFO PingModule Ping 1 (123.123.123.123): Unstable, 354ms 
+2026-05-27 10:49:55.3303 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:49:56.8520 INFO PingModule Ping 1 (123.123.123.123): Unstable, 338ms 
+2026-05-27 10:49:58.3847 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:49:59.9559 INFO PingModule Ping 1 (123.123.123.123): Unstable, 354ms 
+2026-05-27 10:50:01.5222 INFO PingModule Ping 1 (123.123.123.123): Unstable, 353ms 
+2026-05-27 10:50:03.0755 INFO PingModule Ping 1 (123.123.123.123): Unstable, 349ms 
+2026-05-27 10:50:04.6349 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:50:06.1753 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:50:08.3204 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:50:09.8681 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:50:11.3943 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:50:12.9959 INFO PingModule Ping 1 (123.123.123.123): Unstable, 365ms 
+2026-05-27 10:50:14.5513 INFO PingModule Ping 1 (123.123.123.123): Unstable, 349ms 
+2026-05-27 10:50:16.1087 INFO PingModule Ping 1 (123.123.123.123): Unstable, 350ms 
+2026-05-27 10:50:17.6468 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:50:19.1608 INFO PingModule Ping 1 (123.123.123.123): Unstable, 336ms 
+2026-05-27 10:50:21.1703 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:50:22.7054 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:50:24.2535 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:50:25.7792 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:50:27.3075 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:50:28.8482 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:50:30.3940 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:50:31.9307 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:50:33.4996 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:50:35.0153 INFO PingModule Ping 1 (123.123.123.123): Unstable, 335ms 
+2026-05-27 10:50:36.5508 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:50:38.0692 INFO PingModule Ping 1 (123.123.123.123): Unstable, 337ms 
+2026-05-27 10:50:39.6051 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:50:41.1550 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:50:42.7139 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:50:44.3148 INFO PingModule Ping 1 (123.123.123.123): Unstable, 360ms 
+2026-05-27 10:50:45.8631 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:50:47.4042 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:50:48.9362 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:50:50.4740 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:50:52.0192 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:50:53.5588 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:50:55.0842 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:50:56.6124 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:50:58.1926 INFO PingModule Ping 1 (123.123.123.123): Unstable, 356ms 
+2026-05-27 10:50:59.7537 INFO PingModule Ping 1 (123.123.123.123): Unstable, 351ms 
+2026-05-27 10:51:01.3019 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:51:02.8297 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:51:04.3796 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:51:05.8902 INFO PingModule Ping 1 (123.123.123.123): Unstable, 335ms 
+2026-05-27 10:51:07.4178 INFO PingModule Ping 1 (123.123.123.123): Unstable, 340ms 
+2026-05-27 10:51:08.9525 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:51:10.6670 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:51:12.2122 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:51:13.7431 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:51:15.2778 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:51:16.8112 INFO PingModule Ping 1 (123.123.123.123): Unstable, 342ms 
+2026-05-27 10:51:18.3536 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:51:19.8921 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:51:21.4315 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:51:22.9821 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:51:24.5118 INFO PingModule Ping 1 (123.123.123.123): Unstable, 341ms 
+2026-05-27 10:51:26.0271 INFO PingModule Ping 1 (123.123.123.123): Unstable, 337ms 
+2026-05-27 10:52:40.6502 INFO App Application starting 
+2026-05-27 10:52:41.2282 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:52:41.7942 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:52:41.7942 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 10:52:42.8747 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:52:45.0132 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:52:46.5600 INFO PingModule Ping 1 (123.123.123.123): Unstable, 346ms 
+2026-05-27 10:52:48.0991 INFO PingModule Ping 1 (123.123.123.123): Unstable, 343ms 
+2026-05-27 10:52:49.6468 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:52:51.5348 INFO PingModule Ping 1 (123.123.123.123): Unstable, 357ms 
+2026-05-27 10:52:53.0837 INFO PingModule Ping 1 (123.123.123.123): Unstable, 347ms 
+2026-05-27 10:53:28.9754 INFO App Application starting 
+2026-05-27 10:53:29.5576 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:53:30.1146 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:53:30.1176 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 10:53:31.2222 INFO PingModule Ping 1 (123.123.123.123): Unstable, 357ms 
+2026-05-27 10:55:14.4215 INFO App Application starting 
+2026-05-27 10:55:15.0161 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:55:15.6822 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:55:15.6822 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 10:55:16.7904 INFO PingModule Ping 1 (123.123.123.123): Unstable, 356ms 
+2026-05-27 10:55:18.3861 INFO PingModule Ping 1 (123.123.123.123): Unstable, 362ms 
+2026-05-27 10:55:19.9587 INFO PingModule Ping 1 (123.123.123.123): Unstable, 355ms 
+2026-05-27 10:55:21.5146 INFO PingModule Ping 1 (123.123.123.123): Unstable, 345ms 
+2026-05-27 10:55:23.0667 INFO PingModule Ping 1 (123.123.123.123): Unstable, 348ms 
+2026-05-27 10:55:24.6665 INFO PingModule Ping 1 (123.123.123.123): Unstable, 362ms 
+2026-05-27 10:55:26.2306 INFO PingModule Ping 1 (123.123.123.123): Unstable, 349ms 
+2026-05-27 10:55:27.7555 INFO PingModule Ping 1 (123.123.123.123): Unstable, 339ms 
+2026-05-27 10:55:29.3113 INFO PingModule Ping 1 (123.123.123.123): Unstable, 349ms 
+2026-05-27 10:55:30.8517 INFO PingModule Ping 1 (123.123.123.123): Unstable, 344ms 
+2026-05-27 10:55:34.4399 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:55:34.4591 INFO App Application exiting 
+2026-05-27 10:56:33.1337 INFO App Application starting 
+2026-05-27 10:56:33.7202 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 10:56:34.2407 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 10:56:34.2407 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 11:01:18.9815 INFO App Application starting 
+2026-05-27 11:01:19.5373 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:01:20.1044 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:01:20.1044 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-27 11:01:38.8208 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:01:42.3189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:01:45.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:01:49.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:01:52.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:01:56.3178 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:01:59.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:02:03.3178 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:02:06.8199 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:02:10.3194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:02:12.8609 INFO PingModule Ping 1 (1.1.1.1): Unstable, 40ms 
+2026-05-27 11:02:13.4688 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:02:15.6109 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:02:17.7599 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:02:19.9010 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:02:22.0302 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:02:24.1369 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:02:26.2809 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:02:28.4099 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:05:24.1146 INFO App Application starting 
+2026-05-27 11:05:24.6884 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:05:25.2540 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:05:25.2560 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:05:25.4120 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:05:27.5582 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:05:29.6860 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:05:31.8224 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:05:33.9518 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:05:36.0836 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:05:38.1892 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:05:40.2854 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:05:42.4200 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:05:44.5138 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:05:46.6511 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:05:48.7823 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:05:50.8978 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:05:53.0311 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:05:55.1606 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:05:57.2542 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:05:59.3444 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:06:01.4802 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:06:03.6031 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:06:05.7208 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:06:07.8402 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:06:09.9807 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:06:12.0838 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:06:14.1928 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:06:16.3145 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:06:18.4391 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:06:20.5678 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:06:22.6888 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:06:24.8181 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:06:26.9541 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:06:29.0730 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:06:31.1981 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:06:33.3290 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:06:37.0272 INFO App Application starting 
+2026-05-27 11:06:37.6126 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:06:38.1819 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:06:38.1819 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:06:38.3186 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:06:40.4535 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:06:42.5892 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:06:44.7176 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:06:46.8278 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:06:48.9569 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:06:51.1011 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 11:06:53.2008 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:06:55.2958 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:06:57.4047 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:06:59.5372 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:07:01.6568 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:07:03.7874 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:07:05.8877 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:07:08.0303 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:07:10.1310 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:07:12.2562 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:07:14.3969 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:07:16.4987 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:07:18.6566 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 11:07:20.7494 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:07:22.8543 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:07:24.9335 INFO PingModule Ping 1 (1.1.1.1): Online, 24ms 
+2026-05-27 11:07:27.0667 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:07:29.1554 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:07:31.2843 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:07:33.3751 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:07:35.4953 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:07:37.6199 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:07:39.7459 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:07:41.8727 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:07:43.9687 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:07:46.0724 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:07:48.1955 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:07:50.3259 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:07:52.4338 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:07:54.5751 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:07:56.7049 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:07:58.8076 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:08:00.9355 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:08:03.0516 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:08:05.1854 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:08:07.3138 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:08:09.4117 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:11:44.3609 INFO App Application starting 
+2026-05-27 11:11:44.9569 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:11:45.5383 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:11:45.5383 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:11:45.6940 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:11:47.8132 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:11:49.9440 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:11:52.0349 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:11:54.1299 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:11:56.2216 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:11:58.3448 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:12:00.4368 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:12:02.5721 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:12:04.7035 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:12:06.8434 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:12:08.9740 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:12:11.0650 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:12:13.1967 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:12:15.3349 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:12:17.4628 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:12:19.5894 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:12:21.7216 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:12:23.8207 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:12:25.9262 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:12:28.0624 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:12:30.1771 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:12:32.3212 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 11:12:34.4107 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:12:36.5201 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:12:38.6048 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:12:40.7107 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:12:42.8416 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:12:44.9397 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:12:47.0792 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:12:49.1819 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:12:51.3207 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:12:53.4453 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:12:55.5580 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:12:57.6798 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:12:59.7894 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:13:01.9305 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:13:04.0328 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:13:06.1607 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:13:08.2887 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:13:10.3992 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:13:12.5381 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:13:14.6310 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:13:16.7800 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:13:18.9102 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:13:21.0189 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:13:23.1490 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:13:25.2800 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:13:27.3966 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:13:29.5289 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:13:31.6697 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:13:33.7927 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:13:35.9293 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:13:40.4344 INFO App Application starting 
+2026-05-27 11:13:41.0171 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:13:41.6159 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:13:41.6159 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:13:41.7736 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:13:43.8828 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:13:45.9756 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:13:48.1077 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:13:50.2404 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:13:52.3568 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:13:54.4884 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:13:56.5811 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:13:58.7086 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:14:00.8206 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:14:02.9317 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:14:05.0465 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:14:07.1704 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:14:09.2867 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:14:11.4475 INFO PingModule Ping 1 (1.1.1.1): Online, 46ms 
+2026-05-27 11:14:13.5801 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:14:15.6814 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:14:17.7904 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:14:19.9041 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:14:22.0359 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:14:24.1385 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:14:26.2352 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:14:28.3718 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:14:30.4834 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:14:32.6176 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:14:34.7174 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:14:36.8502 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:14:38.9436 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:14:41.0773 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:14:43.2172 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:14:45.3483 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:14:47.4967 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:14:49.6206 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:14:51.7658 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:14:53.8954 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:14:55.9883 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:14:58.0986 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:15:00.2165 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:15:02.3556 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:15:04.4527 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:15:06.5579 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:15:08.6432 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:15:10.7226 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:16:50.1882 INFO App Application starting 
+2026-05-27 11:16:50.8050 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:16:51.3868 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:16:51.3868 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:16:51.5428 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:16:53.6680 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:16:55.7988 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:16:57.9353 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:17:00.0704 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:17:02.2100 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:17:04.3044 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:17:06.4387 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:17:08.5626 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:17:10.6978 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:17:12.8392 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:17:15.0179 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:17:17.1458 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:17:19.2464 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:17:21.3526 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:17:23.4506 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:17:25.5415 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:17:27.6817 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:17:31.4183 INFO App Application starting 
+2026-05-27 11:17:32.0157 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:17:32.5669 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:17:32.5679 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:17:32.7187 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:17:34.8763 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:17:36.9716 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:17:39.1086 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:17:41.2379 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:17:43.3748 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:17:45.5099 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:17:47.6105 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:17:49.7168 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:17:51.8482 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:17:53.9656 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:17:56.0971 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:17:58.1847 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:18:00.2755 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:18:02.3846 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:18:04.4826 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:18:06.6177 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:18:08.7474 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:18:10.8759 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:18:13.0067 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:18:15.1183 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:18:17.2230 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:18:19.3461 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:18:21.4648 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:18:23.5543 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:18:25.6484 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:18:27.7662 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:18:29.8955 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:18:32.0486 INFO PingModule Ping 1 (1.1.1.1): Online, 47ms 
+2026-05-27 11:18:34.1928 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:18:36.3326 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:18:38.4544 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:18:40.5843 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:18:42.7029 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:18:44.8232 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:18:46.9553 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:18:49.0530 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:18:51.2168 INFO PingModule Ping 1 (1.1.1.1): Online, 50ms 
+2026-05-27 11:18:53.3320 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:18:55.4478 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:18:57.5385 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:18:59.6650 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:19:01.7820 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:19:03.9051 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:19:06.0330 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:19:08.1635 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:19:10.2927 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:19:12.3905 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:19:14.4854 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:19:16.5834 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:19:18.6862 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:19:20.7758 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:19:23.1730 INFO PingModule Ping 1 (1.1.1.1): Online, 127ms 
+2026-05-27 11:19:25.2955 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:19:27.4026 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:19:29.5577 INFO PingModule Ping 1 (1.1.1.1): Online, 48ms 
+2026-05-27 11:19:31.6803 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:19:33.8873 INFO PingModule Ping 1 (1.1.1.1): Online, 62ms 
+2026-05-27 11:19:35.9904 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:19:38.1325 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:19:40.2620 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:19:42.3924 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:19:44.4990 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:19:46.6089 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:19:48.7243 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:19:50.8821 INFO PingModule Ping 1 (1.1.1.1): Online, 50ms 
+2026-05-27 11:19:53.1083 INFO PingModule Ping 1 (1.1.1.1): Online, 68ms 
+2026-05-27 11:19:55.2092 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:19:57.3517 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:19:59.4554 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:20:01.5585 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:20:03.6595 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:20:05.7599 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:20:07.8579 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:20:09.9541 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:20:12.0588 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:20:14.1638 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:20:16.2750 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:20:18.4098 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:20:20.5125 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:20:22.6134 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:20:24.7285 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:20:26.8292 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:20:28.9679 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:20:31.2079 INFO PingModule Ping 1 (1.1.1.1): Online, 78ms 
+2026-05-27 11:20:33.2905 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:20:35.3923 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:20:37.4867 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:20:39.5734 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:20:41.6778 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:20:43.7594 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:20:45.8914 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:20:48.0285 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:20:50.1270 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:20:52.2128 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:20:54.3157 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:20:56.4277 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:20:58.5641 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:21:00.9640 INFO PingModule Ping 1 (1.1.1.1): Online, 130ms 
+2026-05-27 11:21:03.0719 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:21:05.1652 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:21:07.2673 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:21:09.3558 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:21:11.4570 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:21:13.5468 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:21:15.6498 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:21:17.7758 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:21:19.9066 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:21:22.0054 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:21:24.0981 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:21:26.1907 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:21:28.3390 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:21:30.4458 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:21:32.5741 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:21:34.6612 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:21:36.7545 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:21:38.8450 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:21:40.9755 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:21:43.0702 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:21:45.1654 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:21:47.2543 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:21:49.3564 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:21:51.4602 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:21:53.6041 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:21:55.7020 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:21:57.8185 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:21:59.9148 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:22:02.0286 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:22:04.1589 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:22:06.2572 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:22:08.3773 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:22:10.4841 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:22:12.5827 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:22:14.6802 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:22:16.7718 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:22:18.9469 INFO PingModule Ping 1 (1.1.1.1): Online, 56ms 
+2026-05-27 11:22:21.0497 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:22:23.1465 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:22:25.2434 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:22:27.3323 INFO PingModule Ping 1 (1.1.1.1): Online, 24ms 
+2026-05-27 11:22:29.4543 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:22:31.5495 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:22:33.6617 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:22:35.7940 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:22:37.8922 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:22:40.0131 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:22:42.1432 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:22:44.2306 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:22:46.3629 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:22:48.4516 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:22:50.5719 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:22:52.6810 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:22:54.8145 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:22:56.9441 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:22:59.0454 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:23:01.1654 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:23:03.3107 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:23:05.4440 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:23:07.5606 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:23:09.6845 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:23:11.7765 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:23:13.8744 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:23:15.9858 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:23:18.1045 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:23:20.2304 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:23:22.3400 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:23:24.4408 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:23:26.5791 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:23:28.6904 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:23:30.8114 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:23:32.9044 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:23:34.9963 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:23:37.0898 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:23:39.2283 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:23:41.3243 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:23:43.4276 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:23:45.5258 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:23:47.6154 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:23:49.7039 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:23:51.7953 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:23:53.9331 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:23:56.1040 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 11:23:58.2289 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:24:00.3400 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:24:02.4847 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:24:04.5872 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:24:06.6889 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:24:08.8143 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:24:10.9505 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:24:13.0889 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:24:15.2191 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:24:17.3031 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:24:19.3976 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:24:21.4883 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:24:23.6072 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:24:25.7188 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:24:27.8463 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:24:29.9491 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:24:32.0599 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:24:34.1881 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:24:36.2708 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:24:38.3764 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:24:40.4715 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:24:42.5831 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:24:44.6866 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:24:46.7858 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:24:48.8928 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:24:51.0272 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:24:53.1561 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:24:55.2669 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:24:57.3555 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:24:59.4714 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:25:01.5603 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:25:03.6756 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:25:05.8070 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:25:07.9472 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:25:10.0732 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:25:12.1605 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:25:14.2751 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:25:16.4143 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:25:18.5657 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:25:20.6751 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:25:22.8066 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:25:24.9364 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:25:27.0544 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:25:29.1859 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:25:31.2950 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:25:33.4330 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:25:35.5699 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:25:37.6746 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:25:39.8132 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:25:41.9456 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:25:44.0455 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:25:46.1750 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:25:48.3046 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:25:50.4210 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:25:52.5657 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:25:54.6580 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:25:56.7522 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:25:58.8577 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:26:00.9725 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:26:03.0671 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:26:05.1815 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:26:07.2784 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:26:09.3905 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:26:11.5133 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:26:13.6611 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:26:15.7519 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:26:17.8829 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:26:20.0159 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:26:22.1303 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:26:24.2313 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:26:26.3266 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:26:28.4705 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:26:30.5707 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:26:32.6769 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:26:34.7832 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:26:36.8949 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:26:39.0223 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:26:41.1520 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:26:43.2613 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:26:45.3693 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:26:47.4603 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:26:49.5545 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:26:51.6814 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:26:55.8032 INFO App Application starting 
+2026-05-27 11:26:56.3907 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:26:56.9889 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:26:56.9909 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:26:57.1451 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:26:59.2554 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:27:01.3923 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:27:03.5427 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:27:05.6497 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:27:07.7545 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:27:09.8547 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:27:11.9610 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:27:14.0545 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:27:16.1803 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:27:18.2939 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:27:20.4207 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:27:22.5300 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:27:24.6280 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:27:26.7438 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:27:28.8724 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:27:30.9991 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:27:33.1101 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:27:35.2094 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:27:37.3030 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:27:39.3972 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:27:41.5189 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:27:43.6600 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 11:27:45.7758 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:27:47.9195 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:27:50.0435 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:27:52.1876 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:27:54.2920 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:27:56.3930 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:27:58.5405 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:28:00.6272 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:28:02.7233 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:28:04.8168 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:28:06.9655 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:28:09.0977 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:28:11.2166 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:28:13.3221 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:28:15.4204 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:28:17.5283 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:28:19.6263 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:28:21.7453 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:28:23.8790 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:28:26.0163 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:28:28.1450 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:28:30.2860 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:28:32.4223 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:28:34.5103 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:28:36.6083 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:28:38.7006 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:28:40.8354 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:28:42.9397 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:28:45.0447 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:28:47.1663 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:28:49.2580 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:28:51.3446 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:28:53.4463 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:28:55.5338 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:28:57.6262 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:28:59.7244 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:29:01.8843 INFO PingModule Ping 1 (1.1.1.1): Online, 46ms 
+2026-05-27 11:29:03.9900 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:29:06.0941 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:29:08.1987 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:29:10.3266 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:29:12.4358 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:29:14.5549 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:29:16.6593 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:29:18.7579 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:29:20.8645 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:29:23.0034 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:29:25.1245 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:29:27.3445 INFO PingModule Ping 1 (1.1.1.1): Online, 66ms 
+2026-05-27 11:29:29.4461 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:29:31.5525 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:29:33.6840 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:29:35.7868 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:29:37.9028 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:29:40.0423 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 11:29:42.1529 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:29:44.2739 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:29:46.3683 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:29:48.4972 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:29:50.5964 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:29:52.7258 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:29:54.8130 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:29:56.9598 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:29:59.0689 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:30:01.2136 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 11:30:03.3399 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:30:05.4372 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:30:07.5512 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:30:09.6816 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:30:11.7913 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:30:13.8966 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:30:15.9816 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:30:18.0965 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:30:20.1932 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:30:22.2850 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:30:24.3754 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:30:26.4861 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:30:28.5857 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:30:30.6798 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:30:32.8305 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:30:34.9301 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:30:37.0363 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:30:39.1615 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:30:41.2499 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:30:43.3570 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:30:45.4695 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:30:47.6124 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:30:49.7408 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:30:51.9365 INFO PingModule Ping 1 (1.1.1.1): Online, 58ms 
+2026-05-27 11:30:54.0442 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:30:56.1520 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:30:58.2599 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:31:00.3649 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:31:02.4578 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:31:04.5899 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:31:06.7003 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:31:08.8128 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:31:10.9312 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:31:13.0793 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:31:15.1791 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:31:17.3046 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:31:19.4110 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:31:21.5192 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:31:23.6242 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:31:25.7468 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:31:27.8432 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:31:29.9472 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:31:32.0565 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:31:34.1466 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:31:36.2727 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:31:38.3772 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:31:40.4770 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:31:42.5814 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:31:44.6945 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:31:46.7976 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:31:48.9286 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:31:51.0333 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:31:53.1289 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:31:55.2362 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:31:57.3621 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:31:59.4601 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:32:01.5713 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:32:03.7055 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:32:05.8011 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:32:07.9362 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:32:10.0686 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:32:12.2006 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:32:14.3373 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:32:16.4320 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:32:18.5646 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:32:20.6527 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:32:22.8393 INFO PingModule Ping 1 (1.1.1.1): Online, 56ms 
+2026-05-27 11:32:24.9559 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:32:27.0604 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:32:29.1870 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:32:31.3154 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:32:33.4202 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:32:35.5242 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:32:37.6285 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:32:39.7458 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:32:41.8862 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:32:43.9848 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:32:46.0992 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:32:48.1944 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:32:50.2878 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:32:52.3727 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:32:54.4724 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:32:56.5632 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:32:58.6960 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:33:00.7954 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:33:02.8976 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:33:05.0251 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:33:07.1647 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:33:09.2940 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:33:11.3924 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:33:13.5038 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:33:15.5925 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:33:17.7306 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:33:19.8328 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:33:21.9584 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:33:24.0864 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:33:26.1771 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:33:28.2930 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:33:30.4240 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:33:32.5322 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:33:34.6637 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:33:36.7709 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:33:38.8845 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:33:40.9905 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:33:43.0949 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:33:45.2016 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:33:47.3121 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:33:49.4055 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:33:51.5330 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:33:53.6455 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:33:55.7659 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:33:57.8906 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:34:00.0007 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:34:02.0995 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:34:04.1963 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:34:06.2954 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:34:08.4323 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:34:10.5307 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:34:12.6299 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:34:14.7239 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:34:16.8242 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:34:18.9155 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:34:21.0216 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:34:23.1446 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:34:25.2593 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:34:27.3731 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:34:29.4688 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:34:31.5640 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:34:33.7044 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:34:35.7998 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:34:37.9292 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:34:40.0615 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:34:42.1732 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:34:44.2689 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:34:46.3730 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:34:48.5100 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:34:50.6037 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:34:52.6971 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:34:54.8040 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:34:55.4073 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:34:57.5035 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:34:59.6382 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:35:01.7369 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:35:03.8546 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:35:05.9531 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:35:08.0581 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:35:10.1431 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:35:12.2319 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:35:14.3213 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:35:18.8184 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:22.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:25.8194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:29.1110 ERROR NotificationService Failed to send email System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.IO.IOException: Не удается прочитать данные из транспортного соединения: net_io_connectionclosed.
+   в System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   в System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   в System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в NetworkMonitor.Services.NotificationService.SendEmail(String subject, String body) в C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\Services\NotificationService.cs:строка 131
+2026-05-27 11:35:29.3178 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:32.8185 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:36.3181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:39.8231 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:43.3191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:46.8193 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:50.3189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:53.8198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:35:57.3188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:00.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:04.3186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:07.8191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:11.3189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:14.8181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:18.3191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:21.8192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:25.3192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:28.8179 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:32.3180 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:35.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:39.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:42.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:46.3192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:49.8194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:53.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:36:56.8187 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:00.3261 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:03.8185 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:07.3194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:10.8178 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:14.3180 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:17.8192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:21.3199 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:24.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:28.3197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:31.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:35.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:38.8195 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:42.3192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:45.8181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:49.3181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:52.8198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:56.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:37:59.8181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:03.3187 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:06.8194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:10.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:13.8183 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:17.3188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:20.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:24.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:27.8185 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:31.3192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:34.8183 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:38.3191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:41.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:45.3218 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:48.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:52.3191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:55.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:38:59.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:02.8192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:06.3188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:09.8182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:13.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:16.8193 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:20.3192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:23.8197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:27.3179 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:30.8238 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:34.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:37.8193 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:41.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:44.8198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:48.3189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:51.8193 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:55.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:39:58.8197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:02.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:05.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:09.3188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:12.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:16.3186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:19.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:23.3197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:26.8196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:30.3193 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:33.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:37.3193 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:40.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:44.3191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:47.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:51.3203 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:54.8182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:40:58.3178 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:01.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:05.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:08.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:12.3187 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:15.8183 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:19.3189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:22.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:26.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:29.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:33.3181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:36.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:40.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:43.8197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:47.3180 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:50.8191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:54.3192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:41:57.8178 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:01.3197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:04.8185 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:08.3198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:11.8196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:15.3186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:18.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:22.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:25.8197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:29.3183 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:32.8180 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:36.3180 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:39.8200 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:43.3192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:46.8180 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:50.3179 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:53.8241 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:42:57.3185 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:00.8195 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:04.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:07.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:11.3188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:14.8191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:18.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:21.8220 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:24.4351 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:43:24.4351 INFO App Application exiting 
+2026-05-27 11:43:39.7883 INFO App Application starting 
+2026-05-27 11:43:40.3695 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:43:40.9354 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:43:40.9354 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:43:43.8232 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:47.3192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:50.8194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:54.0670 ERROR NotificationService Failed to send email System.Net.Mail.SmtpException: Сбой при отправке сообщения электронной почты. ---> System.IO.IOException: Не удается прочитать данные из транспортного соединения: net_io_connectionclosed.
+   в System.Net.Mail.SmtpReplyReaderFactory.ProcessRead(Byte[] buffer, Int32 offset, Int32 read, Boolean readLine)
+   в System.Net.Mail.SmtpReplyReaderFactory.ReadLines(SmtpReplyReader caller, Boolean oneLine)
+   в System.Net.Mail.SmtpReplyReaderFactory.ReadLine(SmtpReplyReader caller)
+   в System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   в System.Net.Mail.SmtpClient.GetConnection()
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- Конец трассировки внутреннего стека исключений ---
+   в System.Net.Mail.SmtpClient.Send(MailMessage message)
+   в NetworkMonitor.Services.NotificationService.SendEmail(String subject, String body) в C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\Services\NotificationService.cs:строка 131
+2026-05-27 11:43:54.3186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:43:57.8187 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:44:01.3186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:44:04.8186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:44:08.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:44:11.8181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:44:15.3179 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:44:18.8181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:44:22.3234 INFO PingModule Ping 1 (1.1.1.1): Offline, -1ms 
+2026-05-27 11:44:22.9609 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:44:25.0786 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:44:27.1905 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:44:29.2933 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:44:31.3969 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:44:33.4819 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:44:35.5830 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:44:37.6860 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:44:39.8122 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:44:41.9272 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:44:44.0159 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:44:46.1431 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:44:48.2806 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:44:50.4040 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:44:52.5353 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:44:54.6402 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:44:56.7733 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:44:58.8750 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:45:01.0195 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:45:03.1148 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:45:05.2433 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:45:07.3904 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:45:09.4919 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:45:11.6142 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:45:13.7121 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:45:15.8136 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:45:17.9142 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:45:20.0100 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:45:22.1611 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:45:24.3077 INFO PingModule Ping 1 (1.1.1.1): Online, 46ms 
+2026-05-27 11:45:26.4192 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:45:28.5503 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:45:30.7105 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 11:45:32.8185 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:45:34.9504 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:45:37.0480 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:45:39.1482 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:45:41.2990 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:45:43.4295 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:45:45.5228 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:45:47.6678 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 11:45:49.7830 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:45:51.9375 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 11:45:54.0611 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:45:56.1560 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:45:58.2550 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:46:00.3728 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:46:02.4979 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:46:04.6391 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:46:06.7799 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:46:08.8858 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:46:11.0361 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 11:46:13.1766 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:46:15.2972 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:46:17.4682 INFO PingModule Ping 1 (1.1.1.1): Online, 51ms 
+2026-05-27 11:46:19.5763 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:46:21.6714 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:46:23.8169 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 11:46:25.9369 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:46:28.0703 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 11:46:30.1981 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:46:32.3159 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:46:34.4483 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:46:36.5657 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:46:38.6623 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:46:40.7746 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:46:42.9071 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:46:45.0459 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 11:46:47.1860 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:46:49.2689 INFO PingModule Ping 1 (1.1.1.1): Online, 25ms 
+2026-05-27 11:46:51.3959 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:46:53.4989 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:46:55.6334 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:46:57.7654 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:46:59.8614 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:47:01.9584 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:47:04.0498 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:47:06.1592 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:47:08.2482 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:47:10.3599 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:47:12.4950 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:47:14.6330 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:47:16.7848 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 11:47:18.8950 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:47:21.0253 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:47:23.1759 INFO PingModule Ping 1 (1.1.1.1): Online, 47ms 
+2026-05-27 11:47:25.2669 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:47:27.3933 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:47:36.3443 INFO App Application starting 
+2026-05-27 11:47:36.9235 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:47:37.4878 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:47:37.4908 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:47:37.6163 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:47:39.7209 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:47:41.8497 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:47:43.9710 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:47:46.0983 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:47:48.2288 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:47:50.3470 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:47:52.4512 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 11:47:54.5838 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:47:56.6718 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 11:47:58.7735 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:48:00.8707 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:48:02.9793 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:48:05.1042 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:48:07.2422 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:48:09.3823 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 11:48:11.4817 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:48:13.6221 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:48:15.7190 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:48:17.8253 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:48:19.9528 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:48:22.0652 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:48:24.1620 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 11:48:26.2535 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:48:28.3817 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:48:30.5207 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:48:32.6355 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:48:34.7695 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:48:36.9123 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 11:48:39.0048 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:48:41.1422 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 11:48:43.2727 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:48:45.3872 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 11:48:47.5110 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 11:48:49.6423 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:48:51.7829 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 11:48:53.8894 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 11:48:55.9926 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:48:58.0978 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:49:00.1897 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 11:49:02.2788 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:49:04.4077 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 11:49:06.5145 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:55:13.0761 INFO App Application starting 
+2026-05-27 11:55:13.6755 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:55:14.2571 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:55:14.2571 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:55:14.4111 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:55:16.5766 INFO PingModule Ping 1 (1.1.1.1): Online, 47ms 
+2026-05-27 11:55:18.7014 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 11:55:20.8324 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:55:22.9611 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 11:55:25.0726 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 11:55:27.1962 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:55:29.3124 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 11:55:31.4397 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 11:55:33.5597 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 11:55:35.6546 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 11:55:37.7626 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 11:55:41.8231 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:55:45.3183 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:55:48.8181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:55:52.2899 ERROR NotificationService Failed to send email MailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected.
+   в MailKit.Net.Smtp.SmtpStream.ReadAhead(CancellationToken cancellationToken) в D:\src\MailKit\MailKit\Net\Smtp\SmtpStream.cs:строка 251
+   в MailKit.Net.Smtp.SmtpStream.ReadResponse(CancellationToken cancellationToken) в D:\src\MailKit\MailKit\Net\Smtp\SmtpStream.cs:строка 540
+   в MailKit.Net.Smtp.SmtpClient.PostConnect(Stream stream, String host, Int32 port, SecureSocketOptions options, Boolean starttls, CancellationToken cancellationToken) в D:\src\MailKit\MailKit\Net\Smtp\SmtpClient.cs:строка 1277
+   в MailKit.Net.Smtp.SmtpClient.Connect(String host, Int32 port, SecureSocketOptions options, CancellationToken cancellationToken) в D:\src\MailKit\MailKit\Net\Smtp\SmtpClient.cs:строка 1403
+   в NetworkMonitor.Services.NotificationService.SendEmail(String subject, String body) в C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\Services\NotificationService.cs:строка 133
+2026-05-27 11:55:52.3179 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:55:55.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:55:59.3186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:02.8191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:06.3306 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:09.8194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:13.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:16.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:20.3241 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:23.8186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:27.3197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:30.8184 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:34.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:37.8191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:41.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:44.8185 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:48.3198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:51.8197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:56:55.3193 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:57:40.9217 INFO App Application starting 
+2026-05-27 11:57:41.5074 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 11:57:42.1403 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 11:57:42.1403 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 11:57:44.8212 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:57:46.6912 INFO NotificationService Email sent: [NetworkMonitor] 1: Online → Offline 
+2026-05-27 11:57:48.3184 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:57:51.8191 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:57:55.3198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:57:58.8178 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:58:02.3203 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:58:05.8196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:58:09.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 11:58:12.8193 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:00:43.1914 INFO App Application starting 
+2026-05-27 12:00:43.7814 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 12:00:44.2990 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 12:00:44.2990 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 12:00:47.3243 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:00:50.5800 INFO NotificationService Email sent: [NetworkMonitor] 1: Online → Offline 
+2026-05-27 12:00:50.8181 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:00:54.3198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:00:57.8180 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:01:01.3210 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:01:04.8192 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:01:08.3186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:01:11.8185 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:01:15.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:01:18.8234 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:01:22.3190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:01:52.3188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:02:22.8190 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:02:52.8188 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:03:22.8194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:03:53.3189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:04:23.3198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:04:53.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:05:23.8196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:05:54.3196 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:06:24.8184 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:06:54.8194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:07:25.3186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:07:55.8189 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:08:25.8228 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:08:56.3197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:09:26.8179 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:17:39.3089 INFO App Application starting 
+2026-05-27 12:17:39.9385 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 12:17:40.5057 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 12:17:40.5057 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 12:17:43.3198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:17:57.3325 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:18:15.3197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:18:45.3183 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:19:15.8194 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:19:45.8186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:20:16.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:20:46.3238 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:21:16.3184 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:21:46.8184 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:22:17.3182 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:22:29.0342 INFO App Application starting 
+2026-05-27 12:22:29.6204 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 12:22:30.1690 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 12:22:30.1690 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 12:22:32.8207 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:22:41.3179 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:22:45.4597 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 12:22:50.5837 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 12:22:55.7220 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 12:23:00.8467 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 12:23:05.9933 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:23:11.1430 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 12:23:16.2778 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 12:23:21.4181 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 12:23:26.5573 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 12:23:31.6955 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 12:23:36.8368 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 12:23:41.9460 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 12:23:47.0870 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 12:23:52.2287 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:23:57.3760 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:24:02.4903 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 12:24:07.6395 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:24:12.8042 INFO PingModule Ping 1 (1.1.1.1): Online, 46ms 
+2026-05-27 12:24:21.4108 INFO App Application starting 
+2026-05-27 12:24:22.0236 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 12:24:22.5671 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 12:24:22.5681 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 12:24:22.7009 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 12:24:27.8756 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 12:24:33.0195 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 12:24:38.1622 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 12:24:43.2858 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 12:24:48.4106 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 12:24:53.5652 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 12:24:58.7246 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 12:25:03.8733 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:25:09.0389 INFO PingModule Ping 1 (1.1.1.1): Online, 48ms 
+2026-05-27 12:25:14.1908 INFO PingModule Ping 1 (1.1.1.1): Online, 46ms 
+2026-05-27 12:25:19.3325 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 12:25:24.4340 INFO PingModule Ping 1 (1.1.1.1): Online, 26ms 
+2026-05-27 12:25:29.5807 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:25:34.7130 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 12:25:39.8638 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:25:45.0016 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 12:25:50.1608 INFO PingModule Ping 1 (1.1.1.1): Online, 50ms 
+2026-05-27 12:25:55.3114 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 12:26:00.4617 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:26:05.6087 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:26:10.7523 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:26:15.9005 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 12:26:21.0441 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 12:26:26.1528 INFO PingModule Ping 1 (1.1.1.1): Online, 29ms 
+2026-05-27 12:26:31.3094 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 12:26:36.4248 INFO PingModule Ping 1 (1.1.1.1): Online, 31ms 
+2026-05-27 12:26:41.5470 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 12:26:46.6535 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 12:26:51.7986 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:26:56.9161 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 12:27:02.0119 INFO PingModule Ping 1 (1.1.1.1): Online, 27ms 
+2026-05-27 12:27:09.8180 INFO PingModule Ping 1 (1.1.1.1): Offline, -1ms 
+2026-05-27 12:27:15.3190 INFO PingModule Ping 1 (1.1.1.1): Offline, -1ms 
+2026-05-27 12:27:18.0156 INFO PingModule Ping 1 (1.1.1.1): Online, 58ms 
+2026-05-27 12:27:20.5915 INFO NotificationService Email sent: [NetworkMonitor] 1: Online → Offline 
+2026-05-27 12:27:23.2261 INFO PingModule Ping 1 (1.1.1.1): Online, 62ms 
+2026-05-27 12:27:28.4400 INFO PingModule Ping 1 (1.1.1.1): Online, 64ms 
+2026-05-27 12:27:33.6465 INFO PingModule Ping 1 (1.1.1.1): Online, 63ms 
+2026-05-27 12:27:38.9636 INFO PingModule Ping 1 (1.1.1.1): Online, 99ms 
+2026-05-27 12:27:44.7200 INFO PingModule Ping 1 (1.1.1.1): Unstable, 245ms 
+2026-05-27 12:27:49.6773 INFO PingModule Ping 1 (1.1.1.1): Online, 143ms 
+2026-05-27 12:27:54.8617 INFO PingModule Ping 1 (1.1.1.1): Online, 53ms 
+2026-05-27 12:28:00.0186 INFO PingModule Ping 1 (1.1.1.1): Online, 48ms 
+2026-05-27 12:28:05.4690 INFO PingModule Ping 1 (1.1.1.1): Online, 146ms 
+2026-05-27 12:28:11.7493 INFO PingModule Ping 1 (1.1.1.1): Unstable, 354ms 
+2026-05-27 12:28:16.0491 INFO PingModule Ping 1 (1.1.1.1): Online, 90ms 
+2026-05-27 12:28:21.7291 INFO PingModule Ping 1 (1.1.1.1): Unstable, 216ms 
+2026-05-27 12:28:27.6003 INFO PingModule Ping 1 (1.1.1.1): Unstable, 390ms 
+2026-05-27 12:28:31.7140 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 12:28:36.8618 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 12:28:42.0117 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 12:28:47.1687 INFO PingModule Ping 1 (1.1.1.1): Online, 48ms 
+2026-05-27 12:28:52.3025 INFO PingModule Ping 1 (1.1.1.1): Online, 40ms 
+2026-05-27 12:28:57.4506 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:29:02.6118 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 12:29:07.7537 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 12:29:12.9010 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:29:20.2703 INFO App Application starting 
+2026-05-27 12:29:20.8667 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 12:29:21.4573 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 12:29:21.4593 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 12:29:21.6024 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 12:29:26.7510 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 12:29:31.9085 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 12:29:37.0298 INFO PingModule Ping 1 (1.1.1.1): Online, 36ms 
+2026-05-27 12:29:42.1792 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:29:47.3053 INFO PingModule Ping 1 (1.1.1.1): Online, 34ms 
+2026-05-27 12:29:52.5410 INFO PingModule Ping 1 (1.1.1.1): Online, 72ms 
+2026-05-27 12:29:57.7230 INFO PingModule Ping 1 (1.1.1.1): Online, 53ms 
+2026-05-27 12:30:02.8806 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 12:30:08.0292 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:30:13.1783 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:30:18.3166 INFO PingModule Ping 1 (1.1.1.1): Online, 43ms 
+2026-05-27 12:30:23.4459 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 12:30:28.6027 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 12:30:33.7566 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 12:30:38.8926 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:30:44.0165 INFO PingModule Ping 1 (1.1.1.1): Online, 35ms 
+2026-05-27 12:30:49.1528 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 12:30:54.3052 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 12:30:59.4477 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 12:31:04.5919 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:31:09.7255 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 12:31:14.8690 INFO PingModule Ping 1 (1.1.1.1): Online, 39ms 
+2026-05-27 12:31:20.0133 INFO PingModule Ping 1 (1.1.1.1): Online, 41ms 
+2026-05-27 12:31:25.1337 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 12:31:30.3083 INFO PingModule Ping 1 (1.1.1.1): Online, 50ms 
+2026-05-27 12:31:35.4640 INFO PingModule Ping 1 (1.1.1.1): Online, 44ms 
+2026-05-27 12:31:40.5713 INFO PingModule Ping 1 (1.1.1.1): Online, 28ms 
+2026-05-27 12:31:45.7040 INFO PingModule Ping 1 (1.1.1.1): Online, 37ms 
+2026-05-27 12:31:50.8515 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:31:56.0369 INFO PingModule Ping 1 (1.1.1.1): Online, 56ms 
+2026-05-27 12:32:01.1823 INFO PingModule Ping 1 (1.1.1.1): Online, 42ms 
+2026-05-27 12:32:06.2987 INFO PingModule Ping 1 (1.1.1.1): Online, 33ms 
+2026-05-27 12:38:50.9059 INFO App Application starting 
+2026-05-27 12:38:51.5169 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 12:38:52.0553 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 12:38:52.0553 INFO MonitoringScheduler Scheduler started with 1 nodes 
+2026-05-27 12:38:52.1863 INFO PingModule Ping 1 (1.1.1.1): Online, 30ms 
+2026-05-27 12:38:57.3051 INFO PingModule Ping 1 (1.1.1.1): Online, 32ms 
+2026-05-27 12:39:00.7962 INFO PingModule Ping 1 (1.1.1.1): Online, 45ms 
+2026-05-27 12:39:02.4364 INFO PingModule Ping 1 (1.1.1.1): Online, 38ms 
+2026-05-27 12:39:10.3180 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:39:12.5834 INFO NotificationService Email sent: [NetworkMonitor] 1: Online → Offline 
+2026-05-27 12:39:15.8186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:39:21.3198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-27 12:39:26.3197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 

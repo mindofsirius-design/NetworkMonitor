@@ -69,28 +69,30 @@
             </TabItem>
 
             <TabItem Header="Email" Width="100" IsTabStop="False">
-                <StackPanel Margin="16">
-                    <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                        <ToggleButton x:Name="EmailToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
-                        <TextBlock Text="Отправка email" VerticalAlignment="Center"/>
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Margin="16">
+                        <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                            <ToggleButton x:Name="EmailToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0,0,8,0"/>
+                            <TextBlock Text="Отправка email" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel IsEnabled="{Binding IsChecked, ElementName=EmailToggle}">
+                            <TextBox x:Name="SmtpHostBox" md:HintAssist.Hint="SMTP сервер" Margin="0,0,0,8"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            <TextBox x:Name="SmtpPortBox" md:HintAssist.Hint="Порт (по умолчанию 587)" Margin="0,0,0,8"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            <TextBox x:Name="SmtpUserBox" md:HintAssist.Hint="Пользователь (полный адрес почты)" Margin="0,0,0,8"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            <PasswordBox x:Name="SmtpPasswordBox" md:HintAssist.Hint="Пароль (спец.пароль для доступа к почте)" Margin="0,0,0,8"
+                                         Style="{StaticResource MaterialDesignOutlinedPasswordBox}"/>
+                            <TextBox x:Name="EmailFromBox" md:HintAssist.Hint="От кого (необязательно)" Margin="0,0,0,8"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            <TextBox x:Name="EmailToBox" md:HintAssist.Hint="Кому (необязательно)" Margin="0,0,0,8"
+                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            <Button Content="Тест" Click="TestEmail_Click" Margin="0,0,0,8"
+                                    Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
+                        </StackPanel>
                     </StackPanel>
-                    <StackPanel IsEnabled="{Binding IsChecked, ElementName=EmailToggle}">
-                        <TextBox x:Name="SmtpHostBox" md:HintAssist.Hint="SMTP сервер" Margin="0,0,0,8"
-                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
-                        <TextBox x:Name="SmtpPortBox" md:HintAssist.Hint="Порт" Margin="0,0,0,8"
-                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
-                        <TextBox x:Name="SmtpUserBox" md:HintAssist.Hint="Пользователь" Margin="0,0,0,8"
-                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
-                        <PasswordBox x:Name="SmtpPasswordBox" md:HintAssist.Hint="Пароль" Margin="0,0,0,8"
-                                     Style="{StaticResource MaterialDesignOutlinedPasswordBox}"/>
-                        <TextBox x:Name="EmailFromBox" md:HintAssist.Hint="От кого" Margin="0,0,0,8"
-                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
-                        <TextBox x:Name="EmailToBox" md:HintAssist.Hint="Кому" Margin="0,0,0,8"
-                                 Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
-                        <Button Content="Тест" Click="TestEmail_Click" Margin="0,0,0,8"
-                                Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
-                    </StackPanel>
-                </StackPanel>
+                </ScrollViewer>
             </TabItem>
 
             <TabItem Header="Оформление" Width="100" IsTabStop="False">

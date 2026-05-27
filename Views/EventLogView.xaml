@@ -21,10 +21,12 @@
                       Style="{StaticResource MaterialDesignOutlinedComboBox}" Width="150" Margin="0,0,12,0"/>
 
             <TextBlock Text="&#x0421;:" VerticalAlignment="Center" Margin="0,0,6,0"/>
-            <DatePicker SelectedDate="{Binding DateFrom}" Width="130" Margin="0,0,12,0"/>
+            <DatePicker SelectedDate="{Binding DateFrom}" Width="130" Margin="0,0,12,0"
+                        VerticalContentAlignment="Center"/>
 
             <TextBlock Text="&#x041F;&#x043E;:" VerticalAlignment="Center" Margin="0,0,6,0"/>
-            <DatePicker SelectedDate="{Binding DateTo}" Width="130"/>
+            <DatePicker SelectedDate="{Binding DateTo}" Width="130" 
+                        VerticalContentAlignment="Center"/>
         </StackPanel>
 
         <DataGrid Grid.Row="1" ItemsSource="{Binding Events}" AutoGenerateColumns="False"
