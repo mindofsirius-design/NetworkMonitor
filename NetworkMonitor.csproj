@@ -362,6 +362,13 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Resource Include="Resources\app.ico" />
+    <Resource Include="Resources\NodeIcons\fs1000.png" />
+    <Resource Include="Resources\NodeIcons\fs2000.png" />
+    <Resource Include="Resources\NodeIcons\router.png" />
+    <Resource Include="Resources\NodeIcons\switch.png" />
+    <Resource Include="Resources\NodeIcons\server.png" />
+    <Resource Include="Resources\NodeIcons\pc.png" />
+    <Resource Include="Resources\NodeIcons\camera.png" />
     <Resource Include="Resources\Noto\NotoSans-Bold.ttf" />
     <Resource Include="Resources\Noto\NotoSans-BoldItalic.ttf" />
     <Resource Include="Resources\Noto\NotoSans-Italic.ttf" />

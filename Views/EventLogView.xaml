@@ -1,4 +1,4 @@
-<Window x:Class="NetworkMonitor.Views.EventLogView"
+﻿<Window x:Class="NetworkMonitor.Views.EventLogView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -12,19 +12,19 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,12">
-            <TextBlock Text="&#x0423;&#x0437;&#x0435;&#x043B;:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+            <TextBlock Text="Узел:" VerticalAlignment="Center" Margin="0,0,6,0"/>
             <ComboBox ItemsSource="{Binding NodeNames}" SelectedItem="{Binding SelectedNodeName}"
                       Style="{StaticResource MaterialDesignOutlinedComboBox}" Width="150" Margin="0,0,12,0"/>
 
-            <TextBlock Text="&#x0422;&#x0438;&#x043F;:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+            <TextBlock Text="Тип:" VerticalAlignment="Center" Margin="0,0,6,0"/>
             <ComboBox ItemsSource="{Binding EventTypes}" SelectedItem="{Binding SelectedEventType}"
                       Style="{StaticResource MaterialDesignOutlinedComboBox}" Width="150" Margin="0,0,12,0"/>
 
-            <TextBlock Text="&#x0421;:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+            <TextBlock Text="С:" VerticalAlignment="Center" Margin="0,0,6,0"/>
             <DatePicker SelectedDate="{Binding DateFrom}" Width="130" Margin="0,0,12,0"
                         VerticalContentAlignment="Center"/>
 
-            <TextBlock Text="&#x041F;&#x043E;:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+            <TextBlock Text="По:" VerticalAlignment="Center" Margin="0,0,6,0"/>
             <DatePicker SelectedDate="{Binding DateTo}" Width="130" 
                         VerticalContentAlignment="Center"/>
         </StackPanel>
@@ -32,16 +32,16 @@
         <DataGrid Grid.Row="1" ItemsSource="{Binding Events}" AutoGenerateColumns="False"
                   IsReadOnly="True">
             <DataGrid.Columns>
-                 <DataGridTextColumn Header="&#x0412;&#x0440;&#x0435;&#x043C;&#x044F;" Width="150">
+                <DataGridTextColumn Header="Время" Width="150">
                     <DataGridTextColumn.Binding>
                         <Binding Path="Timestamp" Converter="{StaticResource UtcToLocalConverter}" ConverterParameter="yyyy-MM-dd HH:mm:ss"/>
                     </DataGridTextColumn.Binding>
                 </DataGridTextColumn>
-                <DataGridTextColumn Header="&#x0423;&#x0437;&#x0435;&#x043B;" Binding="{Binding NodeId}" Width="120"/>
-                <DataGridTextColumn Header="&#x0422;&#x0438;&#x043F;" Binding="{Binding EventType}" Width="120"/>
-                <DataGridTextColumn Header="&#x0421;&#x043E;&#x043E;&#x0431;&#x0449;&#x0435;&#x043D;&#x0438;&#x0435;" Binding="{Binding Message}" Width="*"/>
-                <DataGridTextColumn Header="&#x0411;&#x044B;&#x043B;&#x043E;" Binding="{Binding OldStatus}" Width="80"/>
-                <DataGridTextColumn Header="&#x0421;&#x0442;&#x0430;&#x043B;&#x043E;" Binding="{Binding NewStatus}" Width="80"/>
+                <DataGridTextColumn Header="Узел" Binding="{Binding NodeId}" Width="120"/>
+                <DataGridTextColumn Header="Тип" Binding="{Binding EventType}" Width="120"/>
+                <DataGridTextColumn Header="Сообщение" Binding="{Binding Message}" Width="*"/>
+                <DataGridTextColumn Header="Было" Binding="{Binding OldStatus}" Width="80"/>
+                <DataGridTextColumn Header="Стало" Binding="{Binding NewStatus}" Width="80"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

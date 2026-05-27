@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
+
 
 using Newtonsoft.Json;
 using NetworkMonitor.Models;
@@ -44,13 +44,38 @@ namespace NetworkMonitor.Services
         public AppSettings LoadSettings()
         {
             if (!File.Exists(_settingsFile)) return new AppSettings();
-            return JsonConvert.DeserializeObject<AppSettings>(File.ReadAllText(_settingsFile))
-                   ?? new AppSettings();
+            var loaded = JsonConvert.DeserializeObject<AppSettings>(File.ReadAllText(_settingsFile))
+                         ?? new AppSettings();
+            loaded.SmtpPassword = Unprotect(loaded.SmtpPassword);   // дешифруем пароль
+            return loaded;
         }
 
         public void SaveSettings(AppSettings settings)
         {
-            File.WriteAllText(_settingsFile, JsonConvert.SerializeObject(settings, Formatting.Indented));
+            var copy = JsonConvert.DeserializeObject<AppSettings>(JsonConvert.SerializeObject(settings));
+            copy.SmtpPassword = Protect(copy.SmtpPassword); // шифруем пароль
+            File.WriteAllText(_settingsFile, JsonConvert.SerializeObject(copy, Formatting.Indented));
         }
+
+        public static string Protect(string plainText)
+        {
+            if (string.IsNullOrEmpty(plainText)) return plainText;
+            var bytes = Encoding.UTF8.GetBytes(plainText);
+            var encrypted = ProtectedData.Protect(bytes, null, DataProtectionScope.CurrentUser);
+            return Convert.ToBase64String(encrypted);
+        }
+
+        public static string Unprotect(string cipherText)
+        {
+            if (string.IsNullOrEmpty(cipherText)) return cipherText;
+            try
+            {
+                var bytes = Convert.FromBase64String(cipherText);
+                var decrypted = ProtectedData.Unprotect(bytes, null, DataProtectionScope.CurrentUser);
+                return Encoding.UTF8.GetString(decrypted);
+            }
+            catch { return string.Empty; }
+        }
+
     }
 }

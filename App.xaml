@@ -6,18 +6,18 @@
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
+            
             <ResourceDictionary.MergedDictionaries>
                 <md:BundledTheme BaseTheme="Light" PrimaryColor="BlueGrey" SecondaryColor="Cyan"/>
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign3.Defaults.xaml"/>
-                <!--<ResourceDictionary Source="Themes/Theme.xaml"/>
-                -->
             </ResourceDictionary.MergedDictionaries>
-
+            
             <vm:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
             <vm:StatusToColorConverter x:Key="StatusToColorConverter"/>
             <vm:ToastTypeToColorConverter x:Key="ToastTypeToColorConverter"/>
             <vm:InverseBoolToVisibilityConverter x:Key="InverseBoolToVisibilityConverter"/>
             <vm:UtcToLocalConverter x:Key="UtcToLocalConverter"/>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

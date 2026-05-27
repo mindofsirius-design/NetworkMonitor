@@ -9,13 +9,14 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using GMap.NET;
-using GMap.NET.MapProviders;
 using GMap.NET.WindowsPresentation;
 using NetworkMonitor.Models;
 using NetworkMonitor.Services;
 using NetworkMonitor.ViewModels;
 using MaterialDesignThemes.Wpf;
 using System.Runtime.InteropServices;
+using System.Windows.Data;
+using System.Windows.Media.Imaging;
 
 namespace NetworkMonitor.Views
 {
@@ -26,6 +27,8 @@ namespace NetworkMonitor.Views
         private DispatcherTimer _toastTimer;
         private Point _crosshairPos; // позиция перекрестия в пикселях
         private bool _crosshairInitialized = false;
+        // Для кеширования иконок в ОЗУ
+        private static readonly Dictionary<string, BitmapImage> _iconCache = new Dictionary<string, BitmapImage>(); 
 
         // Для трея
         private System.Windows.Forms.NotifyIcon _trayIcon;
@@ -245,7 +248,7 @@ namespace NetworkMonitor.Views
                 bool isSelected = node.Id == selectedNodeId;
                 double baseSize = _vm.Settings.MarkerSize;
                 double size = isSelected ? baseSize * 1.22 : baseSize;
-                double iconSize = size * 0.5;
+                double iconSize = size * 0.7;
                 double opacity = isSelected? 1 : _vm.Settings.MarkerOpacity;
 
                 Color markerColor;
@@ -257,7 +260,7 @@ namespace NetworkMonitor.Views
                     default: markerColor = Color.FromRgb(0x9E, 0x9E, 0x9E); break;
                 }
 
-                var iconKind = GetIconKind(node.DeviceType);
+                //var iconKind = GetIconKind(node.DeviceType);
                 var grid = new Grid { Width = size, Height = size, Opacity = opacity };
                 grid.Children.Add(new Ellipse
                 {
@@ -267,15 +270,15 @@ namespace NetworkMonitor.Views
                     Width = size,
                     Height = size
                 });
-                grid.Children.Add(new MaterialDesignThemes.Wpf.PackIcon
+                grid.Children.Add(new Image
                 {
-                    Kind = iconKind,
+                    Source = GetNodeIcon(node.DeviceType),
                     Width = iconSize,
                     Height = iconSize,
-                    Foreground = Brushes.White,
                     HorizontalAlignment = HorizontalAlignment.Center,
                     VerticalAlignment = VerticalAlignment.Center
                 });
+
                 grid.ToolTip = $"{node.Name}\n{node.IpAddress}\n{node.Status} | {node.LastPingMs}ms";
 
                 var capturedNode = node;
@@ -347,17 +350,37 @@ namespace NetworkMonitor.Views
                 Fill = brush
             });
         }
-
-        private MaterialDesignThemes.Wpf.PackIconKind GetIconKind(string deviceType)
+        
+        // Подгрузка иконок с кешированием
+        private static BitmapImage GetNodeIcon(string deviceType)
         {
+            string name;
             switch (deviceType?.ToLower())
             {
-                case "router": return MaterialDesignThemes.Wpf.PackIconKind.Router;
-                case "server": return MaterialDesignThemes.Wpf.PackIconKind.Server;
-                case "switch": return MaterialDesignThemes.Wpf.PackIconKind.LanConnect;
-                case "camera": return MaterialDesignThemes.Wpf.PackIconKind.Camera;
-                case "pc": return MaterialDesignThemes.Wpf.PackIconKind.Monitor;
-                default: return MaterialDesignThemes.Wpf.PackIconKind.Devices;
+                case "fs-1000": name = "fs1000"; break;
+                case "fs-2000": name = "fs2000"; break;
+                case "роутер": name = "router"; break;
+                case "коммутатор": name = "switch"; break;
+                case "сервер": name = "server"; break;
+                case "компьютер": name = "pc"; break;
+                case "камера": name = "camera"; break;
+                default: name = "unknown"; break;
+            }
+
+            if (_iconCache.TryGetValue(name, out var cached))
+                return cached;
+
+            try
+            {
+                var img = new BitmapImage(new Uri($"pack://application:,,,/Resources/NodeIcons/{name}.png"));
+                _iconCache[name] = img;
+                return img;
+            }
+            catch
+            {
+                var fallback = new BitmapImage(new Uri("pack://application:,,,/Resources/NodeIcons/unknown.png"));
+                _iconCache[name] = fallback;
+                return fallback;
             }
         }
 
@@ -501,8 +524,11 @@ namespace NetworkMonitor.Views
                 _vm.UpdateSchedulerNodes();
                 _vm.Scheduler.ResetSchedule(node.Id);   //сброс времени ping для этого узла
 
-                _vm.Storage.SaveNodes(_vm.Nodes.ToList()); // Запись колекции в файл
+                _vm.Storage.SaveNodes(_vm.Nodes.ToList()); // Запись колекции узлов в файл
                 RefreshMarkers();
+
+                // Обновить список узлов
+                CollectionViewSource.GetDefaultView(NodeListView.ItemsSource).Refresh();
             }
         }
 

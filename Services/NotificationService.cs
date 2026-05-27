@@ -77,11 +77,11 @@ namespace NetworkMonitor.Services
                 PlaySound();
             }
 
-            if (_settings.EmailEnabled && nodeEvent.NewStatus == NodeStatus.Offline)
+            if (_settings.EmailEnabled && nodeEvent.NewStatus == NodeStatus.Offline || nodeEvent.NewStatus == NodeStatus.Online || nodeEvent.NewStatus == NodeStatus.Unstable)
             {
                 Task.Run(() => SendEmail(
                     $"[NetworkMonitor] {nodeEvent.Message}",
-                    $"Event: {nodeEvent.EventType}\nNode: {nodeEvent.NodeId}\n{nodeEvent.Message}\nTime: {nodeEvent.Timestamp}"));
+                    $"Событие: {nodeEvent.EventType}\nУзел: {nodeEvent.NodeId}\n{nodeEvent.Message}\nВремя: {nodeEvent.Timestamp}"));
             }
         }
 
@@ -135,11 +135,11 @@ namespace NetworkMonitor.Services
                     client.Send(message);
                     client.Disconnect(true);
                 }
-                Logger.Info("Email sent: {0}", subject);
+                Logger.Info("Email отправлен: {0}", subject);
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Failed to send email");
+                Logger.Error(ex, "Ошибка в отправке email");
             }
         }
 

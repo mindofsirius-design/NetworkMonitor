@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Egor\Source\Repos\mindofsirius-design\NetworkMonitor\obj\Debug\
+C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\
 NetworkMonitor
 none
 false
 DEBUG;TRACE
-C:\Users\Egor\Source\Repos\mindofsirius-design\NetworkMonitor\App.xaml
+C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\App.xaml
 7-230205938
-271686521527
-33-557139671
-64-350245872
+27717518498
+34574068632
+71-1508377497
 Views\AddNodeDialog.xaml;Views\EventLogView.xaml;Views\MainWindow.xaml;Views\NodeDetailView.xaml;Views\SettingsDialog.xaml;Views\StatisticsView.xaml;Themes\Theme.xaml;
 
-True
+False
 
