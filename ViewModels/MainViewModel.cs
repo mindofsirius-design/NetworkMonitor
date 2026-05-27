@@ -32,6 +32,7 @@ namespace NetworkMonitor.ViewModels
     public class MainViewModel : BaseViewModel
     {
         private readonly StorageService _storage = new StorageService();
+        public StorageService Storage => _storage;  //публичная копия
         private readonly ModuleRegistry _moduleRegistry;
         private readonly MonitoringScheduler _scheduler;
         public MonitoringScheduler Scheduler => _scheduler; //публичная копия

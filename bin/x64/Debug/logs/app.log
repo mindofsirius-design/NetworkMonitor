@@ -4352,3 +4352,9 @@
 2026-05-26 15:30:40.3032 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
 2026-05-26 15:31:03.9757 INFO App Application starting 
 2026-05-26 15:31:04.5144 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:15:20.1168 INFO App Application starting 
+2026-05-27 08:15:20.8342 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:15:40.4328 INFO App Application starting 
+2026-05-27 08:15:40.9944 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-27 08:16:16.1246 INFO MonitoringScheduler Scheduler stopped 
+2026-05-27 08:16:16.1246 INFO MonitoringScheduler Scheduler started with 0 nodes 

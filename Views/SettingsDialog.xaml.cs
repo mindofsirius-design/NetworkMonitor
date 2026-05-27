@@ -9,6 +9,8 @@ using NetworkMonitor.Services;
 using NetworkMonitor.ViewModels;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace NetworkMonitor.Views
 {
@@ -19,7 +21,14 @@ namespace NetworkMonitor.Views
         private readonly MainWindow _mainWindow;    //для темной темы для букв сверху
         private readonly StorageService _storageService;    //для импорта узлов
 
-        public SettingsDialog(AppSettings settings, DatabaseService database = null, MainWindow mainWindow = null, StorageService storageService)
+        private class ConfigExport
+        {
+            public List<NetworkNode> Nodes { get; set; }
+            public List<NodeLink> Links { get; set; }
+            public AppSettings Settings { get; set; }
+        }
+
+        public SettingsDialog(AppSettings settings, DatabaseService database = null, MainWindow mainWindow = null, StorageService storageService = null)
         {
             InitializeComponent();
 
