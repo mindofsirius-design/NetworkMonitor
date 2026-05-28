@@ -19,7 +19,7 @@
         <vm:InverseBoolToVisibilityConverter x:Key="InverseBoolToVis"/>
     </Window.Resources>
 
-    <Grid>
+    <Grid MouseDown="Grid_MouseDown">
         <Grid.RowDefinitions>
             <RowDefinition Height="56"/>
             <RowDefinition Height="*"/>

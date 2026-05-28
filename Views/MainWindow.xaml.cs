@@ -248,7 +248,7 @@ namespace NetworkMonitor.Views
                 bool isSelected = node.Id == selectedNodeId;
                 double baseSize = _vm.Settings.MarkerSize;
                 double size = isSelected ? baseSize * 1.22 : baseSize;
-                double iconSize = size * 0.7;
+                double iconSize = size * 0.8;
                 double opacity = isSelected? 1 : _vm.Settings.MarkerOpacity;
 
                 Color markerColor;
@@ -378,7 +378,7 @@ namespace NetworkMonitor.Views
             }
             catch
             {
-                var fallback = new BitmapImage(new Uri("pack://application:,,,/Resources/NodeIcons/unknown.png"));
+                var fallback = new BitmapImage(new Uri($"pack://application:,,,/Resources/NodeIcons/unknown.png"));
                 _iconCache[name] = fallback;
                 return fallback;
             }
@@ -593,7 +593,6 @@ namespace NetworkMonitor.Views
             _trayIcon.ContextMenuStrip = menu;
             _trayIcon.DoubleClick += (s, e) => ShowFromTray();
         }
-
         private void ShowFromTray()
         {
             Show();
@@ -601,7 +600,6 @@ namespace NetworkMonitor.Views
             Activate();
             _trayIcon.Visible = false;
         }
-
         private void Window_StateChanged(object sender, EventArgs e)
         {
             if (WindowState == WindowState.Minimized)
@@ -610,6 +608,29 @@ namespace NetworkMonitor.Views
                 _trayIcon.Visible = true;
             }
         }
+
+        // Для снятия выделения с узлов при тыке в любое место
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            // Снимаем выделение только если клик не попал в NodeDetailView или NodeListView
+            var hit = e.OriginalSource as DependencyObject;
+            if (hit != null)
+            {
+                if (IsChildOf(hit, DetailView) || IsChildOf(hit, NodeListView))
+                    return;
+            }
+            NodeListView.SelectedItem = null;
+        }
+        private bool IsChildOf(DependencyObject element, DependencyObject parent)
+        {
+            while (element != null)
+            {
+                if (element == parent) return true;
+                element = VisualTreeHelper.GetParent(element);
+            }
+            return false;
+        }
+
         private void DetailView_Loaded(object sender, RoutedEventArgs e)
         {
 

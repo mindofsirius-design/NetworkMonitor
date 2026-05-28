@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json.Linq;
 using System.Reflection;
+using System.Windows.Controls;
 
 namespace NetworkMonitor.Views
 {
@@ -55,6 +56,12 @@ namespace NetworkMonitor.Views
             bool isDark = theme.GetBaseTheme() == BaseTheme.Dark;
             var brush = new SolidColorBrush(isDark ? Colors.Black : Colors.White);
             SaveButton.Foreground = brush;
+
+            // Стилизация вкладок
+            Loaded += (s, e) =>
+            {
+                ApplyTabStyles();
+            };
 
         }
 
@@ -461,6 +468,56 @@ namespace NetworkMonitor.Views
             // Применяем "живые" настройки сразу
             ApplyStartWithWindows(_settings.StartWithWindows);
             UtcToLocalConverter.OffsetHours = _settings.TimeZoneOffsetHours;
+        }
+
+        // Стилизация имени вкладок
+        private void ApplyTabStyles()
+        {
+            void UpdateTabs()
+            {
+                bool isDarkNow = (new PaletteHelper()).GetTheme().GetBaseTheme() == BaseTheme.Dark;
+
+                MainTabControl.Background = isDarkNow
+                    ? new SolidColorBrush(Color.FromArgb(0x25, 0, 0, 0))
+                    : new SolidColorBrush(Color.FromArgb(0x5, 0, 30, 70));
+
+                var activeBg = isDarkNow
+                    ? new SolidColorBrush(Color.FromRgb(30, 30, 30))
+                    : new SolidColorBrush(Color.FromRgb(200, 200, 200));
+
+                var inactiveBg = isDarkNow
+                    ? new SolidColorBrush(Color.FromRgb(55, 55, 55))
+                    : new SolidColorBrush(Color.FromRgb(220, 220, 220));
+
+                var textBrush = isDarkNow ? Brushes.White : Brushes.Black;
+
+                foreach (TabItem tab in MainTabControl.Items)
+                {
+                    tab.Background = tab.IsSelected ? activeBg : inactiveBg;
+
+                    if (tab.Header is string headerText)
+                    {
+                        tab.Header = new TextBlock
+                        {
+                            Text = headerText,
+                            Foreground = textBrush,
+                            TextWrapping = TextWrapping.Wrap,
+                            VerticalAlignment = VerticalAlignment.Center,
+                            TextAlignment = TextAlignment.Center,
+                            Width = 100,
+                            FontWeight = FontWeights.SemiBold
+                        };
+                    }
+                    else if (tab.Header is TextBlock tb)
+                    {
+                        tb.Foreground = textBrush;
+                        tb.VerticalAlignment = VerticalAlignment.Center;
+                    }
+                }
+            }
+
+            MainTabControl.SelectionChanged += (s, e) => UpdateTabs();
+            UpdateTabs();
         }
 
     }

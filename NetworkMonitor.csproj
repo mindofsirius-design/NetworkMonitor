@@ -369,6 +369,7 @@
     <Resource Include="Resources\NodeIcons\server.png" />
     <Resource Include="Resources\NodeIcons\pc.png" />
     <Resource Include="Resources\NodeIcons\camera.png" />
+	<Resource Include="Resources\NodeIcons\unknown.png" />
     <Resource Include="Resources\Noto\NotoSans-Bold.ttf" />
     <Resource Include="Resources\Noto\NotoSans-BoldItalic.ttf" />
     <Resource Include="Resources\Noto\NotoSans-Italic.ttf" />

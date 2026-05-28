@@ -517,7 +517,6 @@ C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\System.T
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\System.ValueTuple.xml
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\Topten.RichTextKit.pdb
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\Topten.RichTextKit.xml
-C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\NetworkMonitor.csproj.AssemblyReference.cache
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\Views\AddNodeDialog.baml
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\Views\EventLogView.baml
 C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\obj\Debug\Views\SettingsDialog.baml

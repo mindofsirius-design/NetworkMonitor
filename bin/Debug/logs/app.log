@@ -1513,3 +1513,261 @@
 2026-05-27 16:30:47.3280 INFO PingModule Ping 19999 (123.31.123.123): Offline, -1ms 
 2026-05-27 16:30:50.8255 INFO PingModule Ping 123 (12.1.1.1): Offline, -1ms 
 2026-05-27 16:30:54.3306 INFO PingModule Ping 19999 (123.31.123.123): Offline, -1ms 
+2026-05-28 10:46:24.2575 INFO App Application starting 
+2026-05-28 10:46:24.9723 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 10:58:55.0488 INFO App Application starting 
+2026-05-28 10:58:55.6406 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:01:01.4385 INFO App Application starting 
+2026-05-28 11:01:01.9812 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:03:10.9277 INFO App Application starting 
+2026-05-28 11:03:11.4890 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:05:47.1399 INFO App Application starting 
+2026-05-28 11:05:47.7239 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:10:28.2805 INFO App Application starting 
+2026-05-28 11:10:28.8467 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:11:13.2429 INFO App Application starting 
+2026-05-28 11:11:13.7889 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:12:58.7582 INFO App Application starting 
+2026-05-28 11:12:59.3085 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:15:15.2080 INFO App Application starting 
+2026-05-28 11:15:15.7592 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:18:18.3520 INFO App Application starting 
+2026-05-28 11:18:18.9107 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:19:37.3475 INFO App Application starting 
+2026-05-28 11:19:37.9741 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:20:50.4799 INFO App Application starting 
+2026-05-28 11:20:51.0577 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:21:21.2287 INFO App Application starting 
+2026-05-28 11:21:21.8075 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:25:39.6223 INFO App Application starting 
+2026-05-28 11:25:40.2095 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:28:00.6635 INFO App Application starting 
+2026-05-28 11:28:01.2257 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:31:26.4638 INFO App Application starting 
+2026-05-28 11:31:27.0451 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:32:55.0728 INFO App Application starting 
+2026-05-28 11:32:55.6314 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:34:21.3189 INFO App Application starting 
+2026-05-28 11:34:21.8648 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:35:02.2911 INFO App Application starting 
+2026-05-28 11:35:02.8378 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:37:26.4387 INFO App Application starting 
+2026-05-28 11:37:27.0203 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:38:50.8735 INFO App Application starting 
+2026-05-28 11:38:51.4295 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:40:04.7660 INFO App Application starting 
+2026-05-28 11:40:05.3600 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:40:32.1337 INFO App Application starting 
+2026-05-28 11:40:32.6915 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:40:50.3093 INFO App Application starting 
+2026-05-28 11:40:50.8643 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 11:41:48.2577 INFO App Application starting 
+2026-05-28 11:41:48.8215 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:10:54.0462 INFO App Application starting 
+2026-05-28 12:10:54.6230 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:14:02.9255 INFO App Application starting 
+2026-05-28 12:14:03.4921 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:17:48.1228 INFO App Application starting 
+2026-05-28 12:17:48.7135 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:21:05.6537 INFO App Application starting 
+2026-05-28 12:21:06.2388 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:21:47.8264 INFO App Application starting 
+2026-05-28 12:21:48.3896 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:22:08.1607 INFO App Application starting 
+2026-05-28 12:22:08.7242 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:22:30.4720 INFO App Application starting 
+2026-05-28 12:22:31.0346 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:22:55.0505 INFO App Application starting 
+2026-05-28 12:22:55.6253 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:23:31.6991 INFO App Application starting 
+2026-05-28 12:23:32.2935 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:23:47.8185 INFO App Application starting 
+2026-05-28 12:23:48.3972 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:25:47.3955 INFO App Application starting 
+2026-05-28 12:25:47.9925 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:26:04.9627 INFO App Application starting 
+2026-05-28 12:26:05.5070 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:26:24.3746 INFO App Application starting 
+2026-05-28 12:26:24.9366 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:27:20.2362 INFO App Application starting 
+2026-05-28 12:27:20.8052 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:27:37.3267 INFO App Application starting 
+2026-05-28 12:27:37.8824 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:27:54.2917 INFO App Application starting 
+2026-05-28 12:27:54.8557 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:28:19.5605 INFO App Application starting 
+2026-05-28 12:28:20.1331 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:28:45.4302 INFO App Application starting 
+2026-05-28 12:28:46.0089 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:29:43.1191 INFO App Application starting 
+2026-05-28 12:29:43.6717 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:30:25.9005 INFO App Application starting 
+2026-05-28 12:30:26.4542 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:32:40.8010 INFO App Application starting 
+2026-05-28 12:32:41.3465 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:33:24.5575 INFO App Application starting 
+2026-05-28 12:33:25.1131 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:34:00.4340 INFO App Application starting 
+2026-05-28 12:34:00.9906 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:34:23.9386 INFO App Application starting 
+2026-05-28 12:34:24.4766 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:34:40.7546 INFO App Application starting 
+2026-05-28 12:34:41.3126 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:35:07.5276 INFO App Application starting 
+2026-05-28 12:35:08.0962 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:36:44.2405 INFO App Application starting 
+2026-05-28 12:36:44.8136 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:37:29.6653 INFO App Application starting 
+2026-05-28 12:37:30.2143 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:37:53.1950 INFO App Application starting 
+2026-05-28 12:37:53.7460 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 12:41:13.3720 INFO App Application starting 
+2026-05-28 12:41:13.9656 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 14:29:11.1357 INFO App Application starting 
+2026-05-28 14:29:11.9346 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 14:31:29.4882 INFO MonitoringScheduler Scheduler stopped 
+2026-05-28 14:31:29.4882 INFO MonitoringScheduler Scheduler started with 8 nodes 
+2026-05-28 14:31:29.7233 INFO PingModule Ping 7 (77.7.7.77): Online, 68ms 
+2026-05-28 14:31:29.8361 INFO PingModule Ping 88 (88.8.88.88): Online, 108ms 
+2026-05-28 14:31:29.9921 INFO PingModule Ping 675675 (68.85.85.85): Online, 162ms 
+2026-05-28 14:31:32.0993 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:31:32.0993 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:31:32.0993 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:31:32.1233 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:31:32.1233 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:31:59.9092 INFO PingModule Ping 7 (77.7.7.77): Online, 63ms 
+2026-05-28 14:32:00.0294 INFO PingModule Ping 88 (88.8.88.88): Online, 104ms 
+2026-05-28 14:32:00.1781 INFO PingModule Ping 675675 (68.85.85.85): Online, 156ms 
+2026-05-28 14:32:02.5968 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:32:02.5968 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:32:02.6198 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:32:02.5968 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:32:02.6198 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:32:28.1533 INFO App Application starting 
+2026-05-28 14:32:28.6695 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 14:32:43.3588 INFO App Application starting 
+2026-05-28 14:32:44.0004 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 14:32:56.8749 INFO MonitoringScheduler Scheduler stopped 
+2026-05-28 14:32:56.8789 INFO MonitoringScheduler Scheduler started with 8 nodes 
+2026-05-28 14:32:57.0811 INFO PingModule Ping 7 (77.7.7.77): Online, 60ms 
+2026-05-28 14:32:57.2101 INFO PingModule Ping 88 (88.8.88.88): Online, 105ms 
+2026-05-28 14:32:57.3521 INFO PingModule Ping 675675 (68.85.85.85): Online, 151ms 
+2026-05-28 14:32:59.5972 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:32:59.5972 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:32:59.5972 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:32:59.6283 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:32:59.6283 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:33:27.4104 INFO PingModule Ping 7 (77.7.7.77): Online, 67ms 
+2026-05-28 14:33:27.5344 INFO PingModule Ping 88 (88.8.88.88): Online, 109ms 
+2026-05-28 14:33:27.7004 INFO PingModule Ping 675675 (68.85.85.85): Online, 166ms 
+2026-05-28 14:33:30.0966 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:33:30.0966 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:33:30.0966 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:33:30.0966 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:33:30.1206 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:33:57.8769 INFO PingModule Ping 7 (77.7.7.77): Online, 62ms 
+2026-05-28 14:33:57.9991 INFO PingModule Ping 88 (88.8.88.88): Online, 103ms 
+2026-05-28 14:33:58.1613 INFO PingModule Ping 675675 (68.85.85.85): Online, 159ms 
+2026-05-28 14:34:00.6032 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:34:00.6032 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:34:00.6252 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:34:00.6032 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:34:00.6252 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:34:28.0609 INFO PingModule Ping 7 (77.7.7.77): Online, 112ms 
+2026-05-28 14:34:28.2211 INFO PingModule Ping 88 (88.8.88.88): Online, 164ms 
+2026-05-28 14:34:28.3014 INFO PingModule Ping 675675 (68.85.85.85): Online, 195ms 
+2026-05-28 14:34:30.6051 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:34:30.6051 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:34:30.6312 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:34:30.6312 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:34:30.6051 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:34:58.4208 INFO PingModule Ping 7 (77.7.7.77): Online, 65ms 
+2026-05-28 14:34:58.5392 INFO PingModule Ping 88 (88.8.88.88): Online, 106ms 
+2026-05-28 14:34:58.6842 INFO PingModule Ping 675675 (68.85.85.85): Online, 156ms 
+2026-05-28 14:35:01.1092 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:35:01.1322 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:35:01.1092 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:35:01.1322 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:35:01.1092 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:35:28.4322 INFO PingModule Ping 7 (77.7.7.77): Online, 62ms 
+2026-05-28 14:35:28.5647 INFO PingModule Ping 88 (88.8.88.88): Online, 106ms 
+2026-05-28 14:35:28.7082 INFO PingModule Ping 675675 (68.85.85.85): Online, 157ms 
+2026-05-28 14:35:31.0982 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:35:31.0982 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:35:31.0982 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:35:31.1252 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:35:31.1252 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:36:45.3812 INFO App Application starting 
+2026-05-28 14:36:45.9492 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 14:36:52.9264 INFO MonitoringScheduler Scheduler stopped 
+2026-05-28 14:36:52.9264 INFO MonitoringScheduler Scheduler started with 8 nodes 
+2026-05-28 14:36:53.1483 INFO PingModule Ping 7 (77.7.7.77): Online, 63ms 
+2026-05-28 14:36:53.2619 INFO PingModule Ping 88 (88.8.88.88): Online, 105ms 
+2026-05-28 14:36:53.4019 INFO PingModule Ping 675675 (68.85.85.85): Online, 152ms 
+2026-05-28 14:36:55.6026 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:36:55.6026 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:36:55.6026 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:36:55.6026 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:36:55.6026 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:37:23.4082 INFO PingModule Ping 7 (77.7.7.77): Online, 67ms 
+2026-05-28 14:37:23.5526 INFO PingModule Ping 88 (88.8.88.88): Online, 115ms 
+2026-05-28 14:37:23.7300 INFO PingModule Ping 675675 (68.85.85.85): Online, 176ms 
+2026-05-28 14:37:26.1063 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:37:26.1113 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:37:26.1113 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:37:26.1113 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:37:26.1113 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:37:53.8901 INFO PingModule Ping 7 (77.7.7.77): Online, 67ms 
+2026-05-28 14:37:54.0141 INFO PingModule Ping 88 (88.8.88.88): Online, 109ms 
+2026-05-28 14:37:54.1523 INFO PingModule Ping 675675 (68.85.85.85): Online, 156ms 
+2026-05-28 14:37:56.6051 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:37:56.6051 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:37:56.6051 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:37:56.6111 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:37:56.6111 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:38:14.3692 INFO PingModule Ping 7 (77.7.7.77): Online, 61ms 
+2026-05-28 14:38:14.4932 INFO PingModule Ping 88 (88.8.88.88): Online, 102ms 
+2026-05-28 14:38:14.6234 INFO PingModule Ping 675675 (68.85.85.85): Online, 148ms 
+2026-05-28 14:38:17.0991 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:38:17.0991 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:38:17.0991 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:38:17.1171 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:38:17.1171 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:38:35.0313 INFO App Application starting 
+2026-05-28 14:38:35.6014 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 14:43:32.7560 INFO App Application starting 
+2026-05-28 14:43:33.3271 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\Debug\data\history.db 
+2026-05-28 14:43:45.3570 INFO MonitoringScheduler Scheduler stopped 
+2026-05-28 14:43:45.3610 INFO MonitoringScheduler Scheduler started with 8 nodes 
+2026-05-28 14:43:45.5841 INFO PingModule Ping 7 (77.7.7.77): Online, 65ms 
+2026-05-28 14:43:45.6974 INFO PingModule Ping 88 (88.8.88.88): Online, 106ms 
+2026-05-28 14:43:45.8323 INFO PingModule Ping 675675 (68.85.85.85): Online, 152ms 
+2026-05-28 14:43:48.0997 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:43:48.0997 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:43:48.0997 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:43:48.0997 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:43:48.1292 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:43:57.8557 INFO PingModule Ping 7 (77.7.7.77): Online, 60ms 
+2026-05-28 14:43:57.9813 INFO PingModule Ping 88 (88.8.88.88): Online, 102ms 
+2026-05-28 14:43:58.1170 INFO PingModule Ping 675675 (68.85.85.85): Online, 148ms 
+2026-05-28 14:44:00.6063 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:44:00.6063 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:44:00.6063 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:44:00.6063 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:44:00.6063 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:44:27.8993 INFO PingModule Ping 7 (77.7.7.77): Online, 64ms 
+2026-05-28 14:44:28.0261 INFO PingModule Ping 88 (88.8.88.88): Online, 107ms 
+2026-05-28 14:44:28.1553 INFO PingModule Ping 675675 (68.85.85.85): Online, 151ms 
+2026-05-28 14:44:30.6019 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:44:30.6019 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:44:30.6309 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:44:30.6019 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 
+2026-05-28 14:44:30.6309 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:44:58.3776 INFO PingModule Ping 7 (77.7.7.77): Online, 57ms 
+2026-05-28 14:44:58.5088 INFO PingModule Ping 88 (88.8.88.88): Online, 102ms 
+2026-05-28 14:44:58.6381 INFO PingModule Ping 675675 (68.85.85.85): Online, 146ms 
+2026-05-28 14:45:01.1045 INFO PingModule Ping 2 (22.2.2.22): Offline, -1ms 
+2026-05-28 14:45:01.1045 INFO PingModule Ping 444 (44.44.4.44): Offline, -1ms 
+2026-05-28 14:45:01.1045 INFO PingModule Ping 6 (6.6.6.66): Offline, -1ms 
+2026-05-28 14:45:01.1045 INFO PingModule Ping 333 (33.3.3.33): Offline, -1ms 
+2026-05-28 14:45:01.1396 INFO PingModule Ping 5 (5.5.5.55): Offline, -1ms 

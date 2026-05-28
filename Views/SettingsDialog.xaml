@@ -5,14 +5,15 @@
         Title="Настройки" Width="480" Height="520"
         WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
         Style="{StaticResource MaterialDesignWindow}" FontSize="14">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TabControl x:Name="MainTabControl" Style="{StaticResource MaterialDesignNavigationRailTabControl}" Margin="0">
-            
+        <TabControl x:Name="MainTabControl" Style="{StaticResource MaterialDesignNavigationRailTabControl}" Margin="0" md:RippleAssist.IsDisabled="True">
+
             <TabItem Header="Общие" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
                     

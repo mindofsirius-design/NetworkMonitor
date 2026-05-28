@@ -23,7 +23,7 @@
                 <ComboBoxItem Content="Роутер"/>
                 <ComboBoxItem Content="Коммутатор"/>
                 <ComboBoxItem Content="Сервер"/>
-                <ComboBoxItem Content="Комьютер"/>
+                <ComboBoxItem Content="Компьютер"/>
                 <ComboBoxItem Content="Камера"/>
                 <ComboBoxItem Content="Другое"/>
             </ComboBox>

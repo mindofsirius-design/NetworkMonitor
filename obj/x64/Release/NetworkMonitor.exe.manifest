@@ -43,6 +43,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Cryptography.dll" size="6871320">
+      <assemblyIdentity name="BouncyCastle.Cryptography" version="2.0.0.0" publicKeyToken="072EDCF4A5328938" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PwGCMJ+P+5zg+l8wMhnTFVvx2iMuFKYg7SNK7CCaKTU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BruTile.dll" size="201728">
       <assemblyIdentity name="BruTile" version="5.0.6.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -127,6 +139,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MailKit.dll" size="873984">
+      <assemblyIdentity name="MailKit" version="4.3.0.0" publicKeyToken="4E064FE7C44A8F1B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Vl3hln3aF+u9SDjcmfzUHmWevMUOvkubu3TzrAs+dYY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialDesignColors.dll" size="320512">
       <assemblyIdentity name="MaterialDesignColors" version="5.3.1.0" publicKeyToken="DF2A72020BD7962A" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -175,6 +199,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MimeKit.dll" size="1187840">
+      <assemblyIdentity name="MimeKit" version="4.3.0.0" publicKeyToken="BEDE1C8A46C66814" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7blflpCvv3+RI9mVShBz9g0LK7TssjuI3foiPP5lO/M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NetTopologySuite.dll" size="774144">
       <assemblyIdentity name="NetTopologySuite" version="2.0.0.0" publicKeyToken="F580A05016EBADA1" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -211,14 +247,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NetworkMonitor.exe" size="5205976">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NetworkMonitor.exe" size="5231576">
       <assemblyIdentity name="NetworkMonitor" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bfC6MgW8jicteXbWyYuqc9B1PtMldu05i89nq7qHw9U=</dsig:DigestValue>
+        <dsig:DigestValue>s+kJ83sYsG6Dc5IWTpL+3ZKYBsS4go3pYL1BlkglWao=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -459,6 +495,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>o5gzXy+ifA47QmLOGktAvhnFsPLdtNRTI3Wo7VSKq9I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Formats.Asn1.dll" size="85624">
+      <assemblyIdentity name="System.Formats.Asn1" version="7.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1Ibwf1+0Is64v7oa15PySLj3HeJ1G59hI6fic45GhIc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
