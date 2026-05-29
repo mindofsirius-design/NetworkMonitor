@@ -16,41 +16,41 @@
 
             <TabItem Header="Общие" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
-                    
+
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="StartWithWindowsToggle"
-                          Style="{StaticResource MaterialDesignSwitchToggleButton}"
-                          Margin="0,0,8,0"/>
+                        Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                        Margin="0,0,8,0"/>
                         <TextBlock Text="Запуск с Windows" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="AutoStartMonitoringToggle"
-                          Style="{StaticResource MaterialDesignSwitchToggleButton}"
-                          Margin="0,0,8,0"/>
+                        Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                        Margin="0,0,8,0"/>
                         <TextBlock Text="Автозапуск мониторинга" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <TextBox x:Name="TimeZoneOffsetBox" md:HintAssist.Hint="Часовой пояс (UTC+)" Margin="0,0,0,12"
-                             Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                     <Button Content="Экспорт конфигурации" Click="ExportConfig_Click"
-                            Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left" Margin="0,0,0,8"/>
+                        Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left" Margin="0,0,0,8"/>
                     <Button Content="Импорт конфигурации" Click="ImportConfig_Click"
-                            Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
-                    
+                        Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
+
                 </StackPanel>
             </TabItem>
 
             <TabItem Header="Мониторинг" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
                     <TextBox x:Name="IntervalBox" md:HintAssist.Hint="Интервал ping (сек) по умолчанию" Margin="0,0,0,8"
-                             Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                     <TextBox x:Name="TimeoutBox" md:HintAssist.Hint="Таймаут ping (мс)" Margin="0,0,0,8"
-                             Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                     <TextBox x:Name="RetriesBox" md:HintAssist.Hint="Кол-во попыток" Margin="0,0,0,8"
-                             Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                     <TextBox x:Name="UnstableBox" md:HintAssist.Hint="Порог нестабильности (мс)" Margin="0,0,0,8"
-                             Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                 </StackPanel>
             </TabItem>
 
@@ -65,7 +65,7 @@
                         <TextBlock Text="Звуковые оповещения" VerticalAlignment="Center"/>
                     </StackPanel>
                     <TextBox x:Name="SoundDebounceBox" md:HintAssist.Hint="Пауза между звуками (сек)" Margin="0,0,0,8"
-                             Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                 </StackPanel>
             </TabItem>
 
@@ -78,19 +78,19 @@
                         </StackPanel>
                         <StackPanel IsEnabled="{Binding IsChecked, ElementName=EmailToggle}">
                             <TextBox x:Name="SmtpHostBox" md:HintAssist.Hint="SMTP сервер" Margin="0,0,0,8"
-                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                                    Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                             <TextBox x:Name="SmtpPortBox" md:HintAssist.Hint="Порт (по умолчанию 587)" Margin="0,0,0,8"
-                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                                    Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                             <TextBox x:Name="SmtpUserBox" md:HintAssist.Hint="Пользователь (полный адрес почты)" Margin="0,0,0,8"
-                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                                    Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                             <PasswordBox x:Name="SmtpPasswordBox" md:HintAssist.Hint="Пароль (спец.пароль для доступа к почте)" Margin="0,0,0,8"
-                                         Style="{StaticResource MaterialDesignOutlinedPasswordBox}"/>
+                                        Style="{StaticResource MaterialDesignOutlinedPasswordBox}"/>
                             <TextBox x:Name="EmailFromBox" md:HintAssist.Hint="От кого (необязательно)" Margin="0,0,0,8"
-                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                                    Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                             <TextBox x:Name="EmailToBox" md:HintAssist.Hint="Кому (необязательно)" Margin="0,0,0,8"
-                                     Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                                    Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
                             <Button Content="Тест" Click="TestEmail_Click" Margin="0,0,0,8"
-                                    Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
+                                Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
                         </StackPanel>
                     </StackPanel>
                 </ScrollViewer>
@@ -98,37 +98,37 @@
 
             <TabItem Header="Оформление" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
-                    
+
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="DarkThemeToggle" Style="{StaticResource MaterialDesignSwitchToggleButton}"
-                                      Margin="0,0,8,0"/>
+                                    Margin="0,0,8,0"/>
                         <TextBlock Text="Тёмная тема" VerticalAlignment="Center"/>
                     </StackPanel>
-                    
+
                     <TextBlock Text="Размер маркеров" Margin="0,12,0,4"/>
                     <Slider x:Name="MarkerSizeSlider" Minimum="24" Maximum="50" TickFrequency="2"
-                            IsSnapToTickEnabled="True" Margin="0,0,0,4"/>
+                        IsSnapToTickEnabled="True" Margin="0,0,0,4"/>
                     <TextBlock Text="{Binding Value, ElementName=MarkerSizeSlider, StringFormat={}{0:F0} px}"
-                               Foreground="Gray" FontSize="12"/>
+                            Foreground="Gray" FontSize="12"/>
 
                     <TextBlock Text="Прозрачность маркеров" Margin="0,12,0,4"/>
                     <Slider x:Name="MarkerOpacitySlider" Minimum="0.2" Maximum="1.0" TickFrequency="0.1"
-                            IsSnapToTickEnabled="True" Margin="0,0,0,4"/>
+                        IsSnapToTickEnabled="True" Margin="0,0,0,4"/>
                     <TextBlock Text="{Binding Value, ElementName=MarkerOpacitySlider, StringFormat={}{0:P0}}"
-                               Foreground="Gray" FontSize="12"/>
-                    
+                            Foreground="Gray" FontSize="12"/>
+
                 </StackPanel>
             </TabItem>
 
             <TabItem Header="Данные" Width="100" IsTabStop="False">
                 <StackPanel Margin="16">
-                    
+
                     <TextBox x:Name="KeepDaysBox" md:HintAssist.Hint="Хранить историю (дней)" Margin="0,0,0,12"
-                             Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
-                    
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+
                     <Button Content="Очистить историю" Click="ClearHistory_Click" Margin="0,0,0,8"
-                            Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
-               
+                        Style="{StaticResource MaterialDesignOutlinedButton}" HorizontalAlignment="Left"/>
+
                 </StackPanel>
             </TabItem>
 
@@ -137,35 +137,35 @@
                     <!-- 1 переключатель: Перемещение при выборе -->
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="CenterMapOnSelectToggle" 
-                          Style="{StaticResource MaterialDesignSwitchToggleButton}" 
-                          Margin="0,0,8,0"
-                          Unchecked="CenterMapOnSelectToggle_Unchecked"/>
+                        Style="{StaticResource MaterialDesignSwitchToggleButton}" 
+                        Margin="0,0,8,0"
+                        Unchecked="CenterMapOnSelectToggle_Unchecked"/>
                         <TextBlock Text="Перемещение при выборе узла" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <!-- 2 переключатель: Приближать при выборе -->
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="ZoomOnSelectToggle" 
-                          Style="{StaticResource MaterialDesignSwitchToggleButton}" 
-                          Margin="0,0,8,0"
-                          IsEnabled="{Binding IsChecked, ElementName=CenterMapOnSelectToggle}"/>
+                        Style="{StaticResource MaterialDesignSwitchToggleButton}" 
+                        Margin="0,0,8,0"
+                        IsEnabled="{Binding IsChecked, ElementName=CenterMapOnSelectToggle}"/>
                         <TextBlock Text="Приближать при выборе узла" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <!-- 3 переключатель: Приближать карту всегда к центру -->
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                         <ToggleButton x:Name="AlwaysZoomToCenterToggle"
-                                      Style="{StaticResource MaterialDesignSwitchToggleButton}"
-                                      Margin="0,0,8,0"/>
+                                    Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                                    Margin="0,0,8,0"/>
                         <TextBlock Text="Приближать карту всегда к центру" VerticalAlignment="Center"/>
                     </StackPanel>
-                    
+
                 </StackPanel>
             </TabItem>
 
         </TabControl>
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="16">
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="16">
             <Button Content="Отмена" IsCancel="True" Margin="0,0,8,0"
                     Style="{StaticResource MaterialDesignOutlinedButton}"/>
             <Button Content="Сохранить" x:Name="SaveButton" Click="SaveButton_Click"

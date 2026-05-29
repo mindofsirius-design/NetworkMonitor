@@ -22,7 +22,7 @@
   "SmtpHost": "smtp.gmail.com",
   "SmtpPort": 587,
   "SmtpUser": "mindofsirius@gmail.com",
-  "SmtpPassword": "gsdbtjmchzzahfdc",
+  "SmtpPassword": "",
   "EmailFrom": "mindofsirius@gmail.com",
   "EmailTo": "mindofsirius@gmail.com",
   "CenterMapOnSelect": false,

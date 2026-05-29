@@ -10,7 +10,8 @@
         MinWidth="900" MinHeight="600"
         Style="{StaticResource MaterialDesignWindow}"
         Closing="Window_Closing"
-        StateChanged="Window_StateChanged">
+        StateChanged="Window_StateChanged"
+        WindowState="Maximized">
 
     <Window.Resources>
         <vm:StatusToColorConverter x:Key="StatusToColor"/>

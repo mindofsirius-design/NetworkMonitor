@@ -6084,3 +6084,23 @@
 2026-05-27 12:39:15.8186 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
 2026-05-27 12:39:21.3198 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
 2026-05-27 12:39:26.3197 INFO PingModule Ping 1 (12.1.1.1): Offline, -1ms 
+2026-05-29 10:58:22.7485 INFO App Application starting 
+2026-05-29 10:58:23.4168 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-29 10:58:24.0036 INFO MonitoringScheduler Scheduler stopped 
+2026-05-29 10:58:24.0036 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-29 10:58:53.3667 INFO App Application starting 
+2026-05-29 10:58:53.9986 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-29 10:58:54.5584 INFO MonitoringScheduler Scheduler stopped 
+2026-05-29 10:58:54.5584 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-29 10:59:15.6458 INFO App Application starting 
+2026-05-29 10:59:16.2312 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-29 10:59:16.7752 INFO MonitoringScheduler Scheduler stopped 
+2026-05-29 10:59:16.7752 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-29 11:00:41.6933 INFO App Application starting 
+2026-05-29 11:00:42.3132 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-29 11:00:42.8638 INFO MonitoringScheduler Scheduler stopped 
+2026-05-29 11:00:42.8638 INFO MonitoringScheduler Scheduler started with 0 nodes 
+2026-05-29 11:01:07.8985 INFO App Application starting 
+2026-05-29 11:01:08.4867 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-29 11:01:09.0664 INFO MonitoringScheduler Scheduler stopped 
+2026-05-29 11:01:09.0664 INFO MonitoringScheduler Scheduler started with 0 nodes 

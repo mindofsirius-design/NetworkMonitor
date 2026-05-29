@@ -1,1 +1,290 @@
-[]
+[
+  {
+    "Id": "afd87121-c4f9-48e5-ad94-946689a3cd09",
+    "Name": "675675",
+    "IpAddress": "68.85.85.85",
+    "DeviceType": "FS-1000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 30
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 54.127041,
+    "Longitude": 29.663086,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  },
+  {
+    "Id": "3d09c389-dc14-4758-8a11-b01223b4f6b9",
+    "Name": "2",
+    "IpAddress": "22.2.2.22",
+    "DeviceType": "FS-2000",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 30
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 53.703211,
+    "Longitude": 29.663086,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  },
+  {
+    "Id": "4ac0018b-d383-4730-ba05-2827c97591dc",
+    "Name": "333",
+    "IpAddress": "33.3.3.33",
+    "DeviceType": "Роутер",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 30
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 53.357109,
+    "Longitude": 29.696045,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  },
+  {
+    "Id": "d7e702c9-e5fe-4883-8f3d-1f78656d4234",
+    "Name": "444",
+    "IpAddress": "44.44.4.44",
+    "DeviceType": "Коммутатор",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 30
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 52.922151,
+    "Longitude": 29.663086,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  },
+  {
+    "Id": "951fb0f8-fba3-4c33-a1ea-6af22a89c808",
+    "Name": "5",
+    "IpAddress": "5.5.5.55",
+    "DeviceType": "Сервер",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 30
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 52.509535,
+    "Longitude": 29.685059,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  },
+  {
+    "Id": "8b92ed60-ba4b-48fc-9c66-e0395eba6522",
+    "Name": "6",
+    "IpAddress": "6.6.6.66",
+    "DeviceType": "Компьютер",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 30
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 52.079506,
+    "Longitude": 29.6521,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  },
+  {
+    "Id": "084b6493-706b-46f5-85e1-b4f05079517f",
+    "Name": "7",
+    "IpAddress": "77.7.7.77",
+    "DeviceType": "Камера",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 30
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 51.679368,
+    "Longitude": 29.663086,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  },
+  {
+    "Id": "5556557f-b2d9-4242-8793-8f4d7ed58cf5",
+    "Name": "88",
+    "IpAddress": "88.8.88.88",
+    "DeviceType": "Другое",
+    "Description": "",
+    "Monitoring": {
+      "Ping": {
+        "Enabled": true,
+        "IntervalSec": 30
+      },
+      "Tcp": {
+        "Enabled": false,
+        "Ports": [
+          80,
+          443
+        ]
+      },
+      "Snmp": {
+        "Enabled": false,
+        "Community": "public",
+        "Version": "2c"
+      },
+      "Traceroute": {
+        "Enabled": false
+      }
+    },
+    "Latitude": 51.234407,
+    "Longitude": 29.630127,
+    "X": 0.0,
+    "Y": 0.0,
+    "LastSeen": "0001-01-01T00:00:00",
+    "Status": 1,
+    "LastPingMs": -1,
+    "StatusColor": "#9E9E9E"
+  }
+]

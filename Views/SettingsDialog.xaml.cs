@@ -477,9 +477,10 @@ namespace NetworkMonitor.Views
             {
                 bool isDarkNow = (new PaletteHelper()).GetTheme().GetBaseTheme() == BaseTheme.Dark;
 
-                MainTabControl.Background = isDarkNow
-                    ? new SolidColorBrush(Color.FromArgb(0x25, 0, 0, 0))
-                    : new SolidColorBrush(Color.FromArgb(0x5, 0, 30, 70));
+                var rootGrid = (Grid)Content;
+                rootGrid.Background = isDarkNow
+                    ? new SolidColorBrush(Color.FromArgb(0x15, 0, 0, 0))
+                    : new SolidColorBrush(Color.FromArgb(0x9, 0, 0, 0));
 
                 var activeBg = isDarkNow
                     ? new SolidColorBrush(Color.FromRgb(30, 30, 30))
