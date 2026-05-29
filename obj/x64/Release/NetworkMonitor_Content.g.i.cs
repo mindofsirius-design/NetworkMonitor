@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/sounds/alert.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/sourcegear.sqlite3.3.50.4.2/runtimes/win-x64/native/e_sqlite3.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.macos.7.3.0.1/runtimes/osx/native/libharfbuzz" +
     "sharp.dylib")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.macos.7.3.0.1/runtimes/osx/native/libharfbuzz" +
@@ -19,16 +20,6 @@
     "buzzsharp.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.win32.7.3.0.1/runtimes/win-arm64/native/libha" +
     "rfbuzzsharp.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.macos.2.88.7/runtimes/osx/native/libskiasharp.dyl" +
-    "ib")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.macos.2.88.7/runtimes/osx/native/libskiasharp.dyl" +
-    "ib")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.win32.2.88.7/runtimes/win-x86/native/libskiasharp" +
-    ".dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.win32.2.88.7/runtimes/win-x64/native/libskiasharp" +
-    ".dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.win32.2.88.7/runtimes/win-arm64/native/libskiasha" +
-    "rp.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.macos.7.3.0.1/runtimes/osx/native/libharfbuzz" +
     "sharp.dylib")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.win32.7.3.0.1/runtimes/win-x86/native/libharf" +
@@ -45,21 +36,5 @@
     "harfbuzzsharp.so")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.linux.2.8.2.3/runtimes/linux-musl-x64/native/" +
     "libharfbuzzsharp.so")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.macos.2.88.7/runtimes/osx/native/libskiasharp.dyl" +
-    "ib")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.win32.2.88.7/runtimes/win-x86/native/libskiasharp" +
-    ".dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.win32.2.88.7/runtimes/win-x64/native/libskiasharp" +
-    ".dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.win32.2.88.7/runtimes/win-arm64/native/libskiasha" +
-    "rp.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.linux.2.88.7/runtimes/linux-x64/native/libskiasha" +
-    "rp.so")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.linux.2.88.7/runtimes/linux-arm/native/libskiasha" +
-    "rp.so")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.linux.2.88.7/runtimes/linux-arm64/native/libskias" +
-    "harp.so")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.linux.2.88.7/runtimes/linux-musl-x64/native/libsk" +
-    "iasharp.so")]
 
 
