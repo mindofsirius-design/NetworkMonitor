@@ -23,9 +23,6 @@ namespace NetworkMonitor.Views
         private DatabaseService _database;
         private readonly MainWindow _mainWindow;    // для темной темы элементов вверху основного окна
         private readonly StorageService _storageService;    // для импорта узлов
-        // Для дублирования полей в почте
-        private bool _emailFromEdited = false;
-        private bool _emailToEdited = false;
 
         public SettingsDialog(AppSettings settings, DatabaseService database = null, MainWindow mainWindow = null, StorageService storageService = null)
         {

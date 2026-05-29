@@ -17,11 +17,14 @@ using MaterialDesignThemes.Wpf;
 using System.Runtime.InteropServices;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
+using NLog;
+using System.Windows.Media.Media3D;
 
 namespace NetworkMonitor.Views
 {
     public partial class MainWindow : Window
     {
+        private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
         private MainViewModel _vm;
         private DispatcherTimer _refreshTimer;
         private DispatcherTimer _toastTimer;
@@ -486,22 +489,37 @@ namespace NetworkMonitor.Views
                 _vm.Notifications.RemoveToast(toast);
         }
 
+        // Для корректного выключения программы при выключении системы
+        public void ForceClose()
+        {
+            _forceClose = true;
+            Close();
+        }
+
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            LogManager.GetCurrentClassLogger().Info("запущен Window_Closing");
             if (!_forceClose)
             {
                 e.Cancel = true;
                 WindowState = WindowState.Minimized;
                 return;
             }
-
+            LogManager.GetCurrentClassLogger().Info("Window_Closing прошел проверку");
             _trayIcon.Dispose();
             _vm.Settings.MapLat = MainMap.Position.Lat;
             _vm.Settings.MapLon = MainMap.Position.Lng;
             _vm.Settings.MapZoom = MainMap.Zoom;
             _refreshTimer.Stop();
             _toastTimer.Stop();
-            _vm.Save();
+            try
+            {
+                _vm.Save();
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, "Сохранение при закрытии провалилось");
+            }
             _vm.Shutdown();
         }
 
@@ -621,12 +639,15 @@ namespace NetworkMonitor.Views
             }
             NodeListView.SelectedItem = null;
         }
-        private bool IsChildOf(DependencyObject element, DependencyObject parent)
+        private bool IsChildOf(DependencyObject child, DependencyObject parent)
         {
-            while (element != null)
+            while (child != null)
             {
-                if (element == parent) return true;
-                element = VisualTreeHelper.GetParent(element);
+                if (child == parent) return true;
+                if (!(child is Visual) && !(child is Visual3D))
+                    child = LogicalTreeHelper.GetParent(child);
+                else
+                    child = VisualTreeHelper.GetParent(child);
             }
             return false;
         }

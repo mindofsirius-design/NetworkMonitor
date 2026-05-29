@@ -12,10 +12,16 @@ namespace NetworkMonitor.Services
 {
     public class StorageService
     {
-        private static readonly string BaseDir = AppDomain.CurrentDomain.BaseDirectory;
+        private static readonly string BaseDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkMonitor");
         private readonly string _nodesFile = Path.Combine(BaseDir, "nodes.json");
         private readonly string _linksFile = Path.Combine(BaseDir, "links.json");
         private readonly string _settingsFile = Path.Combine(BaseDir, "settings.json");
+
+        public StorageService()
+        {
+            if (!Directory.Exists(BaseDir))
+                Directory.CreateDirectory(BaseDir);
+        }
 
         public List<NetworkNode> LoadNodes()
         {

@@ -22,7 +22,7 @@ namespace NetworkMonitor.Services
 
         public DatabaseService(string dbPath = null)
         {
-            _dbPath = dbPath ?? Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data", "history.db");
+            _dbPath = dbPath ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "NetworkMonitor", "data", "history.db");
         }
 
         public void Initialize()

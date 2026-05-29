@@ -175,14 +175,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NetworkMonitor.exe" size="5231064">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NetworkMonitor.exe" size="5232600">
       <assemblyIdentity name="NetworkMonitor" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YZ9QSAi/bR7eOpHdyrcVSfGLfrJBB1qsrblv0jLNoQM=</dsig:DigestValue>
+        <dsig:DigestValue>X97pKE97qY22ZXL1BpqaLvca1BTW9kqSaGcjfVonnkE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

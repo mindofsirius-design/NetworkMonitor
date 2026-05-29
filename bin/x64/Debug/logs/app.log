@@ -1,2 +1,9 @@
 2026-05-29 12:03:14.0394 INFO App Application starting 
 2026-05-29 12:03:14.5590 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-29 12:09:23.6536 INFO App Application starting 
+2026-05-29 12:09:24.1036 INFO DatabaseService Database initialized: C:\Users\Egor\source\repos\mindofsirius-design\NetworkMonitor\bin\x64\Debug\data\history.db 
+2026-05-29 15:10:13.8519 INFO App Application starting 
+2026-05-29 15:10:14.7098 INFO DatabaseService Database initialized: C:\Users\Egor\AppData\Roaming\NetworkMonitor\data\history.db 
+2026-05-29 15:15:44.8041 INFO App Application starting 
+2026-05-29 15:15:45.3762 INFO DatabaseService Database initialized: C:\Users\Egor\AppData\Roaming\NetworkMonitor\data\history.db 
+2026-05-29 15:15:58.6689 INFO MainWindow запущен Window_Closing 
